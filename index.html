@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>議会、見られる？録れる？</title>
+<title>地方議会の傍聴・録音・中継の一覧</title>
 <meta name="description" content="地方議会を生中継で見られるか、現地で記者や地元の住民が録音・撮影できるかを、議会ごとにまとめました。">
 <style>
 :root{
@@ -41,7 +41,7 @@
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.7 "Hiragino Sans","Noto Sans JP","Yu Gothic",system-ui,sans-serif}
 .wrap{max-width:1180px;margin:0 auto;padding-inline:max(16px, env(safe-area-inset-left, 0px)) max(16px, env(safe-area-inset-right, 0px));padding-block:20px 48px}
-h1{font-size:1.4rem;line-height:1.35;margin:0 0 .3em}
+h1{font-size:1.4rem;line-height:1.35;margin:0 0 .3em;word-break:auto-phrase}
 h2{font-size:1.1rem;margin:1.6em 0 .5em}
 .lead{margin:0 0 .4em}
 .meta{font-size:.82rem;color:var(--muted);margin:.2em 0}
@@ -216,7 +216,7 @@ ul.plain{margin:.3em 0 0;padding-left:1.2em;font-size:.84rem}
 </head>
 <body>
 <div class="wrap">
-<h1 id="title">議会、見られる？録れる？</h1>
+<h1 id="title">地方議会の傍聴・録音・中継の一覧</h1>
 <p class="lead">議会を生中継で見られるか。見られなければ、現地で記者や地元の住民が録れるか。議会ごとにまとめました。</p>
 <p class="meta" id="meta"></p>
 <p class="tolink"><a href="compare.html">都道府県で比べる地図 →</a></p>
@@ -484,8 +484,8 @@ function show(pref) {
   DATA = (window.BOCHO_DATA && window.BOCHO_DATA[pref]) || [];
   FILTER = null;
   const P = PREFS.find(p => p.code === pref) || {};
-  $('title').textContent = `${P.name || ''}の議会、見られる？録れる？`;
-  document.title = `${P.name || ''}の議会、見られる？録れる？`;
+  $('title').textContent = `${P.name || ''}の議会の傍聴・録音・中継の一覧`;
+  document.title = `${P.name || ''}の議会の傍聴・録音・中継の一覧`;
   const dates = [...new Set(DATA.map(d => d.checked_on))].sort();
   $('meta').innerHTML = `${DATA.length}議会 ・ 調査 ${esc(dates.length > 1 ? dates[0] + '〜' + dates.at(-1) : dates[0] || '')}` +
     (P.trial ? ' ・ <span class="badge">試験公開</span> 人による全件確認はまだです' : '');
