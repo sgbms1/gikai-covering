@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>都道府県で比べる</title>
+<meta name="description" content="地方議会を見られるか・録れるかを、都道府県ごとの割合の地図で比べます。">
+<style>
+:root{
+  --bg:#f7f6f2; --panel:#ffffff; --ink:#1d1d1b; --muted:#66645e; --line:#dedbd2; --accent:#1f5f8b; --quote:#f1efe8;
+  /* 割合（連続量）: 青の1色。割合が大きいほど濃い（ライト・ダークとも同じ向き。ダークで逆にしていたのを、直感と違うとして直した 2026-10-26） */
+  --q0:#cde2fb; --q1:#86b6ef; --q2:#3987e5; --q3:#1c5cab; --q4:#0d366b;
+  /* 配信の仕組み（分類）: 3色まで。残りは灰色 */
+  --s1:#2a78d6; --s2:#eb6834; --s3:#1baf7a; --sx:#c9c6bd;
+  --nodata:#e4e2db; --hatch:#5f5d57; --stroke:#ffffff;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#16171a; --panel:#1f2125; --ink:#e9e7e1; --muted:#a19e96; --line:#34363c; --accent:#7db4dc; --quote:#26282d;
+    --q0:#b7d3f6; --q1:#6da7ec; --q2:#3987e5; --q3:#256abf; --q4:#184f95;
+    --s1:#3987e5; --s2:#d95926; --s3:#199e70; --sx:#55534e;
+    --nodata:#2c2d31; --hatch:#c3c2b7; --stroke:#1f2125;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#16171a; --panel:#1f2125; --ink:#e9e7e1; --muted:#a19e96; --line:#34363c; --accent:#7db4dc; --quote:#26282d;
+  --q0:#b7d3f6; --q1:#6da7ec; --q2:#3987e5; --q3:#256abf; --q4:#184f95;
+  --s1:#3987e5; --s2:#d95926; --s3:#199e70; --sx:#55534e;
+  --nodata:#2c2d31; --hatch:#c3c2b7; --stroke:#1f2125;
+  color-scheme: dark;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.7 "Hiragino Sans","Noto Sans JP","Yu Gothic",system-ui,sans-serif}
+.wrap{max-width:1180px;margin:0 auto;padding-inline:max(16px, env(safe-area-inset-left, 0px)) max(16px, env(safe-area-inset-right, 0px));padding-block:20px 48px}
+h1{font-size:1.4rem;line-height:1.35;margin:0 0 .3em}
+h2{font-size:1.05rem;margin:1.4em 0 .4em}
+a{color:var(--accent)}
+.hint{font-size:.78rem;color:var(--muted)}
+.back{display:inline-block;min-height:40px;line-height:40px;font-size:.88rem}
+.controls{display:grid;grid-template-columns:auto minmax(0,1fr);gap:8px 10px;align-items:center;margin:12px 0}
+.controls label{font-size:.85rem;color:var(--muted)}
+.controls select{font:inherit;font-size:16px;min-height:40px;width:100%;min-width:0;padding:6px 8px;border:1px solid var(--line);border-radius:6px;background:var(--panel);color:var(--ink)}
+.desc{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:10px 12px;margin:8px 0}
+.desc p{margin:.2em 0}
+.desc .caveat{font-size:.82rem;color:var(--muted)}
+.mapbox{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:8px;margin-top:10px}
+.mapbox svg{display:block;width:100%;height:auto;max-height:640px}
+path.pf{stroke:var(--stroke);stroke-width:1;vector-effect:non-scaling-stroke;cursor:pointer;outline:none}
+path.pf:hover,path.pf:focus-visible,path.pf.on{stroke:var(--ink);stroke-width:2.2}
+path.hatch{fill:url(#hatch);pointer-events:none}
+.oki rect{fill:none;stroke:var(--line)}
+.oki text{font-size:11px;fill:var(--muted)}
+.info{min-height:3.2em;font-size:.9rem;margin:6px 4px}
+.info strong{font-size:1rem}
+.legend{display:flex;flex-wrap:wrap;gap:6px 14px;margin:6px 4px;font-size:.82rem;color:var(--ink)}
+.legend span{display:inline-flex;align-items:center;gap:5px}
+.sw{display:inline-block;width:1.1em;height:1.1em;border-radius:3px;border:1px solid var(--line)}
+.sw.h{background:repeating-linear-gradient(45deg,var(--hatch) 0 1.5px,transparent 1.5px 5px)}
+table{width:100%;border-collapse:collapse;font-size:.88rem;background:var(--panel);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+th,td{padding:6px 8px;border-bottom:1px solid var(--line);text-align:left;vertical-align:middle}
+th{font-size:.8rem;color:var(--muted);font-weight:600}
+td.num{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
+td.bar{width:38%}
+.bar i{display:block;height:10px;border-radius:0 4px 4px 0;background:var(--q2)}
+tr.on{background:var(--quote)}
+td.rank{color:var(--muted);width:2.5em}
+.notes{font-size:.85rem}
+.notes li{margin:.3em 0}
+@media (max-width:719px){ td.bar{display:none} th.bar{display:none} }
+@media (min-width:960px){
+  .grid{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:16px;align-items:start}
+  .controls{grid-template-columns:auto minmax(0,1fr) auto minmax(0,1fr)}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<a class="back" href="index.html">← 議会ごとの一覧へ</a>
+<h1>都道府県で比べる</h1>
+<p class="hint" id="meta"></p>
+
+<div class="controls">
+  <label for="fMetric">項目</label>
+  <select id="fMetric"></select>
+  <label for="fScope">議会</label>
+  <select id="fScope">
+    <option value="all">すべての議会</option>
+    <option value="city">市・区の議会だけ</option>
+    <option value="town">町・村の議会だけ</option>
+  </select>
+</div>
+<div class="desc"><p id="mDesc"></p><p class="caveat" id="mCaveat"></p></div>
+
+<div class="grid">
+  <div>
+    <div class="mapbox">
+      <div id="map" role="img"></div>
+      <div class="info" id="info" aria-live="polite"></div>
+      <div class="legend" id="legend"></div>
+    </div>
+  </div>
+  <div>
+    <h2 id="tTitle">都道府県の順</h2>
+    <table>
+      <thead><tr><th class="rank">順</th><th>都道府県</th><th class="num">割合</th><th class="bar">　</th><th class="num" id="thSub">議会</th></tr></thead>
+      <tbody id="rows"></tbody>
+    </table>
+  </div>
+</div>
+
+<h2>読むときの注意</h2>
+<ul class="notes">
+  <li><strong>「確認できず」は「ない」ではありません。</strong>生中継・録画・配信の仕組みの割合は、確認できた分だけの下限です。確認できずが3割以上の県は、地図に斜線をかけています。県の差が、実際の差ではなく、調べきれた度合いの差であることがあります（たとえば本会議の録画の割合は、確認できずの多さとほぼ逆の動きをします）。</li>
+  <li><strong>町村の多い県と少ない県があります。</strong>北海道は8割が町村、東京都は2割です。配信は市のほうが進んでいるので、「市・区の議会だけ」「町・村の議会だけ」でも比べてください。議会が5つ未満の県は灰色にしています。</li>
+  <li>規則（傍聴・録音・持込み）の項目は、例規集の条文から決めたもので、ほぼすべての議会で判定できています。規則と実際の運用は違うことがあります。</li>
+  <li>東京都は最初に作った県で、いちばん丁寧に確かめています。愛媛県は、自治体サイトの停止で調べきれていない項目があります。</li>
+  <li>地図: 国土数値情報（行政区域データ、国土交通省）を加工して作成。沖縄県は左上の枠に、本島とその周りの島だけを縮尺を変えて描いています。</li>
+</ul>
+<p class="hint">データと調べ方: <a href="https://github.com/sgbms1/gikai-covering" target="_blank" rel="noopener">github.com/sgbms1/gikai-covering</a></p>
+</div>
+
+<script src="data/geo/japan.js"></script>
+<script src="data/pref_stats.js"></script>
+<script>
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'}[c]));
+const S = window.BOCHO_PREF_STATS, G = window.BOCHO_JAPAN;
+// 項目。stream: 「確認できず」が多いと割合が下がる項目（斜線を出す）
+const METRICS = [
+  {id: 'committee_permit', name: '委員会の傍聴に許可が要る', desc: '委員会の傍聴に、委員長（委員会）の許可が要ると規則で決めている議会の割合。', caveat: '濃いほど、委員会を自由に見に行けない議会が多い。'},
+  {id: 'committee_norule', name: '委員会の録音・撮影の決まりがない', desc: '委員会での録音・撮影について、規則に定めがない議会の割合。', caveat: '決まりがないことは、自由に録れることではありません。その場の委員長の判断になります。'},
+  {id: 'resident_plenary', name: '本会議を住民が録れる', desc: '本会議を、住民が「自由」か「申請」で録れる議会の割合（記者に頼まれて、報道に使う目的で録る場合）。', caveat: ''},
+  {id: 'resident_committee', name: '委員会を住民が録れる', desc: '委員会を、住民が「自由」か「申請」で録れる議会の割合。', caveat: '規則に定めがない議会は「要確認」で、ここには数えません。'},
+  {id: 'device_ban', name: '録音機などの持込みを制限', desc: '録音機・写真機などを持っていること自体を、傍聴の制限の理由にしている議会の割合。', caveat: ''},
+  {id: 'plenary_live', name: '本会議の生中継あり', desc: '本会議をインターネットで生中継していると確認できた議会の割合（ケーブルテレビは含まない）。', caveat: '確認できずは数えていません。斜線の県は、確認できずが3割以上です。', stream: true},
+  {id: 'committee_live', name: '委員会の生中継あり', desc: '委員会（一部の委員会だけを含む）をインターネットで生中継していると確認できた議会の割合。', caveat: '委員会は、中継するともしないとも書いていない議会がほとんどで、確認できずが多い項目です。', stream: true},
+  {id: 'committee_vod', name: '委員会の録画あり', desc: '委員会の録画を配信していると確認できた議会の割合。', caveat: '確認できずは数えていません。', stream: true},
+  {id: 'cable', name: 'ケーブルテレビで放送', desc: '地域のケーブルテレビで、本会議か委員会を放送している（生中継・録画）と分かった議会の割合。', caveat: '見つかったものだけの数です。県によって調べの深さが違った可能性があります。'},
+  {id: 'dl_prohibited', name: '配信の複製を例外なく禁止', desc: '配信のページなどに、映像のダウンロード・複製を例外なく禁じると書いている議会の割合。', caveat: '配信業者の定型の文で決まっていることがあります。', stream: true},
+  {id: 'vendor', name: '主な配信の仕組み', desc: '県内の議会でいちばん多く使われている配信の仕組み（YouTube・DiscussVision・JFIT）。', caveat: '配信の仕組みが分からない議会は数えていません。ほかの仕組み（会議録検索システムなど）は「その他」にまとめています。', cat: true},
+];
+const VENDORS = [['pf_youtube', 'YouTube', '--s1'], ['pf_discuss', 'DiscussVision', '--s2'], ['pf_jfit', 'JFIT', '--s3']];
+const MIN_N = 5;
+for (const m of METRICS) $('fMetric').add(new Option(m.name, m.id));
+$('meta').textContent = `全国1,788議会の調べ（${S.checked[0]}〜${S.checked[1]}）を、都道府県ごとに数えたもの。都道府県議会は「すべての議会」にだけ入ります。`;
+
+// 地図: 本図と、左上の沖縄県の枠（入れ子の svg）
+const [mx, my, mw, mh] = G.main.viewBox.split(' ').map(Number);
+const [ox, oy, ow, oh] = G.okinawa.viewBox.split(' ').map(Number);
+const BOXH = mh * 0.3, BOXW = BOXH * ow / oh;   // 沖縄本島は縦に長いので、高さで決める
+const pathsOf = (paths, cls) => Object.entries(paths).map(([p, d]) => `<path class="${cls}" data-p="${p}" d="${d}"${cls === 'pf' ? ` tabindex="0" role="button"` : ''}></path>`).join('');
+$('map').innerHTML = `<svg viewBox="${mx} ${my} ${mw} ${mh}" aria-label="都道府県の地図">
+  <defs><pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="1.6" height="7" style="fill:var(--hatch)"/></pattern></defs>
+  <g>${pathsOf(G.main.paths, 'pf')}${pathsOf(G.main.paths, 'hatch')}</g>
+  <g class="oki"><rect x="${mx + 4}" y="${my + 4}" width="${BOXW}" height="${BOXH + 16}" rx="4"/><text x="${mx + 10}" y="${my + 18}">沖縄県</text>
+    <svg x="${mx + 4}" y="${my + 18}" width="${BOXW}" height="${BOXH}" viewBox="${ox} ${oy} ${ow} ${oh}">${pathsOf(G.okinawa.paths, 'pf')}${pathsOf(G.okinawa.paths, 'hatch')}</svg></g>
+</svg>`;
+
+const pct = (k, n) => n ? k / n : null;
+const fmt = r => r == null ? '—' : Math.round(r * 100) + '%';
+// 区切り: その項目の最小〜最大を5つに等分し、5%単位に丸める
+function breaks(vals) {
+  const v = vals.filter(x => x != null);
+  let lo = Math.floor(Math.min(...v) * 20) / 20, hi = Math.ceil(Math.max(...v) * 20) / 20;
+  if (hi - lo < 0.25) hi = Math.min(1, lo + 0.25);
+  return [1, 2, 3, 4].map(i => lo + (hi - lo) * i / 5).map(x => Math.round(x * 100) / 100).concat([hi]).reduce((a, x) => (a.push(x), a), [lo]);
+}
+let sel = null;
+function render() {
+  const m = METRICS.find(x => x.id === $('fMetric').value), sc = $('fScope').value;
+  $('mDesc').textContent = m.desc; $('mCaveat').textContent = m.caveat;
+  const rows = Object.entries(S.prefs).map(([p, r]) => {
+    const s = r.s[sc], n = s.n;
+    if (m.cat) {
+      const best = VENDORS.map(([id, name, c]) => ({name, c, k: s[id][0]})).sort((a, b) => b.k - a.k)[0];
+      const known = n - s.pf_youtube[1];
+      const name = known < MIN_N ? null : best.k ? best.name : 'その他';   // 仕組みが分かった議会が少ない県は比べない（愛媛県は1つで「100%」になっていた）
+      return {p, name: r.name, n, known, k: best.k, rate: name ? best.k / known : null, cat: name, color: name ? (VENDORS.find(v => v[1] === name)?.[2] || '--sx') : '--nodata'};
+    }
+    const [k, u] = s[m.id];
+    return {p, name: r.name, n, k, u, rate: n < MIN_N ? null : pct(k, n), unk: pct(u, n)};
+  });
+  let bk = null;
+  if (!m.cat) bk = breaks(rows.map(r => r.rate));
+  const bin = r => r == null ? null : Math.min(4, Math.max(0, bk.findIndex((x, i) => i > 0 && r <= x + 1e-9) - 1));
+  const fill = r => m.cat ? `var(${r.color})` : r.rate == null ? 'var(--nodata)' : `var(--q${bin(r.rate)})`;
+  const tip = r => m.cat
+    ? (r.cat ? `${r.name}：${r.cat}（配信の仕組みが分かった ${r.known} 議会のうち ${r.k}）` : `${r.name}：配信の仕組みが分かった議会が${r.known}つで、比べるには少ない`)
+    : r.rate == null ? `${r.name}：議会が${r.n}つで、比べるには少ない` : `${r.name}：${fmt(r.rate)}（${r.n} 議会のうち ${r.k}${m.stream || r.u ? `。確認できず ${r.u}` : ''}）`;
+  const byP = Object.fromEntries(rows.map(r => [r.p, r]));
+  document.querySelectorAll('#map path.pf').forEach(el => {
+    const r = byP[el.dataset.p]; el.style.fill = fill(r); el.setAttribute('aria-label', tip(r));
+    el.innerHTML = `<title>${esc(tip(r))}</title>`; el.classList.toggle('on', el.dataset.p === sel);
+  });
+  document.querySelectorAll('#map path.hatch').forEach(el => { const r = byP[el.dataset.p]; el.style.display = m.stream && r.rate != null && r.unk >= 0.3 ? '' : 'none'; });
+  // 凡例
+  const lg = m.cat
+    ? [...VENDORS.map(v => [`var(${v[2]})`, v[1]]), ['var(--sx)', 'その他'], ['var(--nodata)', '分かった議会が5つ未満']]
+    : bk.slice(0, 5).map((x, i) => [`var(--q${i})`, `${Math.round(x * 100)}〜${Math.round(bk[i + 1] * 100)}%`]).concat([['var(--nodata)', '議会が5つ未満']]);
+  $('legend').innerHTML = lg.map(([c, t]) => `<span><i class="sw" style="background:${c}"></i>${esc(t)}</span>`).join('') + (m.stream ? '<span><i class="sw h"></i>確認できずが3割以上</span>' : '');
+  // 表（割合の高い順。比べられない県は最後）
+  const sorted = [...rows].sort((a, b) => (b.rate ?? -1) - (a.rate ?? -1) || a.p.localeCompare(b.p));
+  $('tTitle').textContent = m.cat ? '都道府県ごとの主な配信の仕組み' : `都道府県の順（${m.name}）`;
+  $('thSub').textContent = m.cat ? '仕組み' : m.stream ? '確認できず' : '議会';
+  $('rows').innerHTML = sorted.map((r, i) => `<tr data-p="${r.p}" class="${r.p === sel ? 'on' : ''}"><td class="rank">${r.rate == null ? '' : i + 1}</td><td>${esc(r.name)}</td><td class="num">${fmt(r.rate)}</td><td class="bar"><i style="width:${Math.round((r.rate || 0) * 100)}%;${m.cat ? `background:var(${r.color})` : ''}"></i></td><td class="num">${m.cat ? esc(r.cat || '—') : m.stream ? fmt(r.unk) : `${r.k}/${r.n}`}</td></tr>`).join('');
+  show(sel ? byP[sel] : null, tip);
+  render.tip = tip; render.byP = byP;
+}
+function show(r, tip) { $('info').innerHTML = r ? `<strong>${esc(tip(r).split('：')[0])}</strong>　${esc(tip(r).split('：').slice(1).join('：'))}` : '県を押すと、数が出ます。'; }
+function pick(p) {
+  sel = sel === p ? null : p;
+  document.querySelectorAll('#map path.pf').forEach(el => el.classList.toggle('on', el.dataset.p === sel));
+  document.querySelectorAll('#rows tr').forEach(tr => tr.classList.toggle('on', tr.dataset.p === sel));
+  show(sel ? render.byP[sel] : null, render.tip);
+}
+$('map').addEventListener('click', e => { const el = e.target.closest('path.pf'); if (el) pick(el.dataset.p); });
+$('map').addEventListener('keydown', e => { const el = e.target.closest('path.pf'); if (el && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); pick(el.dataset.p); } });
+$('map').addEventListener('mouseover', e => { const el = e.target.closest('path.pf'); if (el && !sel) show(render.byP[el.dataset.p], render.tip); });
+$('map').addEventListener('mouseleave', () => { if (!sel) show(null); });
+$('rows').addEventListener('click', e => { const tr = e.target.closest('tr'); if (tr) pick(tr.dataset.p); });
+// 選んだ項目は URL に残す（共有できるように）
+const q = new URLSearchParams(location.hash.slice(1));
+if (q.get('m') && METRICS.some(x => x.id === q.get('m'))) $('fMetric').value = q.get('m');
+if (['all', 'city', 'town'].includes(q.get('s'))) $('fScope').value = q.get('s');
+for (const id of ['fMetric', 'fScope']) $(id).addEventListener('change', () => { try { history.replaceState(null, '', `#m=${$('fMetric').value}&s=${$('fScope').value}`); } catch (e) { /* file:// などで使えないときは URL に残さない */ } render(); });
+render();
+</script>
+</body>
+</html>

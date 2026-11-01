@@ -1,0 +1,54 @@
+name: 誤り・新しい情報を知らせる
+description: 議会の録音・撮影のルールや、生中継・録画の情報の誤り、新しい情報を知らせる
+title: "[訂正] "
+labels: ["訂正"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ありがとうございます。いただいた情報は、原文（規則・議会のサイト）で確かめてから直します。確かめられないものは「確認できず」のままにすることがあります。
+        個人の連絡先や、ほかの人の個人情報は書かないでください（この内容は公開されます）。
+  - type: input
+    id: council
+    attributes:
+      label: 議会
+      description: 議会名と都道府県（サイトの「知らせる」から開いたときは入っています）
+    validations:
+      required: true
+  - type: dropdown
+    id: item
+    attributes:
+      label: どの項目か
+      multiple: true
+      options:
+        - 本会議の生中継・録画
+        - 委員会の生中継・録画
+        - ケーブルテレビの放送
+        - 本会議を記者・住民が録れるか
+        - 委員会を記者・住民が録れるか
+        - 委員会の傍聴
+        - 映像の貸出・提供・ダウンロード
+        - その他
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: 何が違うか・何が分かったか
+      description: 例「委員会も YouTube で生中継している」「傍聴席での録音を申請したら認められた（2026年9月）」
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: 根拠の URL（あれば）
+      description: 議会のサイトのページ、規則、配信のページなど
+  - type: dropdown
+    id: how
+    attributes:
+      label: どうやって知ったか
+      options:
+        - 議会のサイト・規則で見た
+        - 議会事務局に聞いた
+        - 傍聴・取材で経験した
+        - その他

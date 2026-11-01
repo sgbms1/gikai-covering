@@ -1,0 +1,736 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>議会、見られる？録れる？</title>
+<meta name="description" content="地方議会を生中継で見られるか、現地で記者や地元の住民が録音・撮影できるかを、議会ごとにまとめました。">
+<style>
+:root{
+  --bg:#f7f6f2; --panel:#ffffff; --ink:#1d1d1b; --muted:#66645e; --line:#dedbd2;
+  --accent:#1f5f8b; --quote:#f1efe8;
+  --c-free:#1e7a46; --c-free-bg:#e3f3e9;
+  --c-apply:#1f5f8b; --c-apply-bg:#e4eef6;
+  --c-check:#b26b00; --c-check-bg:#fbefd9;
+  --c-no:#a3262a; --c-no-bg:#f7dcdc;
+  --c-unk:#6b6b6b; --c-unk-bg:#ececec;
+  --c-lend:#167a78; --c-lend-bg:#dcf2f1;
+  --c-vo:#56606a; --c-vo-bg:#e2e7ec; --c-vo-fill:#a9b4be;   /* 録画だけ確認: 確認できずの灰色に少し青み（縞なし） */
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#16171a; --panel:#1f2125; --ink:#e9e7e1; --muted:#a19e96; --line:#34363c;
+    --accent:#7db4dc; --quote:#26282d;
+    --c-free:#7fd4a2; --c-free-bg:#1d3326; --c-apply:#8fc0e4; --c-apply-bg:#1c2b38;
+    --c-check:#f2b85b; --c-check-bg:#3a2c14; --c-no:#f08a8a; --c-no-bg:#3e1c1c;
+    --c-unk:#b5b5b5; --c-unk-bg:#2c2c2c; --c-lend:#79d6d2; --c-lend-bg:#173332;
+    --c-vo:#b5bfc8; --c-vo-bg:#2f353b; --c-vo-fill:#56606a;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#16171a; --panel:#1f2125; --ink:#e9e7e1; --muted:#a19e96; --line:#34363c;
+  --accent:#7db4dc; --quote:#26282d;
+  --c-free:#7fd4a2; --c-free-bg:#1d3326; --c-apply:#8fc0e4; --c-apply-bg:#1c2b38;
+  --c-check:#f2b85b; --c-check-bg:#3a2c14; --c-no:#f08a8a; --c-no-bg:#3e1c1c;
+  --c-unk:#b5b5b5; --c-unk-bg:#2c2c2c; --c-lend:#79d6d2; --c-lend-bg:#173332;
+  --c-vo:#b5bfc8; --c-vo-bg:#2f353b; --c-vo-fill:#56606a;
+  color-scheme: dark;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.7 "Hiragino Sans","Noto Sans JP","Yu Gothic",system-ui,sans-serif}
+.wrap{max-width:1180px;margin:0 auto;padding-inline:max(16px, env(safe-area-inset-left, 0px)) max(16px, env(safe-area-inset-right, 0px));padding-block:20px 48px}
+h1{font-size:1.4rem;line-height:1.35;margin:0 0 .3em}
+h2{font-size:1.1rem;margin:1.6em 0 .5em}
+.lead{margin:0 0 .4em}
+.meta{font-size:.82rem;color:var(--muted);margin:.2em 0}
+.badge{display:inline-block;font-size:.72rem;padding:0 6px;border-radius:4px;background:var(--c-check-bg);color:var(--c-check);font-weight:700}
+.hint{font-size:.78rem;color:var(--muted)}
+a{color:var(--accent)}
+
+/* 区分の色（マス・カード・地図で共通） */
+.l-free{--pc:var(--c-free);--pbg:var(--c-free-bg)} .l-apply{--pc:var(--c-apply);--pbg:var(--c-apply-bg)}
+.l-check{--pc:var(--c-check);--pbg:var(--c-check-bg)} .l-no{--pc:var(--c-no);--pbg:var(--c-no-bg)}
+.l-unk{--pc:var(--c-unk);--pbg:var(--c-unk-bg)} .l-lend{--pc:var(--c-lend);--pbg:var(--c-lend-bg)}
+.l-vo{--pc:var(--c-vo);--pbg:var(--c-vo-bg)}
+.lv{display:inline-block;min-width:3.4em;text-align:center;font-size:.82rem;font-weight:700;padding:2px 8px;border-radius:6px;color:var(--pc);background:var(--pbg);white-space:nowrap}
+.lv.lv-wrap{white-space:normal}   /* 長い名前（「ケーブルTV（ネットは確認できず）」）はスマホの札で折り返す */
+.lv.l-unk{background:repeating-linear-gradient(45deg,var(--c-unk-bg) 0 4px,transparent 4px 8px)}
+.sw{display:inline-block;width:.95em;height:.95em;border-radius:3px;vertical-align:-.12em;margin-right:5px;background:var(--pc)}
+.sw.l-unk{background:repeating-linear-gradient(45deg,var(--c-unk) 0 2px,var(--c-unk-bg) 2px 5px)}
+.sw.l-vo{background:var(--c-vo-fill)}
+
+/* 操作欄（スマホ: 見出しと欄を2列に） */
+.controls{display:grid;grid-template-columns:auto minmax(0,1fr);gap:8px 10px;align-items:center;margin:10px 0}
+.controls label{font-size:.85rem;color:var(--muted)}
+.controls select,.controls input{font:inherit;font-size:16px;min-height:40px;width:100%;min-width:0;padding:6px 8px;border:1px solid var(--line);border-radius:6px;background:var(--panel);color:var(--ink)}
+.controls input,.controls .count{grid-column:1 / -1}
+.count{font-size:.85rem;color:var(--muted)}
+.chip{display:inline-flex;align-items:center;gap:6px;font-size:.85rem;padding:4px 6px 4px 10px;border-radius:999px;background:var(--pbg);color:var(--pc);font-weight:700}
+.chip button{font:inherit;border:0;background:transparent;color:inherit;cursor:pointer;min-width:28px;min-height:28px}
+
+/* 折りたたみ（既定で閉じる注釈・開いておく地図） */
+details.fold{margin-top:.8em}
+details.fold>summary{cursor:pointer;font-weight:700;min-height:40px;display:flex;align-items:center;list-style:none}
+details.fold>summary::-webkit-details-marker{display:none}
+details.fold>summary::before{content:"▸";margin-right:.4em;color:var(--muted)}
+details.fold[open]>summary::before{content:"▾"}
+details.fold>summary:hover{color:var(--accent)}
+details.note>summary{font-weight:400;color:var(--accent);font-size:.9rem}
+.notebox{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:10px 14px;font-size:.88rem}
+.notebox ul{margin:.3em 0;padding-left:1.2em}
+.notebox li{margin:.25em 0}
+.notebox dl{display:grid;grid-template-columns:auto 1fr;gap:4px 10px;margin:.4em 0}
+.notebox dd{margin:0}
+
+/* カード（区分ごとの数。押すと一覧を絞り込む） */
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(150px,100%),1fr));gap:8px;margin-top:.4em}
+.card{position:relative;text-align:left;font:inherit;color:var(--ink);background:var(--panel);border:1px solid var(--line);border-top:5px solid var(--pc);border-radius:10px;padding:8px 10px;cursor:pointer}
+.card:hover{border-color:var(--pc)}
+.card[aria-pressed="true"]{background:var(--pbg);border-color:var(--pc)}
+.card .num{font-size:1.6rem;font-weight:700;color:var(--pc);line-height:1.1}
+.card .name{font-weight:700}
+.card .desc{font-size:.78rem;color:var(--muted);line-height:1.5}
+
+/* 地図 */
+.mapbox{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:10px 12px}
+.maptools{display:flex;flex-wrap:wrap;gap:6px 12px;align-items:center;justify-content:space-between}
+.mapinfo{font-size:.88rem;min-height:1.7em;color:var(--muted)}
+.mapinfo strong{color:var(--ink)}
+button.zoom{font:inherit;font-size:.85rem;min-height:36px;padding:4px 12px;border:1px solid var(--line);border-radius:6px;background:var(--quote);color:var(--ink);cursor:pointer}
+.maps{display:flex;flex-wrap:wrap;gap:12px;align-items:flex-start}
+.map.main{flex:1 1 100%;min-width:0;overflow:auto;-webkit-overflow-scrolling:touch}
+.map svg{display:block;width:100%;height:auto;max-height:640px;margin:0 auto}
+.maps.zoomed .map.main svg{width:240%;max-height:none}
+#map path.area{fill:var(--pc);stroke:var(--panel);stroke-width:.8;vector-effect:non-scaling-stroke;cursor:pointer;outline:none}
+#map path.area.l-unk{fill:url(#hatch)}
+#map path.area.l-vo{fill:var(--c-vo-fill)}
+#map path.area:hover,#map path.area:focus-visible{stroke:var(--ink);stroke-width:2}
+.insets{display:flex;flex-wrap:wrap;gap:12px;align-items:flex-start;flex:0 1 auto;max-width:100%}
+.inset{margin:0;flex:0 1 auto;max-width:100%;border:1px solid var(--line);border-radius:8px;padding:6px 8px}
+.inset figcaption{font-size:.82rem;font-weight:700}
+.inset figcaption span{font-weight:400;font-size:.72rem;color:var(--muted)}
+.inset svg{display:block;max-width:100%;height:auto;margin:4px auto 0}
+.lbl{cursor:pointer}
+.lbl text{font-size:12px;fill:var(--ink)}
+.lbl line{stroke:var(--muted);stroke-width:.6}
+.lbl rect{fill:var(--pc);stroke:var(--panel);stroke-width:.5}
+.lbl rect.l-unk{fill:url(#hatch)}
+.lbl rect.l-vo{fill:var(--c-vo-fill)}
+.lbl:hover text{fill:var(--accent);text-decoration:underline}
+.offmap{margin-top:.5em;font-size:.85rem}
+.offmap a.jump{display:inline-block;margin:2px 10px 2px 0;color:var(--ink)}
+
+/* 一覧（スマホ: 1議会1枚の札に、2×2のマス） */
+.tablebox{border:1px solid var(--line);border-radius:10px;background:var(--panel)}
+table{border-collapse:collapse;width:100%}
+.tablebox thead{display:none}
+.tablebox table,.tablebox tbody{display:block}
+.tablebox tr.row{display:grid;grid-template-columns:4.2em 1fr 1fr;gap:4px 6px;align-items:center;padding:10px 12px;border-top:1px solid var(--line);cursor:pointer;scroll-margin-top:12px}
+.tablebox tr.row:first-child{border-top:0}
+.tablebox tr.row td{display:block;padding:0;border:0}
+.tablebox tr.row td.name{grid-column:1 / -1;display:flex;flex-wrap:wrap;align-items:baseline;gap:0 .6em;font-weight:700;font-size:1rem}
+.tablebox td.name small{font-weight:400;font-size:.78rem;color:var(--muted)}
+.tablebox td.name .toggle{margin-left:auto}
+.tablebox td.mh{font-size:.75rem;color:var(--muted)}
+.tablebox td.mh.col{text-align:center}
+.tablebox td.cell{text-align:center}
+.tablebox td.cell small{display:block;font-size:.72rem;color:var(--muted);line-height:1.3}
+.susp{display:block;font-size:.75rem;font-weight:700;color:var(--c-check);line-height:1.3}
+.tablebox tr.detail{display:block}
+.tablebox tr.detail td{display:block;padding:12px;background:var(--bg)}
+.tablebox tr.hidden{display:none}
+tr.row:hover td{background:var(--quote)}
+@keyframes flash{from{background:var(--c-apply-bg)}to{background:transparent}}
+tr.row.flash{animation:flash 2.4s ease-out}
+.toggle{font-size:.78rem;color:var(--accent);font-weight:400}
+
+/* 詳細 */
+.how{display:grid;gap:10px}
+.dbox{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:10px 12px}
+.dbox h3{font-size:.95rem;margin:0 0 .4em}
+.item{display:grid;grid-template-columns:6.4em minmax(0,1fr);gap:2px 8px;font-size:.86rem;padding:3px 0;border-top:1px solid var(--line)}
+.item:first-of-type{border-top:0}
+.item .k{color:var(--muted)}
+.item .lv{margin-right:6px}
+details.more{margin-top:8px}
+details.more>summary{cursor:pointer;color:var(--accent);font-size:.86rem;min-height:36px;display:flex;align-items:center}
+.basis{margin-top:6px;font-size:.84rem}
+.basis .ttl{color:var(--muted)}
+.basis blockquote{margin:4px 0;background:var(--quote);padding:6px 9px;border-radius:6px}
+.links{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-top:4px}
+a.go{display:inline-block;font-size:.8rem;font-weight:700;color:var(--accent);text-decoration:none;border:1px solid var(--accent);border-radius:5px;padding:6px 10px;line-height:1.3}
+a.go::after{content:" ↗"}
+a.go.guide{font-weight:400;border-style:dashed}
+.foot{margin-top:28px;padding-top:10px;border-top:1px solid var(--line)}
+.tolink{margin:.2em 0}
+.tolink a{display:inline-block;min-height:40px;line-height:40px;font-size:.9rem}
+button.copy{font:inherit;font-size:.78rem;padding:6px 10px;line-height:1.3;border:1px solid var(--line);border-radius:5px;background:var(--quote);color:var(--ink);cursor:pointer}
+button.copy.done{border-color:var(--c-free);color:var(--c-free)}
+ul.plain{margin:.3em 0 0;padding-left:1.2em;font-size:.84rem}
+
+/* 広い画面 */
+@media (min-width:720px){
+  .wrap{padding-block:28px 60px}
+  h1{font-size:1.7rem}
+  .controls{display:flex;flex-wrap:wrap}
+  .controls select,.controls input{font-size:.9rem;width:auto;min-height:34px}
+  .controls input{flex:1 1 180px}
+  .map.main{flex:1 1 520px}
+  button.zoom{display:none}
+  .maps.zoomed .map.main svg{width:100%;max-height:640px}
+  .how{grid-template-columns:1fr 1fr}
+  .how .watch{grid-column:1 / -1}
+}
+@media (min-width:960px){
+  .how{grid-template-columns:repeat(3,1fr)}
+  .how .watch{grid-column:auto}
+  /* 見出しの行を画面の上に固定する（表を読み進めても列の意味が分かるように）。
+     .tablebox に overflow を付けると固定が効かなくなるので付けない（広い画面では表が収まる） */
+  .tablebox{overflow:visible}
+  .tablebox thead{display:table-header-group;position:sticky;top:env(safe-area-inset-top, 0px);z-index:3}
+  /* 重なった境目の線（border）は固定されずに透けるので、線は box-shadow で描く */
+  .tablebox thead th{background:var(--panel);border-bottom:0;box-shadow:inset 0 -1px 0 var(--line)}
+  .tablebox thead tr:first-child th:first-child{border-top-left-radius:10px}
+  .tablebox thead tr:first-child th:last-child{border-top-right-radius:10px}
+  .tablebox tr.row{scroll-margin-top:84px}
+  .tablebox table{display:table}
+  .tablebox tbody{display:table-row-group}
+  .tablebox tr.row{display:table-row;padding:0}
+  .tablebox tr.detail{display:table-row}
+  .tablebox tr.hidden{display:none}
+  .tablebox tr.row td,.tablebox tr.detail td{display:table-cell;padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:middle}
+  .tablebox tr.row td.mh{display:none}
+  .tablebox tr.row td.name{display:table-cell;white-space:nowrap}
+  .tablebox td.name .toggle{display:block}
+  .tablebox td.name small{display:block}
+  .mlabel{display:none}
+  .tablebox tr.detail td{padding:14px 16px}
+  th{font-size:.8rem;color:var(--muted);font-weight:600;padding:8px 10px;text-align:center;border-bottom:1px solid var(--line)}
+  th.left{text-align:left}
+  tr.row.flash{animation:none}
+  tr.row.flash td{animation:flash 2.4s ease-out}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1 id="title">議会、見られる？録れる？</h1>
+<p class="lead">議会を生中継で見られるか。見られなければ、現地で記者や地元の住民が録れるか。議会ごとにまとめました。</p>
+<p class="meta" id="meta"></p>
+<p class="tolink"><a href="compare.html">都道府県で比べる地図 →</a></p>
+
+<details class="fold note" id="about">
+<summary>このサイトについて・読み方</summary>
+<div class="notebox">
+  <p>議会の配信動画は、多くが YouTube で、映像や音声のファイルは手に入りません。記録を自前で持つには、現地で録るしかありません。記者が行けないときは、地元の住民に頼む手もあります。そのときに、録れるか・何をすればよいかを調べるためのサイトです。</p>
+  <dl>
+    <dt><span class="lv l-free">自由</span></dt><dd>申し出るだけで録れる</dd>
+    <dt><span class="lv l-apply">申請</span></dt><dd>事前に議長（委員会は委員長）の許可を申請する</dd>
+    <dt><span class="lv l-check">要確認</span></dt><dd>規則と議会サイトの案内では分からない。議会事務局に聞く</dd>
+    <dt><span class="lv l-no">不可</span></dt><dd>規則か案内に、できないと書いてある</dd>
+    <dt><span class="lv l-unk">確認できず</span></dt><dd>例規集（条例・規則）を探したが、見つからなかった</dd>
+  </dl>
+  <ul>
+    <li>「住民」は、記者に頼まれて、報道に使う目的で録る場合です。報道目的の撮影だけを許可制にしている議会では、住民でも申請が要ります。</li>
+    <li>傍聴規則などの条文（例規集）と、議会サイトの傍聴案内の両方を見て判断しています。案内が規則より厳しい議会は、案内に合わせています。</li>
+    <li>本会議は、どの議会でも誰でも傍聴できます（地方自治法115条。秘密会を除く）。委員会は、委員長の許可が要る議会もあります。</li>
+    <li>許可が実際に下りるか、何に使ってよいかは、規則からは分かりません。必ず議会事務局に確かめてください。</li>
+    <li>「映像を手に入れる」は、議会が映像を出す・貸す・使ってよいと書いているかです。比べると、米国ユタ州では会議の録音は公文書で、会議後3営業日以内に誰でも聞けるようにすることが法律で決まっています（Utah Code 52-4-203）。</li>
+    <li>条文は調査日の時点のものです。その後に改正されていることがあります。</li>
+    <li>「条文を開く」は根拠の条へ直接飛びます（Chrome、Edge、Safari）。Reiki-Base 方式の例規集は固定のリンクがないため、検索語をコピーして探してください。</li>
+    <li>条例・規則は著作権の対象外です（著作権法13条）。</li>
+  </ul>
+</div>
+</details>
+
+<details class="fold note" id="dlnote">
+<summary>配信の映像をダウンロード・録画してよいか</summary>
+<div class="notebox">
+  <ul>
+    <li><strong>見ながらメモを取り、記事にする</strong>のは問題ありません。</li>
+    <li><strong>YouTube の映像をツールでダウンロードする</strong>のは、規約違反です。YouTube と権利者の事前の書面許可が要ります（<a href="https://www.youtube.com/static?template=terms&amp;hl=ja&amp;gl=JP" target="_blank" rel="noopener">利用規約</a>）。</li>
+    <li><strong>議会の配信サイト</strong>は、多くが「著作権法で認められた範囲を超えて複製しない」としています。仕事での保存は「私的使用」（著作権法30条）に当たりません。</li>
+    <li><strong>新聞・放送</strong>は、議会での公開の発言を、報道の目的上正当な範囲で載せたり流したりできます（40条2項）。時事の報道に伴う複製（41条）・引用（32条）もあります。ネットだけの媒体が自社サイトに載せることは、40条2項に書かれていません。</li>
+    <li><strong>映像が要るとき</strong>は、議会事務局に提供を申請するのが確実です。「知りたいこと」の「映像を手に入れる」で、映像を貸し出す・提供する議会が分かります。</li>
+    <li>画面や音声を録って文字起こしすることを、規約や法がどう扱うかははっきりしません。</li>
+  </ul>
+  <p class="hint">2026年10月の調べ。法的な助言ではありません。出典はリポジトリの docs/download_law.md。</p>
+</div>
+</details>
+
+<div class="controls">
+  <label for="fPref">都道府県</label>
+  <select id="fPref"></select>
+  <label for="fView">知りたいこと</label>
+  <select id="fView">
+    <option value="live.plenary">本会議を生中継で見る</option>
+    <option value="live.committee">委員会を生中継で見る</option>
+    <option value="vod.plenary">本会議を録画で見る</option>
+    <option value="vod.committee">委員会を録画で見る</option>
+    <option value="foot">映像を手に入れる</option>
+    <option value="plenary.press">本会議を記者が録る</option>
+    <option value="plenary.resident">本会議を住民が録る</option>
+    <option value="committee.press">委員会を記者が録る</option>
+    <option value="committee.resident">委員会を住民が録る</option>
+  </select>
+</div>
+<div class="cards" id="cards"></div>
+<p class="hint" id="cardsNote"></p>
+
+<details class="fold" id="mapFold" open>
+<summary>地図</summary>
+<div class="mapbox">
+  <div class="maptools"><div class="mapinfo" id="mapInfo"></div><button type="button" class="zoom" id="mapZoom" aria-pressed="false">地図を拡大</button></div>
+  <div class="maps" id="map"></div>
+  <div class="offmap" id="offmap"></div>
+  <details class="more"><summary>地図の出典</summary><p class="hint">国土数値情報（行政区域データ、国土交通省）を加工して作成。政令指定都市は区をまとめて1つの市として塗っています。島しょ部は縮尺を変えて枠の中に描いています。</p></details>
+</div>
+</details>
+
+<h2>議会ごと</h2>
+<div class="controls">
+  <label for="fKind">種類</label>
+  <select id="fKind"><option value="">すべて</option></select>
+  <input id="fText" type="search" placeholder="議会名や語で探す（例: 中継）">
+  <span class="count" id="count"></span>
+</div>
+<div id="filterChip"></div>
+<div class="tablebox">
+<table>
+<thead>
+<tr><th rowspan="2" class="left">議会</th><th colspan="2">生中継</th><th colspan="2">録画配信</th><th colspan="2">現地で録る：本会議</th><th colspan="2">現地で録る：委員会</th></tr>
+<tr><th>本会議</th><th>委員会</th><th>本会議</th><th>委員会</th><th>記者</th><th>住民</th><th>記者</th><th>住民</th></tr>
+</thead>
+<tbody id="rows"></tbody>
+</table>
+</div>
+<p class="hint foot">データと調べ方: <a href="https://github.com/sgbms1/gikai-covering" target="_blank" rel="noopener">github.com/sgbms1/gikai-covering</a>（誤りの指摘は Issue へ）</p>
+</div>
+
+<script>
+const PREFS = [
+  {code:'13', name:'東京都'},
+  {code:'01', name:'北海道', trial: true},
+  {code:'02', name:'青森県', trial: true},
+  {code:'03', name:'岩手県', trial: true},
+  {code:'04', name:'宮城県', trial: true},
+  {code:'05', name:'秋田県', trial: true},
+  {code:'06', name:'山形県', trial: true},
+  {code:'07', name:'福島県', trial: true},
+  {code:'08', name:'茨城県', trial: true},
+  {code:'09', name:'栃木県', trial: true},
+  {code:'10', name:'群馬県', trial: true},
+  {code:'11', name:'埼玉県', trial: true},
+  {code:'12', name:'千葉県', trial: true},
+  {code:'14', name:'神奈川県', trial: true},
+  {code:'15', name:'新潟県', trial: true},
+  {code:'16', name:'富山県', trial: true},
+  {code:'17', name:'石川県', trial: true},
+  {code:'18', name:'福井県', trial: true},
+  {code:'19', name:'山梨県', trial: true},
+  {code:'20', name:'長野県', trial: true},
+  {code:'21', name:'岐阜県', trial: true},
+  {code:'22', name:'静岡県', trial: true},
+  {code:'23', name:'愛知県', trial: true},
+  {code:'24', name:'三重県', trial: true},
+  {code:'25', name:'滋賀県', trial: true},
+  {code:'26', name:'京都府', trial: true},
+  {code:'27', name:'大阪府', trial: true},
+  {code:'28', name:'兵庫県', trial: true},
+  {code:'29', name:'奈良県', trial: true},
+  {code:'30', name:'和歌山県', trial: true},
+  {code:'31', name:'鳥取県', trial: true},
+  {code:'32', name:'島根県', trial: true},
+  {code:'33', name:'岡山県', trial: true},
+  {code:'34', name:'広島県', trial: true},
+  {code:'35', name:'山口県', trial: true},
+  {code:'36', name:'徳島県', trial: true},
+  {code:'37', name:'香川県', trial: true},
+  {code:'38', name:'愛媛県', trial: true},
+  {code:'39', name:'高知県', trial: true},
+  {code:'40', name:'福岡県', trial: true},
+  {code:'41', name:'佐賀県', trial: true},
+  {code:'42', name:'長崎県', trial: true},
+  {code:'43', name:'熊本県', trial: true},
+  {code:'44', name:'大分県', trial: true},
+  {code:'45', name:'宮崎県', trial: true},
+  {code:'46', name:'鹿児島県', trial: true},
+  {code:'47', name:'沖縄県', trial: true},
+];
+
+// 4マスの区分（データの cells.*.level。判定は tools/Cells.pm）
+const LEVELS = {
+  free:    {name:'自由',   cls:'l-free',  desc:'申し出るだけで録れる'},
+  apply:   {name:'申請',   cls:'l-apply', desc:'事前に許可を申請する'},
+  check:   {name:'要確認', cls:'l-check', desc:'規則と案内では分からない'},
+  no:      {name:'不可',   cls:'l-no',    desc:'できないと書いてある'},
+  unknown: {name:'確認できず', cls:'l-unk', desc:'例規集（条例・規則）を探したが、見つからなかった'}
+};
+// 生中継（streaming.plenary_live / committee_live）
+const LIVE = {
+  yes:     {name:'あり',       cls:'l-free',  desc:'インターネットで、どこからでも見られる'},
+  cable:   {name:'ケーブルTV', cls:'l-apply', desc:'地域のケーブルテレビだけ。加入している住民なら見て録れる'},
+  cable_unk: {name:'ケーブルTV（ネットは確認できず）', cls:'l-apply lv-wrap', desc:'ケーブルテレビで生中継している。インターネットの生中継は確認できなかった（ないとは限らない）'},
+  no:      {name:'なし',       cls:'l-no',    desc:'録画だけ、または配信なし'},
+  vod_only: {name:'録画だけ確認', cls:'l-vo', desc:'録画は確認できたが、生中継は見つからない。ない可能性が高いが、ないと書いた文はない（議会事務局に聞く）'},
+  unknown: {name:'確認できず', cls:'l-unk',   desc:'議会サイトや配信サイトを調べたが、確認できなかった。ないとは限らない'}
+};
+// 録画（streaming.plenary_vod / committee_vod）
+const VOD = {
+  yes:     {name:'あり',   cls:'l-free', desc:'録画を公開している'},
+  no:      {name:'なし',   cls:'l-no',   desc:'録画を公開していない'},
+  unknown: {name:'確認できず', cls:'l-unk',  desc:'議会サイトや配信サイトを調べたが、確認できなかった。ないとは限らない'}
+};
+// 配信の一時中止（streaming.suspended。津島市: 議員の発言をきっかけに、令和7年3月から生中継・録画を止めている）。「なし」のマスに目立つ但し書きを付ける
+const susp = (d, m) => d.streaming?.suspended?.[m] ? `<span class="susp">※${esc(d.streaming.suspended.label || '一時中止中')}</span>` : '';
+const vodLevel = (d, m) => { const v = d.streaming?.[m + '_vod']; return v === true ? 'yes' : v === false ? 'no' : 'unknown'; };
+// インターネットの生中継があれば「あり」。ケーブルテレビの生中継（streaming.cable）は、インターネットの生中継が「なし」と分かっているときだけ「ケーブルTV」（ケーブルテレビだけ）。
+//   インターネットの生中継が確認できないときは「ケーブルTV（ネットは確認できず）」（志布志市: ネットでも生中継しているのに「ケーブルTV」と出ていた。interpretation_log の56）
+const liveLevel = (d, m) => {
+  const v = d.streaming?.[m + '_live'];
+  if (v === true) return 'yes';
+  if (d.streaming?.cable?.[m] === 'live') return v === false ? 'cable' : 'cable_unk';
+  if (v === false) return 'no';
+  // 録画は確認できたが生中継が確認できないときは「録画だけ確認」（「なし」とは言わない。全国の調べで、生中継が確認できずの774議会のうち380議会がこれ。2026-10-25）
+  return d.streaming?.[m + '_vod'] === true ? 'vod_only' : 'unknown';
+};
+// 映像のダウンロード・複製（streaming.download.policy）
+const DL = {
+  allowed:     {name:'ダウンロード可',       desc:'ダウンロードできる、またはファイルを提供している'},
+  permission:  {name:'許可を得れば可',       desc:'申請・許可で使える'},
+  law_only:    {name:'法の範囲内だけ',       desc:'「著作権法で認められた範囲（私的使用・引用など）を超えて複製しない」と書いている'},
+  prohibited:  {name:'複製禁止',             desc:'無断の複製・転用を禁止と書いている'},
+  none_stated: {name:'記載なし',             desc:'議会・配信サイトに記述がない'}
+};
+// 映像を手に入れる道（streaming.footage。v1.5）。見つかった道のうち上の行を出す。なければ配信サイトの複製の決まり（download.policy）で「不可と明記」。
+// 見つからないだけの議会は「記載なし」ではなく「確認できず」（調べたが見つからない。書いていないとまでは言えないため）
+const FOOT = {
+  open:  {name:'誰でも使える', cls:'l-free',  desc:'申請なしで映像の転用を認めている'},
+  lend:  {name:'住民に貸出',   cls:'l-lend',  desc:'住民も映像を借りられる・使える（DVD の貸出、申請による使用など）'},
+  press: {name:'報道に提供',   cls:'l-apply', desc:'報道機関にだけ映像を提供している'},
+  no:    {name:'不可と明記',   cls:'l-no',    desc:'複製・転用をしないよう書いている（引用など法の範囲は除く）'},
+  unknown: {name:'確認できず', cls:'l-unk',   desc:'議会サイトの主なページ（中継・傍聴・著作権など）に、提供・貸出の記載が見つからない。ないとは限らないので、議会事務局に聞く'}
+};
+const footLevel = d => {
+  const f = d.streaming?.footage, pol = d.streaming?.download?.policy;
+  for (const k of ['open', 'lend', 'press']) if (f?.[k]) return k;
+  if (pol === 'prohibited' || pol === 'law_only') return 'no';
+  return 'unknown';
+};
+const cellOf = (d, m, who) => d.cells?.[m]?.[who] || {level: 'unknown'};
+const VIEWS = {
+  'plenary.press':      {label:'本会議を記者が録る',   defs: LEVELS, get: d => cellOf(d, 'plenary', 'press').level},
+  'plenary.resident':   {label:'本会議を住民が録る',   defs: LEVELS, get: d => cellOf(d, 'plenary', 'resident').level},
+  'committee.press':    {label:'委員会を記者が録る',   defs: LEVELS, get: d => cellOf(d, 'committee', 'press').level},
+  'committee.resident': {label:'委員会を住民が録る',   defs: LEVELS, get: d => cellOf(d, 'committee', 'resident').level},
+  'live.plenary':       {label:'本会議の生中継',       defs: LIVE,   get: d => liveLevel(d, 'plenary')},
+  'live.committee':     {label:'委員会の生中継',       defs: LIVE,   get: d => liveLevel(d, 'committee')},
+  'vod.plenary':        {label:'本会議の録画',         defs: VOD,    get: d => vodLevel(d, 'plenary')},
+  'vod.committee':      {label:'委員会の録画',         defs: VOD,    get: d => vodLevel(d, 'committee')},
+  'foot':               {label:'映像を手に入れる',     defs: FOOT,   get: footLevel}
+};
+const CA = {open:'誰でも', permit:'委員長の許可を得た人だけ', unknown:'確認できず'};
+const KINDS = ['都道府県','指定都市','特別区','市','町','村'];
+const SHORT = {'都道府県':'都道府県議会','指定都市':'指定都市','特別区':'特別区','市':'市','町':'町','村':'村'};
+const REUSE = {prohibited:'転用は禁止と明記', permission:'転用は許可制', none_stated:'転用の記載なし'};
+
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const short = d => d.name.replace(/議会$/, '');
+const lv = (defs, k, text) => `<span class="lv ${defs[k]?.cls || 'l-unk'}">${esc(text ?? defs[k]?.name ?? '確認できず')}</span>`;
+
+function basisHtml(b, label) {
+  if (!b) return '';
+  const head = [b.title, b.article].filter(Boolean).join(' ');
+  let links = '';
+  if (b.url) {
+    if (b.link_type === 'entry') {
+      const term = (b.search_hint || '').match(/「(.+?)」/)?.[1] || '傍聴';
+      links = `<a class="go" href="${esc(b.url)}" target="_blank" rel="noopener">例規集を開く</a><button type="button" class="copy" data-copy="${esc(term)}">「${esc(term)}」をコピー</button>`;
+    } else if (b.link_type === 'guide' || !b.link_type) {
+      links = `<a class="go guide" href="${esc(b.url)}" target="_blank" rel="noopener">議会サイトの案内</a>`;
+    } else {
+      links = `<a class="go" href="${esc(b.url)}" target="_blank" rel="noopener">条文を開く</a>`;
+    }
+  }
+  return `<div class="basis">${label ? `<div class="ttl">${esc(label)}</div>` : ''}${head ? `<div>${esc(head)}</div>` : ''}
+    ${b.text ? `<blockquote>${esc(b.text)}</blockquote>` : ''}
+    ${links ? `<div class="links">${links}</div>` : ''}</div>`;
+}
+
+let DATA = [];
+let FILTER = null;   // カードで選んだ区分 {view, level}
+// 都道府県のデータ（data/<pref>.js）と地図（data/geo/<pref>.js）は、選んだときにその県の分だけ読み込む。
+//   最初に全部を読むと、21都道府県で約9MB、全国で約15MBになり、スマホで開くまで待たされた（2026-10-21）
+const LOADED = {};
+function loadScript(src) {
+  return new Promise((ok, ng) => { const s = document.createElement('script'); s.src = src; s.onload = ok; s.onerror = ng; document.head.appendChild(s); });
+}
+function fetchPref(pref) {
+  // 地図のない都道府県もあるので、地図の読み込みの失敗は無視する
+  return LOADED[pref] ||= Promise.all([loadScript(`data/${pref}.js`), loadScript(`data/geo/${pref}.js`).catch(() => {})])
+    .catch(e => { delete LOADED[pref]; throw e; });
+}
+// 読み込みが終わったら表示する。window.BOCHO_READY は画面テストが待つため
+function load(pref) {
+  $('meta').textContent = '読み込み中…';
+  return window.BOCHO_READY = fetchPref(pref).then(
+    () => { if ($('fPref').value === pref) show(pref); },   // 読み込み中に別の県を選んだら、古いほうは表示しない
+    () => { if ($('fPref').value === pref) $('meta').textContent = 'データを読み込めませんでした。ページを再読み込みしてください。'; });
+}
+function show(pref) {
+  DATA = (window.BOCHO_DATA && window.BOCHO_DATA[pref]) || [];
+  FILTER = null;
+  const P = PREFS.find(p => p.code === pref) || {};
+  $('title').textContent = `${P.name || ''}の議会、見られる？録れる？`;
+  document.title = `${P.name || ''}の議会、見られる？録れる？`;
+  const dates = [...new Set(DATA.map(d => d.checked_on))].sort();
+  $('meta').innerHTML = `${DATA.length}議会 ・ 調査 ${esc(dates.length > 1 ? dates[0] + '〜' + dates.at(-1) : dates[0] || '')}` +
+    (P.trial ? ' ・ <span class="badge">試験公開</span> 人による全件確認はまだです' : '');
+  const KS = KINDS.filter(k => DATA.some(d => d.kind === k));
+  $('fKind').length = 1; KS.forEach(k => $('fKind').add(new Option(SHORT[k], k)));
+  renderRows(); renderView(); apply();
+}
+function municipal() { return DATA.filter(d => d.kind !== '都道府県'); }
+
+// カードと地図: 「知りたいこと」で切り替える
+function renderView() {
+  const key = $('fView').value, V = VIEWS[key] || VIEWS['live.plenary'];
+  const M = municipal();
+  const pref = DATA.filter(d => d.kind === '都道府県');
+  $('cardsNote').textContent = `数は市区町村議会（${M.length}）。` + (pref.length ? `${pref.map(d => d.name).join('、')}は一覧にだけ載せています。` : '') + 'カードを押すと、一覧をその区分に絞ります。';
+  $('cards').innerHTML = Object.entries(V.defs).map(([k, v]) => {
+    const n = M.filter(d => V.get(d) === k).length;
+    if (!n) return '';
+    const on = FILTER && FILTER.view === key && FILTER.level === k;
+    return `<button type="button" class="card ${v.cls}" data-level="${k}" aria-pressed="${on}"><div class="num">${n}</div><div class="name">${esc(v.name)}</div><div class="desc">${esc(v.desc)}</div></button>`;
+  }).join('');
+  renderMap(V);
+}
+
+function renderMap(V) {
+  const G = window.BOCHO_GEO?.[$('fPref').value];
+  const label = d => V.defs[V.get(d)]?.name || '確認できず';
+  const cls = d => V.defs[V.get(d)]?.cls || 'l-unk';
+  if (!G) { $('map').innerHTML = ''; $('offmap').innerHTML = ''; $('mapInfo').textContent = 'この都道府県の地図はまだありません。'; return; }
+  MAPHINT = `${esc(V.label)}。市区町村${G.insets?.length ? '（枠の中の島は島名）' : ''}を押すと一覧へ。`;
+  // 本図と挿入図（東京都の島しょ部など、別の縮尺の枠）
+  const sheets = [G, ...(G.insets || [])];
+  const sheetOf = d => d.kind === '都道府県' ? null : sheets.find(s => s.paths[d.code.slice(0, 5)]);
+  const tip = d => short(d) + '：' + label(d);
+  const area = (s, d) => `<path class="area ${cls(d)}" d="${s.paths[d.code.slice(0, 5)]}" data-code="${esc(d.code)}" data-label="${esc(tip(d))}" tabindex="0" role="link" aria-label="${esc(tip(d))}"><title>${esc(tip(d))}</title></path>`;
+  const hit = s => DATA.filter(d => sheetOf(d) === s);
+  // 挿入図の島は小さいので、右側に島名のラベル（押せる）を付ける。重ならないよう上から順にずらす
+  const labels = s => {
+    let last = -Infinity;
+    return hit(s).map(d => ({d, b: pathBox(s.paths[d.code.slice(0, 5)])})).sort((a, b) => a.b.cy - b.b.cy).map(({d, b}) => {
+      const y = Math.max(b.cy + 4, last + 13); last = y;
+      const x = b.x2 + 6;
+      return `<g class="lbl ${cls(d)}" data-code="${esc(d.code)}" data-label="${esc(tip(d))}"><line x1="${b.x2 + 1}" y1="${b.cy}" x2="${x}" y2="${y - 4}"/><rect class="${cls(d)}" x="${x}" y="${y - 9}" width="9" height="9" rx="2"/><text x="${x + 12}" y="${y}">${esc(short(d))}</text></g>`;
+    }).join('');
+  };
+  const svg = (s, inset) => `<svg viewBox="${s.viewBox}"${inset ? ` width="${s.viewBox.split(' ')[2]}"` : ''} role="img" aria-label="${esc((inset ? s.name + '。' : '') + V.label)}">${s === G ? HATCH : ''}${hit(s).map(d => area(s, d)).join('')}${inset ? labels(s) : ''}</svg>`;
+  $('map').innerHTML = `<div class="map main">${svg(G)}</div>` +
+    (G.insets?.length ? '<div class="insets">' + G.insets.map(s => `<figure class="inset" style="width:${+s.viewBox.split(' ')[2] + 18}px"><figcaption>${esc(s.name)}<span>（縮尺は別）</span></figcaption>${svg(s, true)}</figure>`).join('') + '</div>' : '');
+  const off = DATA.filter(d => !sheetOf(d));
+  $('offmap').innerHTML = off.length ? '地図にない議会: ' + off.map(d => `<a href="#r-${esc(d.code)}" class="jump" data-code="${esc(d.code)}"><span class="sw ${cls(d)}"></span>${esc(d.name)}：${esc(label(d))}</a>`).join('') : '';
+  mapInfo();
+}
+const HATCH = '<defs><pattern id="hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="6" height="6" style="fill:var(--c-unk-bg)"/><rect width="2" height="6" style="fill:var(--c-unk)"/></pattern></defs>';
+// パス（M x y x y …）の外接矩形
+function pathBox(d) {
+  const n = d.match(/-?\d+(?:\.\d+)?/g).map(Number);
+  let x1 = Infinity, x2 = -Infinity, y1 = Infinity, y2 = -Infinity;
+  for (let i = 0; i + 1 < n.length; i += 2) { x1 = Math.min(x1, n[i]); x2 = Math.max(x2, n[i]); y1 = Math.min(y1, n[i + 1]); y2 = Math.max(y2, n[i + 1]); }
+  return {x1, x2, y1, y2, cy: (y1 + y2) / 2};
+}
+let MAPHINT = '';
+function mapInfo(p) { $('mapInfo').innerHTML = p ? `<strong>${esc(p.dataset.label)}</strong>（押すと一覧へ）` : MAPHINT; }
+
+// 一覧のマス: 1語と、短い補足（「冒頭だけ」など）だけ
+function cellHtml(c) {
+  const note = c.note && c.note.length <= 6 ? `<small>${esc(c.note)}</small>` : '';
+  return lv(LEVELS, c.level) + note;
+}
+function renderRows() {
+  const order = d => d.kind === '都道府県' ? 9 : 0; // 都道府県議会は最後に
+  const rows = [...DATA].sort((a, b) => order(a) - order(b) || a.code.localeCompare(b.code));
+  $('rows').innerHTML = rows.map(d => `<tr class="row" id="r-${esc(d.code)}" data-code="${esc(d.code)}">
+      <td class="name">${esc(d.name)}<small>${esc(SHORT[d.kind] || d.kind)}</small><span class="toggle">詳細 ▸</span></td>
+      <td class="mh">生中継</td><td class="cell live"><span class="mlabel">本会議 </span>${lv(LIVE, liveLevel(d, 'plenary'))}${susp(d, 'plenary')}</td><td class="cell live"><span class="mlabel">委員会 </span>${lv(LIVE, liveLevel(d, 'committee'))}${susp(d, 'committee')}</td>
+      <td class="mh">録画配信</td><td class="cell vod"><span class="mlabel">本会議 </span>${lv(VOD, vodLevel(d, 'plenary'))}${susp(d, 'plenary')}</td><td class="cell vod"><span class="mlabel">委員会 </span>${lv(VOD, vodLevel(d, 'committee'))}${susp(d, 'committee')}</td>
+      <td class="mh">現地で録る</td><td class="mh col">記者</td><td class="mh col">住民</td>
+      <td class="mh">本会議</td>
+      <td class="cell">${cellHtml(cellOf(d, 'plenary', 'press'))}</td><td class="cell">${cellHtml(cellOf(d, 'plenary', 'resident'))}</td>
+      <td class="mh">委員会</td>
+      <td class="cell">${cellHtml(cellOf(d, 'committee', 'press'))}</td><td class="cell">${cellHtml(cellOf(d, 'committee', 'resident'))}</td>
+    </tr><tr class="detail hidden" data-for="${esc(d.code)}"><td colspan="9"></td></tr>`).join('');
+}
+
+// 詳細: まず「録るには」。根拠などは折りたたんで閉じておく
+function howText(c, approver, d) {
+  const note = c.note ? `（${c.note}）` : '';
+  switch (c.level) {
+    case 'free':  return '申し出るだけ' + note;
+    case 'apply': return `${approver}の許可を申請` + note;
+    case 'check': return (c.note || '規則と案内では分からない') + '。議会事務局に聞く';
+    case 'no':    return 'できない' + note;
+    // 例規集は確かめたが委員会の決まりが取れていない議会と、例規集そのものを確かめられていない議会を分ける（島田市で「まだ確かめていない」と出ていた。2026-10-26）
+    default:      return d && !['no_reiki', 'unknown'].includes(d.plenary_recording?.pattern || 'unknown') ? '例規集で決まりが見つからない。議会事務局に聞く' : '例規集を確認できず';
+  }
+}
+function detailHtml(d) {
+  const p = d.plenary_recording || {}, c = d.committee_recording || {}, ca = d.committee_access || {};
+  const s = d.streaming || {}, pr = d.press || {}, dev = d.device_entry_ban || {};
+  const pa = p.approver || '議長';
+  const capr = c.approver || (c.pattern === 'applies_plenary' ? `${pa}（委員会は委員長の場合も）` : '委員長');
+  const row = (k, v) => `<div class="item"><span class="k">${k}</span><span>${v}</span></div>`;
+  const box = (title, m, approver, deadline, access) => {
+    const a = cellOf(d, m, 'press'), b = cellOf(d, m, 'resident');
+    return `<div class="dbox"><h3>${title}</h3>
+      ${row('記者', lv(LEVELS, a.level) + esc(howText(a, approver, d)))}
+      ${row('住民', lv(LEVELS, b.level) + esc(howText(b, approver, d)))}
+      ${row('申請の期限', esc(deadline || '—'))}
+      ${row('傍聴', esc(access))}</div>`;
+  };
+  const prac = d.practice || {};
+  const pracBasis = prac.plenary?.basis ? basisHtml({...prac.plenary.basis, link_type: 'guide'}, '議会サイトの案内（撮影・録音の部分）') : '';
+  const yn = v => v === true ? 'あり' : v === false ? 'なし' : '確認できず';
+  const dl = s.download?.policy && DL[s.download.policy];
+  const watch = `<div class="dbox watch"><h3>配信で見る</h3>
+      ${row('生中継', `${lv(LIVE, liveLevel(d, 'plenary'), '本会議 ' + LIVE[liveLevel(d, 'plenary')].name)} ${lv(LIVE, liveLevel(d, 'committee'), '委員会 ' + LIVE[liveLevel(d, 'committee')].name)}${s.live_scope ? `<div class="hint">${esc(s.live_scope)}</div>` : ''}${s.suspended ? `<div class="susp">※${esc(s.suspended.label || '一時中止中')}${s.suspended.since ? `（${esc(s.suspended.since)}から）` : ''}</div>${s.suspended.basis ? basisHtml(s.suspended.basis, '中止の案内') : ''}` : ''}`)}
+      ${row('録画配信', `${lv(VOD, vodLevel(d, 'plenary'), '本会議 ' + yn(s.plenary_vod))} ${lv(VOD, vodLevel(d, 'committee'), '委員会 ' + yn(s.committee_vod))}`)}
+      ${row('ケーブルTV', s.cable ? esc([['plenary', '本会議'], ['committee', '委員会']].filter(([m]) => s.cable[m]).map(([m, n]) => n + (s.cable[m] === 'live' ? 'を生中継' : 'を録画で放送')).join('、') + (s.cable.station ? '（' + s.cable.station + '）' : '')) + (s.cable.scope ? `<div class="hint">${esc(s.cable.scope)}</div>` : '') : '見つかっていない')}
+      ${row('公開期間', esc(s.vod_period || '確認できず'))}
+      ${row('映像の入手', `${lv(FOOT, footLevel(d))}${[['open', '誰でも使える'], ['lend', '住民に貸出'], ['press', '報道に提供']].filter(([k]) => s.footage?.[k] && k !== footLevel(d)).map(([, n]) => ` <span class="hint">ほかに ${n}</span>`).join('')}<div class="hint">${esc(FOOT[footLevel(d)].desc)}${dl ? '。配信サイトの決まり: ' + esc(dl.name) + (s.download.target === 'site' ? '（自治体サイト全体）' : '') : ''}</div>`)}
+      ${s.url ? `<div class="links"><a class="go" href="${esc(s.url)}" target="_blank" rel="noopener">配信ページ</a></div>` : ''}</div>`;
+  return `<div class="how">
+    ${watch}
+    ${box('現地で録る：本会議', 'plenary', pa, p.application_deadline, '誰でも')}
+    ${box('現地で録る：委員会', 'committee', capr, c.application_deadline, CA[ca.pattern] || '確認できず')}
+  </div>
+  <details class="more"><summary>根拠（条文と案内）</summary>
+    ${basisHtml(p.basis, '本会議の録音・撮影')}${basisHtml(p.deadline_basis, '本会議の申請期限')}
+    ${basisHtml(c.basis, '委員会の録音・撮影')}${basisHtml(c.deadline_basis, '委員会の申請期限')}${basisHtml(ca.basis, '委員会の傍聴')}
+    ${pracBasis}
+    ${(pr.basis || []).map(b => basisHtml(b, '報道関係者')).join('')}
+    ${dev.exists ? basisHtml(dev.basis, '録音機などの持込み制限') : ''}
+    ${basisHtml(s.live_basis, '生中継（本会議）')}${basisHtml(s.committee_live_basis, '生中継（委員会）')}${basisHtml(s.cable?.basis, 'ケーブルテレビの放送')}${basisHtml(s.vod_period_basis, '録画の公開期間')}${basisHtml(s.footage?.open, '映像の転用')}${basisHtml(s.footage?.lend, '映像の貸出・使用')}${basisHtml(s.footage?.press, '報道機関への映像の提供')}${basisHtml(s.download?.basis, 'ダウンロード・複製')}${basisHtml(s.reuse_basis, '配信映像の転用')}
+    <p class="hint">調査日 ${esc(d.checked_on)} ・ <a href="${esc(d.reiki_url)}" target="_blank" rel="noopener">例規集</a>${d.guide_url ? ` ・ <a href="${esc(d.guide_url)}" target="_blank" rel="noopener">傍聴案内</a>` : ''}</p>
+  </details>
+  ${(d.notes || []).length ? `<details class="more"><summary>目立つ点（${d.notes.length}）</summary><ul class="plain">${d.notes.map(n => `<li>${esc(n)}</li>`).join('')}</ul></details>` : ''}
+  ${(d.unverified || []).length ? `<details class="more"><summary>確かめられていないこと（${d.unverified.length}）</summary><ul class="plain">${d.unverified.map(n => `<li>${esc(n)}</li>`).join('')}</ul></details>` : ''}`;
+}
+// 詳細は開くときに作る（行の数が多くても軽くするため）
+function openDetail(tr, open) {
+  const det = tr.nextElementSibling;
+  if (open && !det.firstElementChild.innerHTML) det.firstElementChild.innerHTML = detailHtml(DATA.find(x => x.code === tr.dataset.code));
+  det.classList.toggle('hidden', !open);
+  tr.querySelector('.toggle').textContent = open ? '詳細 ▾' : '詳細 ▸';
+}
+
+function apply() {
+  const q = $('fText').value.trim();
+  let shown = 0;
+  document.querySelectorAll('#rows tr.row').forEach(tr => {
+    const d = DATA.find(x => x.code === tr.dataset.code);
+    const ok = (!$('fKind').value || d.kind === $('fKind').value) &&
+               (!FILTER || VIEWS[FILTER.view].get(d) === FILTER.level) &&
+               (!q || JSON.stringify(d).includes(q));
+    tr.classList.toggle('hidden', !ok);
+    if (!ok) tr.nextElementSibling.classList.add('hidden');
+    if (ok) shown++;
+  });
+  $('count').textContent = `${shown} / ${DATA.length} 議会`;
+  if (FILTER) {
+    const V = VIEWS[FILTER.view], v = V.defs[FILTER.level];
+    $('filterChip').innerHTML = `<span class="chip ${v.cls}">${esc(V.label)}：${esc(v.name)}<button type="button" id="clearFilter" aria-label="絞り込みを解く">✕</button></span>`;
+  } else $('filterChip').innerHTML = '';
+}
+function clearFilters() {
+  FILTER = null; $('fKind').value = ''; $('fText').value = '';
+  document.querySelectorAll('#cards .card').forEach(c => c.setAttribute('aria-pressed', 'false'));
+  apply();
+}
+
+function copyText(text) {
+  if (navigator.clipboard && window.isSecureContext) return navigator.clipboard.writeText(text);
+  const ta = document.createElement('textarea');
+  ta.value = text; ta.style.position = 'fixed'; ta.style.opacity = '0';
+  document.body.appendChild(ta); ta.select();
+  const ok = document.execCommand('copy'); ta.remove();
+  return ok ? Promise.resolve() : Promise.reject();
+}
+
+// 一覧の行へ飛ぶ（絞り込みで隠れていれば解き、詳細を開いて、行を一瞬強調する）
+function jumpTo(code) {
+  const tr = document.getElementById('r-' + code);
+  if (!tr) return;
+  if (tr.classList.contains('hidden')) clearFilters();
+  openDetail(tr, true);
+  tr.scrollIntoView?.({behavior: 'smooth', block: 'start'});
+  tr.classList.remove('flash'); void tr.offsetWidth; tr.classList.add('flash');
+  try { history.replaceState(null, '', '#r-' + code); } catch (e) { /* file:// で開いたときなど */ }
+}
+document.addEventListener('click', e => {
+  const a = e.target.closest('a.jump');
+  if (a) { e.preventDefault(); jumpTo(a.dataset.code); return; }
+  if (e.target.closest('#clearFilter')) clearFilters();
+});
+$('cards').addEventListener('click', e => {
+  const c = e.target.closest('.card');
+  if (!c) return;
+  const view = $('fView').value, level = c.dataset.level;
+  FILTER = FILTER && FILTER.view === view && FILTER.level === level ? null : {view, level};
+  document.querySelectorAll('#cards .card').forEach(x => x.setAttribute('aria-pressed', String(!!FILTER && x === c)));
+  apply();
+});
+$('rows').addEventListener('click', e => {
+  const b = e.target.closest('button.copy');
+  if (b) {
+    copyText(b.dataset.copy).then(() => {
+      b.textContent = 'コピーしました'; b.classList.add('done');
+      setTimeout(() => { b.textContent = `「${b.dataset.copy}」をコピー`; b.classList.remove('done'); }, 1800);
+    }, () => { b.textContent = 'コピーできませんでした'; });
+    return;
+  }
+  if (e.target.closest('a, details')) return;
+  const tr = e.target.closest('tr.row');
+  if (tr) openDetail(tr, tr.nextElementSibling.classList.contains('hidden'));
+});
+$('fKind').addEventListener('change', apply);
+$('fText').addEventListener('input', apply);
+$('fView').addEventListener('change', renderView);
+// 地図: 市区町村（挿入図の島名のラベルも）を押すと一覧の行へ飛ぶ。載せると名前と区分を出す
+const mapTarget = e => e.target.closest?.('path.area, g.lbl');
+$('map').addEventListener('click', e => { const p = mapTarget(e); if (p) jumpTo(p.dataset.code); });
+$('map').addEventListener('keydown', e => { const p = mapTarget(e); if (p && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); jumpTo(p.dataset.code); } });
+['mouseover', 'focusin'].forEach(t => $('map').addEventListener(t, e => { const p = mapTarget(e); if (p) mapInfo(p); }));
+['mouseleave', 'focusout'].forEach(t => $('map').addEventListener(t, () => mapInfo()));
+// スマホ: 本図を広げて、横にスクロールして見る（市区町村が集まっているあたりを真ん中に）
+$('mapZoom').addEventListener('click', () => {
+  const on = $('map').classList.toggle('zoomed');
+  const box = document.querySelector('.map.main');
+  if (on && box) {
+    const svg = box.querySelector('svg'), vbw = +svg.getAttribute('viewBox').split(' ')[2];
+    const xs = [...svg.querySelectorAll('path.area')].map(p => { const b = pathBox(p.getAttribute('d')); return (b.x1 + b.x2) / 2; });
+    const cx = xs.reduce((a, x) => a + x, 0) / (xs.length || 1);
+    box.scrollLeft = cx / vbw * box.scrollWidth - box.clientWidth / 2;
+  }
+  $('mapZoom').textContent = on ? '元の大きさに戻す' : '地図を拡大';
+  $('mapZoom').setAttribute('aria-pressed', String(on));
+});
+
+const fPref = $('fPref');
+PREFS.forEach(p => fPref.add(new Option(p.name, p.code)));
+fPref.addEventListener('change', () => load(fPref.value));
+// URL に #r-<団体コード> があれば、その都道府県を開いて該当の行へ飛ぶ（共有用のリンク）
+const h = location.hash.match(/^#r-(\d{6})$/);
+const start = h && PREFS.some(p => p.code === h[1].slice(0, 2)) ? h[1].slice(0, 2) : PREFS[0].code;
+fPref.value = start;
+load(start).then(() => { if (h) jumpTo(h[1]); });
+</script>
+</body>
+</html>
