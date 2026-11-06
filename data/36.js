@@ -4051,16 +4051,13 @@ window.BOCHO_DATA["36"] = [
         "target": null,
         "basis": null
       },
-      "live_basis": {
-        "text": "定例会（年4回）の開会日、閉会日の本会議を生中継します。",
-        "url": "https://www.town.higashimiyoshi.lg.jp/docs/532.html"
-      },
+      "live_basis": null,
       "live_scope": null,
       "not_official_record": null,
       "platforms": [
         "CATV"
       ],
-      "plenary_live": true,
+      "plenary_live": null,
       "plenary_vod": true,
       "plenary_vod_basis": {
         "text": "定例会（年4回）の開会日、閉会日の本会議を録画配信します。",

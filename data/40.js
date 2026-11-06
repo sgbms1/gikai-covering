@@ -4248,11 +4248,8 @@ window.BOCHO_DATA["40"] = [
     "reiki_system": "g-reiki",
     "reiki_url": "https://www1.g-reiki.net/city.ukiha.fukuoka/reiki_menu.html",
     "streaming": {
-      "committee_live": true,
-      "committee_live_basis": {
-        "text": "うきは市議会令和８年第５回定例会第５日目（委員会報告・議案質疑・表決）②",
-        "url": "https://www.youtube.com/channel/UCkLr3L9adsxHutZYvFOjSng/streams"
-      },
+      "committee_live": null,
+      "committee_live_basis": null,
       "committee_vod": null,
       "committee_vod_basis": null,
       "download": {

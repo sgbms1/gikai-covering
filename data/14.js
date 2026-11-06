@@ -2314,11 +2314,8 @@ window.BOCHO_DATA["14"] = [
     "reiki_system": "d1-static",
     "reiki_url": "https://en3-jg.d1-law.com/miura/d1w_reiki/reiki.html",
     "streaming": {
-      "committee_live": true,
-      "committee_live_basis": {
-        "text": "令和８年９月２日　本会議３日目②　一般質問　小林直樹議員、草間道治議員　提出議案の説明、質疑　令和７年度三浦市決算審査特別委員会の設置並びに委員及び正副委員長の選任",
-        "url": "https://www.youtube.com/channel/UCstTnwDEUiCwJHixShyTQnw/streams"
-      },
+      "committee_live": null,
+      "committee_live_basis": null,
       "committee_vod": null,
       "committee_vod_basis": null,
       "download": {

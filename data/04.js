@@ -1712,11 +1712,8 @@ window.BOCHO_DATA["04"] = [
     "reiki_system": "g-reiki",
     "reiki_url": "https://www.city.iwanuma.miyagi.jp:443/reiki_int/reiki_taikei/taikei_default.html",
     "streaming": {
-      "committee_live": true,
-      "committee_live_basis": {
-        "text": "20260914　質疑・委員会付託",
-        "url": "https://www.youtube.com/channel/UCLd-5zjHDqPhc2sLOwUpWuQ/streams"
-      },
+      "committee_live": null,
+      "committee_live_basis": null,
       "committee_vod": null,
       "committee_vod_basis": null,
       "download": {

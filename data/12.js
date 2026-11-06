@@ -6893,11 +6893,8 @@ window.BOCHO_DATA["12"] = [
     "reiki_system": "d1-opensearch",
     "reiki_url": "https://ops-jg.d1-law.com/opensearch/SrMjF01/init?jctcd=8A80078984",
     "streaming": {
-      "committee_live": true,
-      "committee_live_basis": {
-        "text": "令和８年大網白里市議会第３回定例会　閉会(委員会審査報告、採決他)(９／２５)",
-        "url": "https://www.youtube.com/channel/UCHel_v_YGXOyBxk3flmHnbA/streams"
-      },
+      "committee_live": null,
+      "committee_live_basis": null,
       "committee_vod": null,
       "committee_vod_basis": null,
       "download": {
