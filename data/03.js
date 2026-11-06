@@ -1,4 +1,4 @@
-// 自動生成: tools/build_data.sh 03（2026-10-26）。直接編集しない。
+// 自動生成: tools/build_data.sh 03（2026-11-06）。直接編集しない。
 window.BOCHO_DATA = window.BOCHO_DATA || {};
 window.BOCHO_DATA["03"] = [
   {
@@ -104,7 +104,10 @@ window.BOCHO_DATA["03"] = [
     "reiki_url": "https://www1.g-reiki.net/pref.iwate/reiki_taikei/taikei_default.html",
     "streaming": {
       "committee_live": true,
-      "committee_live_basis": null,
+      "committee_live_basis": {
+        "text": "生中継は開会から終了まで議場の様子をそのまま放送します。通常の開会時刻は、本会議が午後１時から、予算・決算特別委員会が午前10時からです。",
+        "url": "http://www.iwate-pref.stream.jfit.co.jp/"
+      },
       "committee_vod": true,
       "committee_vod_basis": {
         "text": "予算特別委員会（総括質疑、議会、総務部、政策企画部）",
@@ -118,7 +121,10 @@ window.BOCHO_DATA["03"] = [
         "policy": "law_only",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "本会議等の生中継をご覧いただけます。",
+        "url": "http://www.iwate-pref.stream.jfit.co.jp/"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -295,7 +301,10 @@ window.BOCHO_DATA["03"] = [
         "policy": "prohibited",
         "target": "site"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "盛岡市議会では、定例会および臨時会の本会議の生中継と録画映像の配信を行っています。",
+        "url": "https://www.city.morioka.iwate.jp/shisei/shigikai/shigikai_gaiyo/1014441.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -472,8 +481,8 @@ window.BOCHO_DATA["03"] = [
         "target": "video"
       },
       "live_basis": {
-        "text": "令和8年1月臨時会議",
-        "url": "https://smart.discussvision.net/smart/tenant/miyako_city/WebView/rd/council_1.html"
+        "text": "本会議は生中継（ライブ配信）しています。",
+        "url": "https://www.city.miyako.iwate.jp/material/files/group/35/shigikaidayori86.pdf"
       },
       "live_scope": null,
       "not_official_record": true,
@@ -1152,8 +1161,8 @@ window.BOCHO_DATA["03"] = [
     "streaming": {
       "committee_live": true,
       "committee_live_basis": {
-        "text": "基本構想審査特別委員会",
-        "url": "https://smart.discussvision.net/smart/tenant/kuji/WebView/rd/council_1.html?referrer=https%3A%2F%2Fwww.city.kuji.iwate.jp%2F"
+        "text": "\"isLiveContent\":true",
+        "url": "https://www.youtube.com/watch?v=q0dsE_WYn5I"
       },
       "committee_vod": true,
       "committee_vod_basis": {
@@ -1166,7 +1175,7 @@ window.BOCHO_DATA["03"] = [
         "basis": null
       },
       "live_basis": {
-        "text": "令和8年2月定例会議",
+        "text": "録画映像は、生中継のおおよそ4日後（土日祝を除く。）に配信します。",
         "url": "https://smart.discussvision.net/smart/tenant/kuji/WebView/rd/council_1.html?referrer=https%3A%2F%2Fwww.city.kuji.iwate.jp%2F"
       },
       "live_scope": null,
@@ -2035,7 +2044,10 @@ window.BOCHO_DATA["03"] = [
         "policy": "law_only",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "令和7年12月定例会（最終本会議） ／ 126 ／ 10 か月前 に配信済み",
+        "url": "https://www.youtube.com/channel/UC7PLVA-y5bOqGmx7u_40BwQ/streams"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -2402,7 +2414,10 @@ window.BOCHO_DATA["03"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "全員協議会のライブ配信はこちらからご覧ください／奥州市公式ホームページ",
+        "url": "https://www.city.oshu.iwate.jp/gikai/kyogikai/11645.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -2562,7 +2577,10 @@ window.BOCHO_DATA["03"] = [
     "reiki_url": "https://ops-jg.d1-law.com/opensearch/SrMjF01/init?jctcd=8A7A118115",
     "streaming": {
       "committee_live": true,
-      "committee_live_basis": null,
+      "committee_live_basis": {
+        "text": "議場で行われる「本会議」「予算決算常任委員会」の模様を、インターネットで生中継しています。",
+        "url": "https://www.city.takizawa.iwate.jp/shigikai/gikai-other/chukei-housou"
+      },
       "committee_vod": true,
       "committee_vod_basis": {
         "text": "滝沢市議会 予算決算常任委員会【令和7年度決算審査 環境厚生分野】20260910④",
@@ -2573,7 +2591,10 @@ window.BOCHO_DATA["03"] = [
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "議場で行われる「本会議」「予算決算常任委員会」の模様を、インターネットで生中継しています。",
+        "url": "https://www.city.takizawa.iwate.jp/shigikai/gikai-other/chukei-housou"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [],
@@ -3066,11 +3087,8 @@ window.BOCHO_DATA["03"] = [
     "reiki_system": "g-reiki",
     "reiki_url": "https://www.town.iwate.iwate.jp/reiki/reiki_taikei/taikei_default.html",
     "streaming": {
-      "committee_live": true,
-      "committee_live_basis": {
-        "text": "令和8年予算審査特別委員会",
-        "url": "https://smart.discussvision.net/smart/tenant/iwate/WebView/rd/council_1.html"
-      },
+      "committee_live": null,
+      "committee_live_basis": null,
       "committee_vod": true,
       "download": {
         "basis": {
@@ -3080,7 +3098,10 @@ window.BOCHO_DATA["03"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "岩手町議会本会議等の模様を生中継と録画配信でご覧いただけます。",
+        "url": "https://town.iwate.iwate.jp/gikai/minutes/broadcast/"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -3746,11 +3767,8 @@ window.BOCHO_DATA["03"] = [
     "reiki_system": "g-reiki",
     "reiki_url": "https://www1.g-reiki.net/town.kanegasaki.iwate/reiki_taikei/taikei_default.html",
     "streaming": {
-      "committee_live": true,
-      "committee_live_basis": {
-        "text": "令和８年予算審査特別委員会",
-        "url": "https://smart.discussvision.net/smart/tenant/kanegasaki/WebView/rd/council_1.html"
-      },
+      "committee_live": null,
+      "committee_live_basis": null,
       "committee_vod": true,
       "committee_vod_basis": {
         "text": "令和８年予算審査特別委員会",
@@ -3927,8 +3945,8 @@ window.BOCHO_DATA["03"] = [
         "target": "video"
       },
       "live_basis": {
-        "text": "令和8年定例会3月会議",
-        "url": "https://smart.discussvision.net/smart/tenant/hiraizumi/WebView/rd/council_1.html"
+        "text": "なお、本会議については、スマートフォンやタブレット、PC等を利用して、インターネットからでもご覧いただけます。",
+        "url": "https://www.town.hiraizumi.iwate.jp/%E8%AD%B0%E4%BC%9A%E5%82%8D%E8%81%B4-21179/"
       },
       "live_scope": null,
       "not_official_record": true,
@@ -4977,7 +4995,7 @@ window.BOCHO_DATA["03"] = [
     "pref": "岩手県",
     "name": "軽米町議会",
     "kind": "町",
-    "checked_on": "2026-10-26",
+    "checked_on": "2026-11-06",
     "reiki_system": "other",
     "reiki_url": "https://www.town.karumai.iwate.jp/article/cat778/entry-basename-143.html",
     "guide_url": null,
@@ -5681,7 +5699,10 @@ window.BOCHO_DATA["03"] = [
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "■ 本会議の生中継をご覧いただけます。",
+        "url": "https://ichinohe-town.stream.jfit.co.jp/"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [

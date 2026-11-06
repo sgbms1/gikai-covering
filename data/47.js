@@ -1,4 +1,4 @@
-// 自動生成: tools/build_data.sh 47（2026-10-24）。直接編集しない。
+// 自動生成: tools/build_data.sh 47（2026-11-06）。直接編集しない。
 window.BOCHO_DATA = window.BOCHO_DATA || {};
 window.BOCHO_DATA["47"] = [
   {
@@ -105,7 +105,10 @@ window.BOCHO_DATA["47"] = [
     "reiki_url": "https://ops-jg.d1-law.com/opensearch/SrMjF01/init?jctcd=8A91CAD16A",
     "streaming": {
       "committee_live": true,
-      "committee_live_basis": null,
+      "committee_live_basis": {
+        "text": "本会議及び委員会の開会時刻は、通常午前10時からです。",
+        "url": "https://smart.discussvision.net/smart/tenant/pref_okinawa/WebView/rd/council_1.html"
+      },
       "committee_vod": true,
       "download": {
         "basis": {
@@ -115,7 +118,10 @@ window.BOCHO_DATA["47"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "録画配信は、ライブ中継を実施した日の翌々日（土曜日、日曜日、祝日を除く。）から通常ご覧になれます。",
+        "url": "https://smart.discussvision.net/smart/tenant/pref_okinawa/WebView/rd/council_1.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -515,7 +521,10 @@ window.BOCHO_DATA["47"] = [
         "policy": "law_only",
         "target": "site"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "※本会議のライブ配信をご覧いただけます。",
+        "url": "https://ginowan-city.stream.jfit.co.jp/?tpl=play_live&room_id=1"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -710,7 +719,7 @@ window.BOCHO_DATA["47"] = [
       "platforms": [
         "YouTube"
       ],
-      "plenary_live": true,
+      "plenary_live": null,
       "plenary_vod": true,
       "reuse_basis": {
         "article": null,
@@ -909,7 +918,10 @@ window.BOCHO_DATA["47"] = [
         "policy": "prohibited",
         "target": "site"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "生中継を見る",
+        "url": "https://urasoe-city.stream.jfit.co.jp/"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -1266,7 +1278,10 @@ window.BOCHO_DATA["47"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "平成29年9月7日（木曜日）開会の平成29年第3回（9月）定例会より議会中継（ライブ及び録画映像）の配信が始まります。ご視聴ください。",
+        "url": "https://www.city.itoman.lg.jp/soshiki/37/1150.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -1449,7 +1464,10 @@ window.BOCHO_DATA["47"] = [
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "議会ライブ・録画中継（外部サイトへリンク）",
+        "url": "https://www.city.okinawa.okinawa.jp/k046/shiseijouhou/shigikai/139/index.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -1614,7 +1632,10 @@ window.BOCHO_DATA["47"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "議会中継ページへ（ライブ中継、録画中継）",
+        "url": "https://www.city.tomigusuku.lg.jp/material/files/group/38/95847566.pdf"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -1805,7 +1826,10 @@ window.BOCHO_DATA["47"] = [
         "policy": "prohibited",
         "target": "site"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "ライブ中継を見る",
+        "url": "https://uruma-city.stream.jfit.co.jp/"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -1996,7 +2020,10 @@ window.BOCHO_DATA["47"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "宮古島市議会では、インターネット映像配信サービスを利用して本会議をライブ配信および録画配信を行っています。",
+        "url": "https://www.city.miyakojima.lg.jp/gyosei/gikai/gikaichukei.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -2175,7 +2202,10 @@ window.BOCHO_DATA["47"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "本日は、ライブ中継の予定はありません。",
+        "url": "https://smart.discussvision.net/smart/tenant/nanjo/WebView/rd/council_1.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -2683,7 +2713,10 @@ window.BOCHO_DATA["47"] = [
         "policy": "law_only",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "令和8年第8回東村議回臨時会（10月16日） ／ 35 ／ 4 日前 に配信済み",
+        "url": "https://www.youtube.com/@%E6%9D%B1%E6%9D%91%E8%AD%B0%E4%BC%9A/streams"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -3206,7 +3239,10 @@ window.BOCHO_DATA["47"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "ために、本議会の様子を生中継・録画中継しています。",
+        "url": "https://www.vill.onna.okinawa.jp/userfiles/files/202303_P19.pdf"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -3549,7 +3585,10 @@ window.BOCHO_DATA["47"] = [
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "本日は、ライブ中継の予定はありません。",
+        "url": "https://smart.discussvision.net/smart/tenant/kin/WebView/rd/council_1.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -3888,7 +3927,10 @@ window.BOCHO_DATA["47"] = [
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "読谷村議会ライブ配信（第555回 一般質問17 與那覇徳雄議員）令和8年10月21日 ／ 10 人が視聴中",
+        "url": "https://www.youtube.com/channel/UCYiYWojlwB2sb3mrXcm9uaQ/streams"
+      },
       "live_scope": null,
       "not_official_record": null,
       "platforms": [
@@ -4059,7 +4101,10 @@ window.BOCHO_DATA["47"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "令和5年3月議会からインターネット中継（ライブ配信・録画配信）を行っています。",
+        "url": "https://www.kadena-gikai.jp/bocho.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -4238,7 +4283,10 @@ window.BOCHO_DATA["47"] = [
         "policy": "prohibited",
         "target": "site"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "ライブ中継を見る",
+        "url": "https://chatan-town.stream.jfit.co.jp/"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -4415,7 +4463,10 @@ window.BOCHO_DATA["47"] = [
         "policy": "prohibited",
         "target": "site"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "ライブ配信の日程は、議会日程をご覧ください。",
+        "url": "https://kitanakagusuku-village.stream.jfit.co.jp/"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -4594,7 +4645,10 @@ window.BOCHO_DATA["47"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "ライブ配信を見る",
+        "url": "https://nakagusuku-village.stream.jfit.co.jp/"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -5109,7 +5163,10 @@ window.BOCHO_DATA["47"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "※インターネットでも本会議の様子を生中継します。ご覧ください。",
+        "url": "https://www.town.haebaru.lg.jp/site/gikai/19820.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -5686,7 +5743,7 @@ window.BOCHO_DATA["47"] = [
     "pref": "沖縄県",
     "name": "渡名喜村議会",
     "kind": "村",
-    "checked_on": "2026-10-24",
+    "checked_on": "2026-11-06",
     "reiki_system": "none",
     "reiki_url": null,
     "guide_url": null,
@@ -5952,7 +6009,7 @@ window.BOCHO_DATA["47"] = [
     "pref": "沖縄県",
     "name": "北大東村議会",
     "kind": "村",
-    "checked_on": "2026-10-24",
+    "checked_on": "2026-11-06",
     "reiki_system": "none",
     "reiki_url": null,
     "guide_url": null,
@@ -6236,7 +6293,7 @@ window.BOCHO_DATA["47"] = [
     "pref": "沖縄県",
     "name": "伊是名村議会",
     "kind": "村",
-    "checked_on": "2026-10-24",
+    "checked_on": "2026-11-06",
     "reiki_system": "none",
     "reiki_url": null,
     "guide_url": null,
@@ -6455,7 +6512,10 @@ window.BOCHO_DATA["47"] = [
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "久米島町議会では町民の皆さんに議会を身近に感じていただくため、令和５年６月定例会より本会議を生中継と録画放映を配信します。",
+        "url": "https://www.town.kumejima.okinawa.jp/docs/gikailive/"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -6630,7 +6690,10 @@ window.BOCHO_DATA["47"] = [
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "第３条　ライブ中継及び録画中継を行う会議は、地方自治法（昭和22年法律第67号。以下「法」という。）第102条第１項に規定する定例会及び臨時会の本会議とする。ただし、法第115条第１項ただし書に規定する秘密会のライブ中継及び録画中継は行わないものとする。",
+        "url": "https://ops-jg.d1-law.com/opensearch/SrJbF01/init?jctcd=8A91CB4634&houcd=H508915100011&no=1&totalCount=1&fromJsp=SrMj"
+      },
       "live_scope": null,
       "not_official_record": null,
       "platforms": [],
@@ -6963,7 +7026,10 @@ window.BOCHO_DATA["47"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "令和8年　第5回竹富町議会（9月定例会）10月6日 午前 ／ 351 ／ 2 週間前 に配信済み",
+        "url": "https://www.youtube.com/@taketomi.town.council/streams"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -7139,7 +7205,10 @@ window.BOCHO_DATA["47"] = [
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "与那国町議会中継【20261006午後一般質問】 ／ 1475 ／ 2 週間前 に配信済み",
+        "url": "https://www.youtube.com/channel/UCFxUe_JHhCgXaGLKQi6042g/streams"
+      },
       "live_scope": null,
       "not_official_record": null,
       "platforms": [

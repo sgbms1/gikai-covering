@@ -1,4 +1,4 @@
-// 自動生成: tools/build_data.sh 02（2026-10-24）。直接編集しない。
+// 自動生成: tools/build_data.sh 02（2026-11-06）。直接編集しない。
 window.BOCHO_DATA = window.BOCHO_DATA || {};
 window.BOCHO_DATA["02"] = [
   {
@@ -483,7 +483,10 @@ window.BOCHO_DATA["02"] = [
     "reiki_url": "https://ops-jg.d1-law.com/opensearch/SrMjF01/init?jctcd=8A7A02175C",
     "streaming": {
       "committee_live": true,
-      "committee_live_basis": null,
+      "committee_live_basis": {
+        "text": "本会議と予算決算常任委員会のライブ中継を視聴できます。",
+        "url": "http://www.kensakusystem.jp/hirosaki-vod/index.html"
+      },
       "committee_vod": true,
       "committee_vod_basis": {
         "text": "録画映像の検索 | 過去の本会議と予算決算常任委員会の録画映像をご覧いただけます。",
@@ -494,7 +497,10 @@ window.BOCHO_DATA["02"] = [
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "本会議と予算決算常任委員会のライブ中継を視聴できます。",
+        "url": "http://www.kensakusystem.jp/hirosaki-vod/index.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -854,7 +860,7 @@ window.BOCHO_DATA["02"] = [
       "platforms": [
         "YouTube"
       ],
-      "plenary_live": true,
+      "plenary_live": null,
       "plenary_vod": true,
       "reuse_basis": {
         "article": null,
@@ -1236,7 +1242,10 @@ window.BOCHO_DATA["02"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "発熱または咳の症状がある場合は、傍聴席での傍聴はお控えくださるようご理解、ご協力をお願いします。 なお、本会議の様子は、インターネットで視聴することができます（生配信及び過去の映像の配信）。",
+        "url": "https://www.city.towada.lg.jp/shisei/gikai/bouchou.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -1759,7 +1768,10 @@ window.BOCHO_DATA["02"] = [
         "policy": "prohibited",
         "target": "site"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "つがる市議会の様子をライブ中継にてご覧になれます。",
+        "url": "https://www.city.tsugaru.aomori.jp/joho/mokuteki/administration/shigikai/gikaichukei/3662.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -2879,7 +2891,7 @@ window.BOCHO_DATA["02"] = [
       "live_scope": null,
       "not_official_record": null,
       "platforms": [],
-      "plenary_live": true,
+      "plenary_live": null,
       "plenary_vod": true,
       "reuse_basis": {
         "article": null,
@@ -4031,7 +4043,10 @@ window.BOCHO_DATA["02"] = [
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "令和8年第3回中泊町議会定例会（単行案） ／ 338 ／ 1 か月前 に配信済み",
+        "url": "https://www.youtube.com/channel/UCdVbwrYObgf9I3aYI4kAxKg/streams"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -5529,7 +5544,7 @@ window.BOCHO_DATA["02"] = [
     "pref": "青森県",
     "name": "風間浦村議会",
     "kind": "村",
-    "checked_on": "2026-10-24",
+    "checked_on": "2026-11-06",
     "reiki_system": "none",
     "reiki_url": null,
     "guide_url": null,
@@ -5938,7 +5953,10 @@ window.BOCHO_DATA["02"] = [
         "policy": "prohibited",
         "target": "site"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "YouTube（ユーチューブ）による議会のライブ中継",
+        "url": "https://www.town.sannohe.aomori.jp/choseijoho/gikai/eizouhaishin/index.html"
+      },
       "live_scope": null,
       "not_official_record": null,
       "platforms": [
@@ -6670,7 +6688,7 @@ window.BOCHO_DATA["02"] = [
     "pref": "青森県",
     "name": "新郷村議会",
     "kind": "村",
-    "checked_on": "2026-10-24",
+    "checked_on": "2026-11-06",
     "reiki_system": "none",
     "reiki_url": null,
     "guide_url": "https://www.vill.shingo.aomori.jp/public/ogani/sosiki/page-22130/",

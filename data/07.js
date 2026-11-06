@@ -1,4 +1,4 @@
-// 自動生成: tools/build_data.sh 07（2026-10-25）。直接編集しない。
+// 自動生成: tools/build_data.sh 07（2026-11-06）。直接編集しない。
 window.BOCHO_DATA = window.BOCHO_DATA || {};
 window.BOCHO_DATA["07"] = [
   {
@@ -471,7 +471,21 @@ window.BOCHO_DATA["07"] = [
     "reiki_url": "https://www.city.aizuwakamatsu.fukushima.jp/j/reiki_int/reiki_taikei/taikei_default.html",
     "streaming": {
       "committee_live": true,
+      "committee_live_basis": {
+        "text": "定例会議及び臨時会議の本会議及び予算決算委員会の開催中には、議会のライブ映像を配信しています。",
+        "url": "https://www.city.aizuwakamatsu.fukushima.jp/docs/2015020400066/"
+      },
       "committee_vod": true,
+      "download": {
+        "policy": null,
+        "target": null,
+        "basis": null
+      },
+      "live_basis": {
+        "text": "定例会議及び臨時会議の本会議及び予算決算委員会の開催中には、議会のライブ映像を配信しています。",
+        "url": "https://www.city.aizuwakamatsu.fukushima.jp/docs/2015020400066/"
+      },
+      "live_scope": null,
       "not_official_record": true,
       "platforms": [
         "YouTube"
@@ -483,18 +497,10 @@ window.BOCHO_DATA["07"] = [
       "scope": "本会議と予算決算委員会",
       "url": "https://www.city.aizuwakamatsu.fukushima.jp/docs/2015020400066/#:~:text=%E9%85%8D%E4%BF%A1%E3%81%95%E3%82%8C%E3%81%A6%E3%81%84%E3%82%8B%E6%98%A0%E5%83%8F%E5%8F%8A%E3%81%B3%E9%9F%B3%E5%A3%B0%E3%81%AF%E3%80%81%E4%BC%9A%E6%B4%A5%E8%8B%A5%E6%9D%BE%E5%B8%82%E8%AD%B0%E4%BC%9A%E3%81%AE%E5%85%AC%E5%BC%8F%E8%A8%98%E9%8C%B2%E3%81%A7%E3%81%AF%E3%81%82%E3%82%8A%E3%81%BE%E3%81%9B%E3%82%93%E3%80%82",
       "vod_delay": null,
-      "live_basis": null,
-      "committee_live_basis": null,
-      "plenary_vod_basis": null,
-      "committee_vod_basis": null,
-      "live_scope": null,
       "vod_period": null,
       "vod_period_basis": null,
-      "download": {
-        "policy": null,
-        "target": null,
-        "basis": null
-      },
+      "plenary_vod_basis": null,
+      "committee_vod_basis": null,
       "cable": null,
       "footage": null,
       "suspended": null
@@ -664,7 +670,10 @@ window.BOCHO_DATA["07"] = [
         },
         "press": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "郡山市議会のライブ配信と録画映像の配信がご覧になれます。",
+        "url": "https://www.city.koriyama.lg.jp/site/gikai/2659.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -841,7 +850,10 @@ window.BOCHO_DATA["07"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "本会議の模様は、インターネットによるライブ中継をはじめ、議会棟１階の市民ロビーでも放映しています。",
+        "url": "https://www.city.iwaki.lg.jp/www/contents/1699340979815/index.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -1196,7 +1208,10 @@ window.BOCHO_DATA["07"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "須賀川市議会インターネット中継は、須賀川市議会の本会議のライブ中継と録画配信をおこなっております。",
+        "url": "http://gikai.city.sukagawa.fukushima.jp/help_broadcasting.asp"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -1376,7 +1391,10 @@ window.BOCHO_DATA["07"] = [
         "policy": "law_only",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "本市議会では、ビデオグを利用して、本会議のライブ配信放送を行っております。なお、ご覧になる際は注意（免責）事項をご確認ください。",
+        "url": "http://kitakatashigikai.fukushima.jp/live/"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -1727,7 +1745,10 @@ window.BOCHO_DATA["07"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "令和8年第6回9月定例会から、AIを活用した本会議ライブ中継映像への字幕表示を実施します。",
+        "url": "https://www.city.nihonmatsu.lg.jp/gikai/cyukei/page014340.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -2073,8 +2094,8 @@ window.BOCHO_DATA["07"] = [
     "streaming": {
       "committee_live": true,
       "committee_live_basis": {
-        "text": "令和8年3月予算決算常任委員会",
-        "url": "https://smart.discussvision.net/smart/tenant/minamisoma/WebView/rd/council_1.html"
+        "text": "本会議と予算決算常任委員会はインターネットでも中継しています。",
+        "url": "https://www.city.minamisoma.lg.jp/portal/admin/shigikai/schedule/26069.html"
       },
       "committee_vod": true,
       "committee_vod_basis": {
@@ -2089,7 +2110,10 @@ window.BOCHO_DATA["07"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "また、インターネットでもリアルタイムで配信しており、閉会した過去の会議録の閲覧も可能となっております。",
+        "url": "https://www.city.minamisoma.lg.jp/portal/admin/shigikai/4130.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -2443,7 +2467,10 @@ window.BOCHO_DATA["07"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "インターネットでは生中継や、過",
+        "url": "https://www.city.motomiya.lg.jp/uploaded/attachment/27811.pdf"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -2603,7 +2630,10 @@ window.BOCHO_DATA["07"] = [
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "議会ライブ中継",
+        "url": "https://www.town.koori.fukushima.jp/site/gikai/list21-73.html"
+      },
       "live_scope": null,
       "not_official_record": null,
       "platforms": [],
@@ -2773,7 +2803,10 @@ window.BOCHO_DATA["07"] = [
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "議会本会議はライブ配信しておりますので、ぜひご活用ください。（議会中継）",
+        "url": "https://www.town.kunimi.fukushima.jp/site/gikai/14.html"
+      },
       "live_scope": null,
       "not_official_record": null,
       "platforms": [],
@@ -2935,7 +2968,10 @@ window.BOCHO_DATA["07"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "◆録画は、ライブ配信終了後、１～２週間後にアップします。",
+        "url": "https://www.town.kawamata.lg.jp/site/gikai/gikai-tyukei-2.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -3281,7 +3317,7 @@ window.BOCHO_DATA["07"] = [
       "platforms": [
         "DiscussVision"
       ],
-      "plenary_live": true,
+      "plenary_live": null,
       "plenary_vod": true,
       "plenary_vod_basis": {
         "text": "令和8年3月鏡石町議会定例会（第11回）",
@@ -3712,7 +3748,7 @@ window.BOCHO_DATA["07"] = [
     "pref": "福島県",
     "name": "檜枝岐村議会",
     "kind": "村",
-    "checked_on": "2026-10-25",
+    "checked_on": "2026-11-06",
     "reiki_system": "none",
     "reiki_url": null,
     "guide_url": null,
@@ -3936,7 +3972,10 @@ window.BOCHO_DATA["07"] = [
         "policy": "law_only",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "本町議会では、YouTube, LLCのサービスを用いて本会議のライブ中継及び録画配信を行っています。",
+        "url": "https://www.town.tadami.lg.jp/parliament/relay/"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -4104,7 +4143,10 @@ window.BOCHO_DATA["07"] = [
         "policy": "law_only",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "本町議会では、YouTube（ユーチューブ） ,LLCのインターネットストリーミングサービスを利用して、本会議のライブ中継放送を行っております。なお、ご覧になる際は注意（免責）事項をご確認ください。",
+        "url": "https://www.town.minamiaizu.lg.jp/official/soshikikarasagasu/gikaijimukyoku/minamiaizumachigikai/5/777.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -4279,7 +4321,10 @@ window.BOCHO_DATA["07"] = [
         "policy": "prohibited",
         "target": "site"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "本会議のライブ中継を視聴できます。",
+        "url": "https://www.kensakusystem.jp/kitashiobara-vod/index.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -5120,7 +5165,10 @@ window.BOCHO_DATA["07"] = [
         "policy": "prohibited",
         "target": "site"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "生中継で配信する映像は、定例会における開会から閉会までとし、録画中継で配信する映像は、一般質問のみとする。",
+        "url": "https://en3-jg.d1-law.com/yugawa/d1w_reiki/H502915500001/H502915500001_j.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -6086,7 +6134,10 @@ window.BOCHO_DATA["07"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "なお、本会議の模様は役場1階窓口及び総務課のテレビで議会の模様を放送しているほか、インターネット中継も実施しております。",
+        "url": "https://www.vill.nishigo.fukushima.jp/sonseijoho/nishigomuragikai/kaiginonei/1338.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -6278,7 +6329,7 @@ window.BOCHO_DATA["07"] = [
       "platforms": [
         "DiscussVision"
       ],
-      "plenary_live": true,
+      "plenary_live": null,
       "plenary_vod": true,
       "plenary_vod_basis": {
         "text": "令和８年第１回臨時会",
@@ -6769,7 +6820,7 @@ window.BOCHO_DATA["07"] = [
       "platforms": [
         "DiscussVision"
       ],
-      "plenary_live": true,
+      "plenary_live": null,
       "plenary_vod": true,
       "reuse_basis": {
         "article": null,
@@ -6946,7 +6997,7 @@ window.BOCHO_DATA["07"] = [
       "platforms": [
         "DiscussVision"
       ],
-      "plenary_live": true,
+      "plenary_live": null,
       "plenary_vod": true,
       "plenary_vod_basis": {
         "text": "令和8年第1回臨時会",
@@ -7137,7 +7188,7 @@ window.BOCHO_DATA["07"] = [
       "platforms": [
         "DiscussVision"
       ],
-      "plenary_live": true,
+      "plenary_live": null,
       "plenary_vod": true,
       "plenary_vod_basis": {
         "text": "令和8年第2回塙町議会定例会",
@@ -7800,7 +7851,7 @@ window.BOCHO_DATA["07"] = [
         "DiscussVision",
         "YouTube"
       ],
-      "plenary_live": true,
+      "plenary_live": null,
       "plenary_vod": true,
       "plenary_vod_basis": {
         "text": "令和8年3月定例会（第1回）",
@@ -8138,7 +8189,7 @@ window.BOCHO_DATA["07"] = [
       "platforms": [
         "DiscussVision"
       ],
-      "plenary_live": true,
+      "plenary_live": null,
       "plenary_vod": true,
       "reuse_basis": {
         "article": null,
@@ -8791,7 +8842,10 @@ window.BOCHO_DATA["07"] = [
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "第３条　ライブ中継の対象は、定例会本会議の開会から閉会までとする。ただし、次の各号のいずれかに該当するときは配信しない。",
+        "url": "https://ops-jg.d1-law.com/opensearch/SrJbF01/init?jctcd=8A7A4F9DD2&houcd=H502902200051&no=1&totalCount=1&fromJsp=SrMj"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [],
@@ -9298,7 +9352,10 @@ window.BOCHO_DATA["07"] = [
         "policy": "law_only",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "※生中継および録画中継は、YouTubeという動画共有サイト上で配信します",
+        "url": "https://www.town.okuma.fukushima.jp/site/gikai/1630.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -9466,7 +9523,10 @@ window.BOCHO_DATA["07"] = [
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "本会議の模様をライブ中継と録画中継でご覧いただけます。",
+        "url": "https://www.town.fukushima-futaba.lg.jp/4521.htm"
+      },
       "live_scope": null,
       "not_official_record": null,
       "platforms": [
@@ -9642,7 +9702,10 @@ window.BOCHO_DATA["07"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "浪江町議会では、本会議（定例会及び臨時会）の模様をライブ中継や録画映像でご覧いただけます。",
+        "url": "https://www.town.namie.fukushima.jp/site/gikai/169.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -10142,7 +10205,10 @@ window.BOCHO_DATA["07"] = [
         "policy": "law_only",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "飯舘村議会では、議会中継（ライブ）配信を行っています。",
+        "url": "https://www.vill.iitate.fukushima.jp/site/gikai/3611.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [

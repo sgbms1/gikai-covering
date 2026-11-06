@@ -1,4 +1,4 @@
-// 自動生成: tools/build_data.sh 05（2026-10-26）。直接編集しない。
+// 自動生成: tools/build_data.sh 05（2026-11-06）。直接編集しない。
 window.BOCHO_DATA = window.BOCHO_DATA || {};
 window.BOCHO_DATA["05"] = [
   {
@@ -103,7 +103,10 @@ window.BOCHO_DATA["05"] = [
     "reiki_url": "https://www1.g-reiki.net/pref_akita/reiki_taikei/taikei_default.html",
     "streaming": {
       "committee_live": true,
-      "committee_live_basis": null,
+      "committee_live_basis": {
+        "text": "本会議・予算特別委員会のライブ配信はこちら（外部リンク）",
+        "url": "https://pref.akita.gsl-service.net/doc/2018062000034/"
+      },
       "committee_vod": true,
       "committee_vod_basis": {
         "text": "03月16日予算特別委員会　総括審査",
@@ -117,7 +120,10 @@ window.BOCHO_DATA["05"] = [
         "policy": "law_only",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "本会議・予算特別委員会のライブ配信はこちら（外部リンク）",
+        "url": "https://pref.akita.gsl-service.net/doc/2018062000034/"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -497,7 +503,7 @@ window.BOCHO_DATA["05"] = [
       "platforms": [
         "YouTube"
       ],
-      "plenary_live": true,
+      "plenary_live": null,
       "plenary_vod": true,
       "reuse_basis": {
         "article": null,
@@ -674,7 +680,10 @@ window.BOCHO_DATA["05"] = [
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "議会の模様は、インターネットを通じて生中継しますので、議会のライブ映像をご自宅のパソコンやスマートフォンなどでも見ることができます。",
+        "url": "https://www.city.yokote.lg.jp/shigikai/1001551/1004072.html"
+      },
       "live_scope": null,
       "not_official_record": null,
       "platforms": [],
@@ -1149,7 +1158,10 @@ window.BOCHO_DATA["05"] = [
     "reiki_url": "https://reiki.city-yuzawa.com/reiki_menu.html",
     "streaming": {
       "committee_live": true,
-      "committee_live_basis": null,
+      "committee_live_basis": {
+        "text": "予算決算常任委員会総括質疑（全体会・令和７年度決算）",
+        "url": "https://www.city-yuzawa.jp/site/gikai/3455.html"
+      },
       "committee_vod": true,
       "committee_vod_basis": {
         "text": "予算決算常任委員会",
@@ -1163,7 +1175,10 @@ window.BOCHO_DATA["05"] = [
         "policy": "prohibited",
         "target": "site"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "秋田県湯沢市議会の本会議場の映像(ライブ・録画)を配信しています。",
+        "url": "https://www.youtube.com/channel/UCnepCwem2IOvP30K4dyY0nQ"
+      },
       "live_scope": null,
       "not_official_record": null,
       "platforms": [
@@ -1356,7 +1371,10 @@ window.BOCHO_DATA["05"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "平成19年6月定例会より、本会議の映像を、生中継及び録画中継でご覧いただいております。",
+        "url": "https://www.city.kazuno.lg.jp/shisei_machizukuri/gikai/8/3148.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -1526,7 +1544,10 @@ window.BOCHO_DATA["05"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "令和8年第3回定例会（9月）ライブ配信",
+        "url": "https://www.city.yurihonjo.lg.jp/1001571/1001642/1008336.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -1708,7 +1729,10 @@ window.BOCHO_DATA["05"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "インターネット配信（ライブ配信）もご利用いただけます。",
+        "url": "https://www.city.katagami.lg.jp/gyosei/gyoseijoho/shigikai/1595.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -2040,8 +2064,8 @@ window.BOCHO_DATA["05"] = [
         "target": "video"
       },
       "live_basis": {
-        "text": "令和8年3月定例会",
-        "url": "https://smart.discussvision.net/smart/tenant/kitaakita/WebView/rd/council_1.html"
+        "text": "ライブ中継の開始時間は、通常午前10時からとなります。また、休憩時などは中継を停止する場合があります。",
+        "url": "https://www.city.kitaakita.akita.jp/archive/p11346"
       },
       "live_scope": null,
       "not_official_record": true,
@@ -2230,7 +2254,7 @@ window.BOCHO_DATA["05"] = [
       "live_scope": null,
       "not_official_record": true,
       "platforms": [],
-      "plenary_live": true,
+      "plenary_live": null,
       "plenary_vod": true,
       "reuse_basis": {
         "article": null,
@@ -3848,7 +3872,10 @@ window.BOCHO_DATA["05"] = [
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "大潟村議会ライブ映像中継を見る",
+        "url": "https://www.vill.ogata.akita.jp/archive/relay"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [

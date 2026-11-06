@@ -1,4 +1,4 @@
-// 自動生成: tools/build_data.sh 22（2026-10-26）。直接編集しない。
+// 自動生成: tools/build_data.sh 22（2026-11-06）。直接編集しない。
 window.BOCHO_DATA = window.BOCHO_DATA || {};
 window.BOCHO_DATA["22"] = [
   {
@@ -113,7 +113,10 @@ window.BOCHO_DATA["22"] = [
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "この議会中継（生中継及び録画中継）は、発言訂正等により、会議録と語句が相違する場合があります。あらかじめ御了承ください。",
+        "url": "https://shizuoka-pref.stream.jfit.co.jp/"
+      },
       "live_scope": null,
       "not_official_record": null,
       "platforms": [
@@ -311,7 +314,10 @@ window.BOCHO_DATA["22"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "パソコン、スマートフォンで本会議を見てみませんか？本会議当日のライブ配信や過去の映像はこちらから",
+        "url": "https://www.city.shizuoka.lg.jp/gikai/p000235.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -490,8 +496,8 @@ window.BOCHO_DATA["22"] = [
     "streaming": {
       "committee_live": true,
       "committee_live_basis": {
-        "text": "令和8年総務委員会",
-        "url": "https://smart.discussvision.net/smart/tenant/hamamatsu/WebView/rd/council_1.html"
+        "text": "本会議、議会運営委員会、常任・特別委員会について、ライブ中継しています。",
+        "url": "https://web.archive.org/web/20250117111436/https://www.city.hamamatsu.shizuoka.jp/chosa/faq/shise/gikai/002.html"
       },
       "committee_vod": true,
       "committee_vod_basis": {
@@ -506,7 +512,10 @@ window.BOCHO_DATA["22"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "本会議、議会運営委員会、常任・特別委員会について、ライブ中継しています。",
+        "url": "https://web.archive.org/web/20250117111436/https://www.city.hamamatsu.shizuoka.jp/chosa/faq/shise/gikai/002.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -690,7 +699,10 @@ window.BOCHO_DATA["22"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "本会議の中継（ライブ・過去の録画映像）は、パソコン・スマートフォン等からも視聴できます。",
+        "url": "https://www.city.numazu.shizuoka.jp/shisei/g-shigiki/g-sigiki/boucho/boucho.htm"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -1056,7 +1068,10 @@ window.BOCHO_DATA["22"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "令和3年6月定例会から、現在実施している本会議のインターネットライブ中継において、音声認識技術を活用した字幕配信を開始します。",
+        "url": "https://www.city.mishima.shizuoka.jp/site/gikai/4555.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -1231,8 +1246,8 @@ window.BOCHO_DATA["22"] = [
     "streaming": {
       "committee_live": true,
       "committee_live_basis": {
-        "text": "令和8年予算審査特別委員会",
-        "url": "https://smart.discussvision.net/smart/tenant/fujinomiya/WebView/rd/council_1.html"
+        "text": "委員会はインターネット中継や、録画映像を公開しております。",
+        "url": "https://www.city.fujinomiya.lg.jp/documents/3116/qc0he80000005sj9.pdf"
       },
       "committee_vod": true,
       "committee_vod_basis": {
@@ -1247,7 +1262,10 @@ window.BOCHO_DATA["22"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "◆ライブ中継は、本会議開会から閉会までの全ての模様をご覧いただけます。",
+        "url": "https://smart.discussvision.net/smart/tenant/fujinomiya/WebView/rd/council.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -1802,7 +1820,10 @@ window.BOCHO_DATA["22"] = [
     "reiki_url": "https://krg311.legal-square.com/HAS-Shohin/page/SJSrbLogin.jsf",
     "streaming": {
       "committee_live": true,
-      "committee_live_basis": null,
+      "committee_live_basis": {
+        "text": "富士市議会では、本会議・委員会等の様子について、インターネット中継・動画配信をしています。",
+        "url": "https://www.city.fuji.shizuoka.jp/5105000000/p007223.html"
+      },
       "committee_vod": true,
       "committee_vod_basis": {
         "text": "第一委員会室で開催された会議を公開しています。富士市議会の公式チャンネルです。",
@@ -1816,7 +1837,10 @@ window.BOCHO_DATA["22"] = [
         "policy": "law_only",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "本会議の模様を生中継と録画映像でご覧いただくことができます。",
+        "url": "http://fuji.gijiroku.com/help_broadcasting.asp"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -2007,7 +2031,10 @@ window.BOCHO_DATA["22"] = [
         "policy": "prohibited",
         "target": "site"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "生中継を見る",
+        "url": "https://iwata-city.stream.jfit.co.jp/"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -2341,7 +2368,10 @@ window.BOCHO_DATA["22"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "本会議の開催時には、ライブ及び録画でのインターネット映像配信行います。",
+        "url": "https://www.city.kakegawa.shizuoka.jp/gyosei/docs/8005.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -2518,7 +2548,10 @@ window.BOCHO_DATA["22"] = [
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "藤枝市議会インターネット中継は、藤枝市議会の本会議のライブ(生)中継と録画配信をおこなっております。",
+        "url": "http://fujieda.gijiroku.com/help_broadcasting.asp"
+      },
       "live_scope": "本会議のみ",
       "not_official_record": null,
       "platforms": [
@@ -2869,7 +2902,10 @@ window.BOCHO_DATA["22"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "袋井市議会では、本会議の模様をインターネットで生中継します。また、市役所1階市民ロビーの大型テレビでも中継を御覧いただけけます。",
+        "url": "https://www.city.fukuroi.shizuoka.jp/soshiki/35/2/net_chuukei.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -3602,7 +3638,10 @@ window.BOCHO_DATA["22"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "なお、本会議は、インターネットによる生中継も行っております。",
+        "url": "https://www.city.izu.shizuoka.jp/shiseijoho/4/1/3260.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -3969,7 +4008,10 @@ window.BOCHO_DATA["22"] = [
         "policy": "prohibited",
         "target": "site"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "生中継を見る",
+        "url": "https://kikugawa-city.stream.jfit.co.jp/"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -4155,7 +4197,10 @@ window.BOCHO_DATA["22"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "インターネットライブ中継は「伊豆の国市議会中継」ページをご覧ください。（外部サイトへリンク）",
+        "url": "https://www.city.izunokuni.shizuoka.jp/gikai/gikailive.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [

@@ -1,4 +1,4 @@
-// 自動生成: tools/build_data.sh 06（2026-10-26）。直接編集しない。
+// 自動生成: tools/build_data.sh 06（2026-11-06）。直接編集しない。
 window.BOCHO_DATA = window.BOCHO_DATA || {};
 window.BOCHO_DATA["06"] = [
   {
@@ -453,7 +453,10 @@ window.BOCHO_DATA["06"] = [
     "reiki_url": "https://www1.g-reiki.net/yonezawa/reiki_kana/reiki_taikei/taikei_default.html",
     "streaming": {
       "committee_live": true,
-      "committee_live_basis": null,
+      "committee_live_basis": {
+        "text": "米沢市議会では、市民に開かれた議会の実現に向けて情報公開を推進しており、本会議及び各委員会については、本市議会のYouTubeチャンネルでのライブ中継を行っています。",
+        "url": "https://www.city.yonezawa.yamagata.jp/gikai/5590.html"
+      },
       "committee_vod": true,
       "download": {
         "basis": {
@@ -463,7 +466,10 @@ window.BOCHO_DATA["06"] = [
         "policy": "law_only",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "米沢市議会では、市民に開かれた議会の実現に向けて情報公開を推進しており、本会議及び各委員会については、本市議会のYouTubeチャンネルでのライブ中継を行っています。",
+        "url": "https://www.city.yonezawa.yamagata.jp/gikai/5590.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -822,8 +828,8 @@ window.BOCHO_DATA["06"] = [
         "target": "video"
       },
       "live_basis": {
-        "text": "令和８年定例会　１月招集議会",
-        "url": "https://smart.discussvision.net/smart/tenant/sakata/WebView/rd/council_1.html"
+        "text": "本会議のライブ配信と過去の録画配信を視聴できます。",
+        "url": "https://www.city.sakata.lg.jp/shisei/shigikai/sakatashigikai.html"
       },
       "live_scope": null,
       "not_official_record": true,
@@ -1195,7 +1201,10 @@ window.BOCHO_DATA["06"] = [
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "本会議のライブ中継を視聴できます。",
+        "url": "https://www.kensakusystem.jp/sagae-vod2/"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -1551,8 +1560,8 @@ window.BOCHO_DATA["06"] = [
         "target": "video"
       },
       "live_basis": {
-        "text": "令和8年第1回臨時会",
-        "url": "https://smart.discussvision.net/smart/tenant/murayama/WebView/rd/council_1.html"
+        "text": "村山市議会を広く市民に公開し、開かれた議会を目指すため、議会の「生中継」および「録画中継」を配信しています。",
+        "url": "https://www.city.murayama.lg.jp/shisei/gikai/intarnet.html"
       },
       "live_scope": null,
       "not_official_record": true,
@@ -1716,14 +1725,20 @@ window.BOCHO_DATA["06"] = [
     "reiki_url": "https://www.city.nagai.yamagata.jp/section/reiki/reiki_taikei/taikei_default.html",
     "streaming": {
       "committee_live": true,
-      "committee_live_basis": null,
+      "committee_live_basis": {
+        "text": "長井市議会では、議場に足を運ぶことのできない方にも議会の様子をご覧いただけるよう、市議会の本会議や予算、決算特別委員会のインターネット中継を行っています。",
+        "url": "https://www.city.nagai.yamagata.jp/shigikai/5713.html"
+      },
       "committee_vod": true,
       "download": {
         "policy": null,
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "ライブ中継と過去1年分の録画中継の視聴ができますので、ぜひご利用ください。",
+        "url": "https://www.city.nagai.yamagata.jp/shigikai/5713.html"
+      },
       "live_scope": null,
       "not_official_record": null,
       "platforms": [
@@ -2906,8 +2921,8 @@ window.BOCHO_DATA["06"] = [
         "target": "video"
       },
       "live_basis": {
-        "text": "令和8年1月臨時会",
-        "url": "https://smart.discussvision.net/smart/tenant/kahoku/WebView/rd/council_1.html"
+        "text": "スマホで議会ライブ中継と",
+        "url": "https://www.town.kahoku.yamagata.jp/material/files/group/16/kahokugikaidayori124.pdf"
       },
       "live_scope": null,
       "not_official_record": true,
@@ -3070,8 +3085,8 @@ window.BOCHO_DATA["06"] = [
         "target": "video"
       },
       "live_basis": {
-        "text": "令和8年第1回臨時会",
-        "url": "https://smart.discussvision.net/smart/tenant/town_nishikawa/WebView/rd/council_1.html"
+        "text": "西川町議会中継は、以下より視聴することができます。（※中継映像はリアルタイムのみ）",
+        "url": "https://www.town.nishikawa.yamagata.jp/site/gikai/6791.html"
       },
       "live_scope": null,
       "not_official_record": true,
@@ -3582,7 +3597,7 @@ window.BOCHO_DATA["06"] = [
         "target": "video"
       },
       "live_basis": {
-        "text": "令和8年第1回臨時会",
+        "text": "本日はライブ中継の予定はありません。",
         "url": "https://smart.discussvision.net/smart/tenant/oishida/WebView/rd/council_1.html"
       },
       "live_scope": null,
@@ -3902,7 +3917,7 @@ window.BOCHO_DATA["06"] = [
         "basis": null
       },
       "live_basis": {
-        "text": "令和8年9月定例会",
+        "text": "・生中継については、本会議の審議状況などにより開始時間が変更になりますのでご了承ください。",
         "url": "https://smart.discussvision.net/smart/tenant/mogami/WebView/rd/council_1.html"
       },
       "live_scope": null,
@@ -4067,8 +4082,8 @@ window.BOCHO_DATA["06"] = [
         "target": "video"
       },
       "live_basis": {
-        "text": "令和8年第1回臨時会",
-        "url": "https://smart.discussvision.net/smart/tenant/funagata/WebView/rd/council_1.html"
+        "text": "■定例会および臨時会の開会中は生中継しています。",
+        "url": "https://www.town.funagata.yamagata.jp/s027/gikai/020/650/202504gikaidayorifunagata.pdf"
       },
       "live_scope": null,
       "not_official_record": true,
@@ -4744,8 +4759,8 @@ window.BOCHO_DATA["06"] = [
         "target": "video"
       },
       "live_basis": {
-        "text": "令和8年第1回臨時会",
-        "url": "https://smart.discussvision.net/smart/tenant/tozawa/WebView/rd/council_1.html"
+        "text": "議会ライブ配信",
+        "url": "https://www.vill.tozawa.yamagata.jp/gikai/"
       },
       "live_scope": null,
       "not_official_record": true,
@@ -4923,7 +4938,10 @@ window.BOCHO_DATA["06"] = [
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "ライブ中継も行っていますので、ご利用ください。",
+        "url": "https://www.town.takahata.yamagata.jp/site/gikai/1271.html"
+      },
       "live_scope": null,
       "not_official_record": null,
       "platforms": [
@@ -5933,8 +5951,8 @@ window.BOCHO_DATA["06"] = [
         "target": "video"
       },
       "live_basis": {
-        "text": "令和8年第1回臨時会",
-        "url": "https://smart.discussvision.net/smart/tenant/shonai/WebView/rd/council_1.html"
+        "text": "インターネット配信により、議会の開催状況、審議の模様をリアルタイムで見ることができます。",
+        "url": "https://www.town.shonai.lg.jp/gyousei/gikai/gikai/teireikaigoannai.html"
       },
       "live_scope": null,
       "not_official_record": true,

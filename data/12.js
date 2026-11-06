@@ -1,4 +1,4 @@
-// 自動生成: tools/build_data.sh 12（2026-10-26）。直接編集しない。
+// 自動生成: tools/build_data.sh 12（2026-11-06）。直接編集しない。
 window.BOCHO_DATA = window.BOCHO_DATA || {};
 window.BOCHO_DATA["12"] = [
   {
@@ -122,7 +122,10 @@ window.BOCHO_DATA["12"] = [
         "policy": "law_only",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "インターネットで議会の生中継をストリーミングでご覧いただけます。",
+        "url": "https://www.pref.chiba.lg.jp/gikai/chuukei/index.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -511,7 +514,10 @@ window.BOCHO_DATA["12"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "本会議の様子をインターネットでライブ配信しています。（試行）",
+        "url": "https://www.city.choshi.chiba.jp/gikai/page190112.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -691,7 +697,10 @@ window.BOCHO_DATA["12"] = [
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "生中継は、定例会・臨時会の開会期間中に、議場での本会議の模様をそのまま放送します。",
+        "url": "https://www.city.ichikawa.lg.jp/site/gikai/5243.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -864,14 +873,20 @@ window.BOCHO_DATA["12"] = [
     "reiki_url": "https://krg005.legal-square.com/HAS-Shohin/page/SJSrbLogin.jsf",
     "streaming": {
       "committee_live": true,
-      "committee_live_basis": null,
+      "committee_live_basis": {
+        "text": "船橋市議会インターネット中継は、船橋市議会の本会議及び委員会のライブ中継と録画放映をおこなっております。",
+        "url": "https://funabashi.gijiroku.com/help_broadcasting.asp"
+      },
       "committee_vod": true,
       "download": {
         "policy": null,
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "船橋市議会　ライブ中継・録画放映の操作説明",
+        "url": "https://funabashi.gijiroku.com/help_broadcasting.asp"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -1040,7 +1055,10 @@ window.BOCHO_DATA["12"] = [
         "policy": "law_only",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "本会議開会日にライブ配信を行います。",
+        "url": "https://www.youtube.com/channel/UC4oCNeN-aueHOcSMa_B3kBQ"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -1218,7 +1236,10 @@ window.BOCHO_DATA["12"] = [
         "policy": "prohibited",
         "target": "site"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "本会議の開催中は、生中継をご覧いただけます。",
+        "url": "https://www.city.kisarazu.lg.jp/gyoseijoho/shigikai/eizouhaishin/8048.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -1408,7 +1429,10 @@ window.BOCHO_DATA["12"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "市議会では、本会議の模様を生中継（ライブ）及び録画中継（オン・デマンド）により配信しております。ぜひご覧ください。",
+        "url": "https://www.city.matsudo.chiba.jp/gikai/i-gikai_tyuukei.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -1598,7 +1622,10 @@ window.BOCHO_DATA["12"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "野田市議会本会議の模様をライブ中継と録画中継で下記によりご覧いただけます。",
+        "url": "https://www.city.noda.chiba.jp/gikai/1028330/1028428.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -1788,7 +1815,10 @@ window.BOCHO_DATA["12"] = [
         "policy": "prohibited",
         "target": "site"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "ライブ配信を見る",
+        "url": "https://mobara-city.stream.jfit.co.jp/"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -1948,7 +1978,10 @@ window.BOCHO_DATA["12"] = [
     "reiki_url": "https://www1.g-reiki.net/narita/reiki_taikei/taikei_default.html",
     "streaming": {
       "committee_live": true,
-      "committee_live_basis": null,
+      "committee_live_basis": {
+        "text": "市議会では、本会議と委員会について、インターネットでライブ中継と録画中継（委員会はライブ中継のみ）をしています。",
+        "url": "https://www.city.narita.chiba.jp/gikai/page253700.html"
+      },
       "committee_vod": true,
       "committee_vod_basis": {
         "text": "市議会では、本会議と委員会について、インターネットでライブ中継と録画中継（委員会はライブ中継のみ）をしています。",
@@ -1962,7 +1995,10 @@ window.BOCHO_DATA["12"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "市議会では、本会議と委員会について、インターネットでライブ中継と録画中継（委員会はライブ中継のみ）をしています。",
+        "url": "https://www.city.narita.chiba.jp/gikai/page253700.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -2119,7 +2155,10 @@ window.BOCHO_DATA["12"] = [
         "policy": "prohibited",
         "target": "site"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "生中継は本会議開催当日の10時から行います。",
+        "url": "https://sakurashigikai.gijiroku.com/help_broadcasting.asp"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -2492,7 +2531,10 @@ window.BOCHO_DATA["12"] = [
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "生中継を視聴する",
+        "url": "https://asahi-city.stream.jfit.co.jp/"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -2672,7 +2714,10 @@ window.BOCHO_DATA["12"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "習志野市議会では、より開かれた議会の実現をめざすため、本会議のようすをインターネットでライブ中継・録画中継（オンデマンド配信）しています。",
+        "url": "https://www.city.narashino.lg.jp/joho/shigikai/gaiyo/chukei.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -2858,7 +2903,10 @@ window.BOCHO_DATA["12"] = [
     "reiki_url": "https://krg018.legal-square.com/HAS-Shohin/page/SJSrbLogin.jsf",
     "streaming": {
       "committee_live": true,
-      "committee_live_basis": null,
+      "committee_live_basis": {
+        "text": "令和4年3月より、常任委員会のライブ中継及び録画配信を開始いたします。",
+        "url": "https://www.city.kashiwa.lg.jp/gikaigiji/assembly/broadcast/regular_meeting.html"
+      },
       "committee_vod": true,
       "download": {
         "basis": {
@@ -2868,7 +2916,10 @@ window.BOCHO_DATA["12"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "◆ライブ中継は、本会議開会から閉会までの全ての模様をご覧いただけます。",
+        "url": "https://smart.discussvision.net/smart/tenant/kashiwa/WebView/rd/council_1.html?referrer=http%3A%2F%2Fwww.city.kashiwa.lg.jp%2Fsoshiki%2F222000%2Fp052952.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -3052,7 +3103,10 @@ window.BOCHO_DATA["12"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "勝浦市議会では、本会議の映像をライブ中継及び録画映像にて配信公開しております。",
+        "url": "https://www.city.katsuura.lg.jp/site/gikai/11752.html"
+      },
       "live_scope": null,
       "not_official_record": null,
       "platforms": [],
@@ -3960,7 +4014,10 @@ window.BOCHO_DATA["12"] = [
         "policy": "law_only",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "鴨川市議会の本会議のライブ中継および録画映像は、これまで独自のシステムにより配信してきましたが、平成28年第4回定例会から、YouTube（ユーチューブ）のサイトを利用して、鴨川市議会チャンネルにて配信します。",
+        "url": "https://www.city.kamogawa.lg.jp/soshiki/30/281.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -4145,7 +4202,10 @@ window.BOCHO_DATA["12"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "市議会では、本会議の模様を生中継（ライブ）及び録画中継（オン・デマンド）により配信しています。ぜひご覧ください。",
+        "url": "https://www.city.kamagaya.chiba.jp/gikai/nternet_broadcast.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -4496,7 +4556,10 @@ window.BOCHO_DATA["12"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "富津市議会インターネット中継は、富津市議会の本会議のライブ中継と録画配信をおこなっています。",
+        "url": "https://www.futtsu-gikai.jp/g07_broadcasting.asp"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -4872,7 +4935,10 @@ window.BOCHO_DATA["12"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "本会議のライブ（生）中継及び録画中継は、上記によりご覧いただけます。",
+        "url": "https://www.city.yotsukaido.chiba.jp/shigikai/tyuukei/gikai_chukei.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -5042,7 +5108,10 @@ window.BOCHO_DATA["12"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "◆ライブ中継は、令和5年6月定例会より、本会議開会中にご覧頂けます。",
+        "url": "https://smart.discussvision.net/smart/tenant/sodegaura/WebView/rd/council_1.html?referrer=https%3A%2F%2Fwww.city.sodegaura.lg.jp%2F"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -5213,7 +5282,10 @@ window.BOCHO_DATA["12"] = [
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "本会議のライブ中継を視聴できます。",
+        "url": "https://www.kensakusystem.jp/yachimata-vod/index.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -5396,9 +5468,9 @@ window.BOCHO_DATA["12"] = [
     "reiki_system": "d1-opensearch",
     "reiki_url": "https://ops-jg.d1-law.com/opensearch/SrMjF01/init?jctcd=8A80073BC0",
     "streaming": {
-      "committee_live": true,
+      "committee_live": false,
       "committee_live_basis": {
-        "text": "令和8年各種委員会",
+        "text": "■ライブ中継は、本会議のみとなり、開会から閉会までの全ての模様をご覧いただけます。",
         "url": "https://smart.discussvision.net/smart/tenant/inzai/WebView/rd/council_1.html"
       },
       "committee_vod": true,
@@ -5407,7 +5479,10 @@ window.BOCHO_DATA["12"] = [
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "■印西市議会本会議の模様を、ライブ中継とオンデマンド（録画）でご覧いただけます。",
+        "url": "https://smart.discussvision.net/smart/tenant/inzai/WebView/rd/council_1.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -5577,7 +5652,10 @@ window.BOCHO_DATA["12"] = [
     "reiki_url": "https://www1.g-reiki.net/shiroi/reiki_taikei/taikei_default.html",
     "streaming": {
       "committee_live": true,
-      "committee_live_basis": null,
+      "committee_live_basis": {
+        "text": "生中継- 開催中の本会議・委員会をご覧になれます",
+        "url": "https://shiroi-city.stream.jfit.co.jp/"
+      },
       "committee_vod": false,
       "committee_vod_basis": {
         "text": "（録画は本会議のみとなります）",
@@ -5591,7 +5669,10 @@ window.BOCHO_DATA["12"] = [
         "policy": "prohibited",
         "target": "site"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "生中継- 開催中の本会議・委員会をご覧になれます",
+        "url": "https://shiroi-city.stream.jfit.co.jp/"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -5760,7 +5841,10 @@ window.BOCHO_DATA["12"] = [
         "policy": "law_only",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "議会中継は、インターネット映像配信サービスYouTube(ユーチューブ)を利用して、議場の生中継及び録画映像を配信するものです。議会中継の視聴に当たっては、次の視聴方法及び注意(免責)事項に同意の上、ご覧ください。",
+        "url": "https://www.city.tomisato.lg.jp/0000009828.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -5926,7 +6010,10 @@ window.BOCHO_DATA["12"] = [
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "第5条　映像配信の種類は、ライブ配信及び録画配信とする。",
+        "url": "https://www1.g-reiki.net/minamiboso/reiki_honbun/r361RG00001390.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [],
@@ -6265,8 +6352,8 @@ window.BOCHO_DATA["12"] = [
         "target": "video"
       },
       "live_basis": {
-        "text": "令和8年3月定例会",
-        "url": "https://smart.discussvision.net/smart/tenant/katori/WebView/rd/council_1.html"
+        "text": "平成31年1月21日開催の臨時会ライブ中継からスマホやタブレットでも視聴できるようになりました。",
+        "url": "https://www.city.katori.lg.jp/gikai/index.html"
       },
       "live_scope": null,
       "not_official_record": true,
@@ -6644,7 +6731,7 @@ window.BOCHO_DATA["12"] = [
       "live_scope": null,
       "not_official_record": true,
       "platforms": [],
-      "plenary_live": true,
+      "plenary_live": null,
       "plenary_vod": true,
       "reuse_basis": {
         "article": null,
@@ -6821,7 +6908,10 @@ window.BOCHO_DATA["12"] = [
         "policy": "law_only",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "YouTube（ユーチューブ）による議会本会議の生中継及び録画配信",
+        "url": "https://www.city.oamishirasato.lg.jp/0000009090.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -6997,7 +7087,7 @@ window.BOCHO_DATA["12"] = [
       "platforms": [
         "DiscussVision"
       ],
-      "plenary_live": true,
+      "plenary_live": null,
       "plenary_vod": true,
       "reuse_basis": {
         "article": null,
@@ -7505,7 +7595,10 @@ window.BOCHO_DATA["12"] = [
         "policy": "prohibited",
         "target": "site"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "生中継の日程については、議会日程をご覧ください。",
+        "url": "https://tako-town.stream.jfit.co.jp/"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -7681,7 +7774,7 @@ window.BOCHO_DATA["12"] = [
       "platforms": [
         "JFIT"
       ],
-      "plenary_live": true,
+      "plenary_live": null,
       "plenary_vod": true,
       "reuse_basis": {
         "article": null,
@@ -8334,7 +8427,10 @@ window.BOCHO_DATA["12"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "平成３０年６月定例会から、インターネットによるライブ中継及び録画中継の配信を開始しました。",
+        "url": "https://www.town.ichinomiya.chiba.jp/info/gikai/16.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -8509,7 +8605,10 @@ window.BOCHO_DATA["12"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "議会に傍聴に来ることができない方でも、議会開催日にはインターネットによりライブ中継（生中継）をご覧いただけるほか、おおむね７日後（土・日・祝日を除く）から録画放送もご覧いただけます。",
+        "url": "https://www.town.mutsuzawa.chiba.jp/kurashi/gikai/%e4%bb%a4%e5%92%8c%ef%bc%93%e5%b9%b4%ef%bc%99%e6%9c%88%e8%ad%b0%e4%bc%9a%e5%ae%9a%e4%be%8b%e4%bc%9a%e3%81%8b%e3%82%89%e3%82%a4%e3%83%b3%e3%82%bf%e3%83%bc%e3%83%8d%e3%83%83%e3%83%88%e6%98%a0%e5%83%8f.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -8866,7 +8965,10 @@ window.BOCHO_DATA["12"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "議会に傍聴に来ることができない方でも、議会開催日にはYouTube（ユーチューブ）によりライブ中継（生中継）をご覧いただけます。",
+        "url": "https://www.town.shirako.lg.jp/0000003598.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -9045,7 +9147,10 @@ window.BOCHO_DATA["12"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "令和８年第３回議会定例会（９月２４日）　長柄町議会インターネット中継（ライブ配信）",
+        "url": "https://www.youtube.com/live/U1EF7ppAPEk"
+      },
       "live_scope": null,
       "not_official_record": null,
       "platforms": [
@@ -9236,7 +9341,10 @@ window.BOCHO_DATA["12"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "※ライブ配信は、令和８年第１回定例会（令和8年2月27日開会）から、開始しました。",
+        "url": "https://www.town.chonan.chiba.jp/chousei/gikai/48897/"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -9756,7 +9864,10 @@ window.BOCHO_DATA["12"] = [
         "policy": "law_only",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "※録画配信は、利用サイトの特性上、ライブ配信終了後1日程度経ってから視聴可能となります。",
+        "url": "https://www.town.kyonan.chiba.jp/site/machigikai/1506.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [

@@ -1,4 +1,4 @@
-// 自動生成: tools/build_data.sh 13（2026-10-26）。直接編集しない。
+// 自動生成: tools/build_data.sh 13（2026-11-06）。直接編集しない。
 window.BOCHO_DATA = window.BOCHO_DATA || {};
 window.BOCHO_DATA["13"] = [
   {
@@ -2898,8 +2898,8 @@ window.BOCHO_DATA["13"] = [
       },
       "committee_live": true,
       "committee_live_basis": {
-        "text": "令和８年予算特別委員会",
-        "url": "https://smart.discussvision.net/smart/tenant/nakano/WebView/rd/council_1.html"
+        "text": "本会議、予算・決算特別委員会の",
+        "url": "https://kugikai-nakano.jp/dayori/290-2682081511.pdf"
       },
       "committee_vod": true,
       "download": {
@@ -2916,8 +2916,8 @@ window.BOCHO_DATA["13"] = [
         "press": null
       },
       "live_basis": {
-        "text": "令和８年第１回臨時会",
-        "url": "https://smart.discussvision.net/smart/tenant/nakano/WebView/rd/council_1.html"
+        "text": "様子をインターネットでライブ中継",
+        "url": "https://kugikai-nakano.jp/dayori/290-2682081511.pdf"
       },
       "live_scope": null,
       "not_official_record": null,
@@ -5014,7 +5014,7 @@ window.BOCHO_DATA["13"] = [
       "deadline_basis": null
     },
     "streaming": {
-      "committee_live": true,
+      "committee_live": null,
       "committee_live_basis": null,
       "committee_vod": true,
       "download": {
@@ -5601,7 +5601,10 @@ window.BOCHO_DATA["13"] = [
         "open": null,
         "press": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "★録画による放映は、ライブ中継終了後、準備が整い次第、ご覧になることができます。",
+        "url": "https://smart.discussvision.net/smart/tenant/ome/WebView/rd/council_1.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -6729,7 +6732,7 @@ window.BOCHO_DATA["13"] = [
       "platforms": [
         "DiscussVision"
       ],
-      "plenary_live": true,
+      "plenary_live": null,
       "plenary_vod": true,
       "reuse_basis": {
         "article": null,
@@ -7100,7 +7103,10 @@ window.BOCHO_DATA["13"] = [
     },
     "streaming": {
       "committee_live": true,
-      "committee_live_basis": null,
+      "committee_live_basis": {
+        "text": "市議会では、平成27年9月定例会初日（9月1日）から、すべての本会議及び委員会のライブ中継・録画配信を行っています。",
+        "url": "https://www.city.higashimurayama.tokyo.jp/gikai/gikaijoho/gikai_21_rokuga/index.html"
+      },
       "committee_vod": true,
       "download": {
         "basis": null,
@@ -7112,7 +7118,10 @@ window.BOCHO_DATA["13"] = [
         "open": null,
         "press": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "市議会では、平成27年9月定例会初日（9月1日）から、すべての本会議及び委員会のライブ中継・録画配信を行っています。",
+        "url": "https://www.city.higashimurayama.tokyo.jp/gikai/gikaijoho/gikai_21_rokuga/index.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -8100,8 +8109,8 @@ window.BOCHO_DATA["13"] = [
     "streaming": {
       "committee_live": true,
       "committee_live_basis": {
-        "text": "令和8年総務委員会",
-        "url": "https://smart.discussvision.net/smart/tenant/higashiyamato/WebView/rd/council_1.html"
+        "text": "※本会議、常任委員会、議会運営委員会につきましては、インターネット中継をご視聴いただけます。",
+        "url": "https://www.city.higashiyamato.lg.jp/shisei/gikai/1008119/1005414/1011821/1012599.html"
       },
       "committee_vod": true,
       "download": {
@@ -8117,7 +8126,10 @@ window.BOCHO_DATA["13"] = [
         "open": null,
         "press": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "※字幕が表示されるのは、会議当日のインターネット中継画面のみです。",
+        "url": "https://smart.discussvision.net/smart/tenant/higashiyamato/WebView/rd/council_1.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -8688,11 +8700,8 @@ window.BOCHO_DATA["13"] = [
       "deadline_basis": null
     },
     "streaming": {
-      "committee_live": true,
-      "committee_live_basis": {
-        "text": "令和8年予算特別委員会",
-        "url": "https://smart.discussvision.net/smart/tenant/musashimurayama/WebView/rd/council_1.html"
-      },
+      "committee_live": null,
+      "committee_live_basis": null,
       "committee_vod": true,
       "download": {
         "basis": null,
@@ -8704,16 +8713,13 @@ window.BOCHO_DATA["13"] = [
         "open": null,
         "press": null
       },
-      "live_basis": {
-        "text": "令和8年第1回定例会",
-        "url": "https://smart.discussvision.net/smart/tenant/musashimurayama/WebView/rd/council_1.html"
-      },
+      "live_basis": null,
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
         "DiscussVision"
       ],
-      "plenary_live": true,
+      "plenary_live": null,
       "plenary_vod": true,
       "reuse_basis": {},
       "reuse_policy": "none_stated",
@@ -11010,8 +11016,8 @@ window.BOCHO_DATA["13"] = [
         "press": null
       },
       "live_basis": {
-        "text": "令和8年第1回臨時会",
-        "url": "https://smart.discussvision.net/smart/tenant/niijima/WebView/rd/council_1.html"
+        "text": "当日見逃した方は︑新島村議",
+        "url": "https://www.niijima.com/gikai/gikaidayori/2023/files/06/gikai4.pdf"
       },
       "live_scope": null,
       "not_official_record": null,

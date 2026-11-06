@@ -1,4 +1,4 @@
-// 自動生成: tools/build_data.sh 04（2026-10-26）。直接編集しない。
+// 自動生成: tools/build_data.sh 04（2026-11-06）。直接編集しない。
 window.BOCHO_DATA = window.BOCHO_DATA || {};
 window.BOCHO_DATA["04"] = [
   {
@@ -122,7 +122,10 @@ window.BOCHO_DATA["04"] = [
         "policy": "law_only",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "生中継を見る",
+        "url": "https://miyagi-pref.stream.jfit.co.jp/"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -294,7 +297,10 @@ window.BOCHO_DATA["04"] = [
     "reiki_url": "https://kra600.legal-square.com/HAS-Shohin/page/SJSrbLogin.jsf",
     "streaming": {
       "committee_live": true,
-      "committee_live_basis": null,
+      "committee_live_basis": {
+        "text": "本会議及び予算・決算等審査特別委員会の開会中は、YouTube及びインターネット議会中継（ホームページ）で生中継をご覧いただけます。",
+        "url": "https://www.gikai.city.sendai.jp/council_guide/6.html"
+      },
       "committee_vod": true,
       "committee_vod_basis": {
         "text": "このチャンネルでは、仙台市議会の本会議や予算・決算等審査特別委員会の生中継および録画放映等を行います。",
@@ -313,7 +319,10 @@ window.BOCHO_DATA["04"] = [
         "open": null,
         "press": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "本会議及び予算・決算等審査特別委員会の開会中は、YouTube及びインターネット議会中継（ホームページ）で生中継をご覧いただけます。",
+        "url": "https://www.gikai.city.sendai.jp/council_guide/6.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -485,14 +494,20 @@ window.BOCHO_DATA["04"] = [
     "reiki_url": "https://ops-jg.d1-law.com/opensearch/SrMjF01/init?jctcd=8A7A20E9FC",
     "streaming": {
       "committee_live": true,
-      "committee_live_basis": null,
+      "committee_live_basis": {
+        "text": "本会議・委員会のライブ中継（生中継）はこちらから（外部サイトにリンクします）",
+        "url": "https://www.city.ishinomaki.lg.jp/cont/30101000/9000/20150925180519.html"
+      },
       "committee_vod": true,
       "download": {
         "policy": null,
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "本会議・委員会のライブ中継（生中継）はこちらから（外部サイトにリンクします）",
+        "url": "https://www.city.ishinomaki.lg.jp/cont/30101000/9000/20150925180519.html"
+      },
       "live_scope": null,
       "not_official_record": null,
       "platforms": [
@@ -653,7 +668,10 @@ window.BOCHO_DATA["04"] = [
     "reiki_url": "https://www.city.shiogama.miyagi.jp/html/reiki_int/reiki_taikei/taikei_default.html",
     "streaming": {
       "committee_live": true,
-      "committee_live_basis": null,
+      "committee_live_basis": {
+        "text": "予算委員会および決算委員会",
+        "url": "https://www.city.shiogama.miyagi.jp/soshiki/2/13989.html"
+      },
       "committee_vod": true,
       "download": {
         "basis": {
@@ -663,7 +681,10 @@ window.BOCHO_DATA["04"] = [
         "policy": "prohibited",
         "target": "site"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "市議会生中継放送および録画配信を行っています",
+        "url": "https://www.city.shiogama.miyagi.jp/soshiki/2/13989.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -1188,7 +1209,10 @@ window.BOCHO_DATA["04"] = [
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "ライブ中継：本会議、財務常任委員会、議員協議会",
+        "url": "https://www.city.natori.miyagi.jp/site/gikai/3564.html"
+      },
       "live_scope": null,
       "not_official_record": null,
       "platforms": [],
@@ -1357,7 +1381,10 @@ window.BOCHO_DATA["04"] = [
         "policy": "prohibited",
         "target": "site"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "生中継を見る",
+        "url": "https://kakuda-city.stream.jfit.co.jp/"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -1516,7 +1543,10 @@ window.BOCHO_DATA["04"] = [
     "reiki_url": "https://krc210.legal-square.com/HAS-Shohin/page/SJSrbLogin.jsf",
     "streaming": {
       "committee_live": true,
-      "committee_live_basis": null,
+      "committee_live_basis": {
+        "text": "多賀城市議会では、議会改革の一環として、市民が参画できる議会運営の実現に向けて、積極的な情報公開を推進するため、本会議および予算・決算特別委員会の様子をインターネットで中継しています。",
+        "url": "https://www.city.tagajo.miyagi.jp/gikai/shise/shigikai/chuke/chuke.html"
+      },
       "committee_vod": true,
       "committee_vod_basis": {
         "text": "予算特別委員会（令和8年9月30日）②",
@@ -1530,7 +1560,10 @@ window.BOCHO_DATA["04"] = [
         "policy": "law_only",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "多賀城市議会では、議会改革の一環として、市民が参画できる議会運営の実現に向けて、積極的な情報公開を推進するため、本会議および予算・決算特別委員会の様子をインターネットで中継しています。",
+        "url": "https://www.city.tagajo.miyagi.jp/gikai/shise/shigikai/chuke/chuke.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -1694,7 +1727,10 @@ window.BOCHO_DATA["04"] = [
         "policy": "prohibited",
         "target": "site"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "岩沼市議会では、平成30年12月定例会からインターネットによる本会議の映像配信（録画配信）を開始しました。 また、令和2年12月定例会から本会議の生中継を行っています。",
+        "url": "http://www.gikai-iwanuma.jp/eizou/m_eizou.htm"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -1878,7 +1914,10 @@ window.BOCHO_DATA["04"] = [
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "■ 本会議の生中継をご覧いただけます。",
+        "url": "https://tome-city.stream.jfit.co.jp/"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -2046,7 +2085,10 @@ window.BOCHO_DATA["04"] = [
     "reiki_url": "https://krr173.legal-square.com/HAS-Shohin/page/SJSrbLogin.jsf",
     "streaming": {
       "committee_live": true,
-      "committee_live_basis": null,
+      "committee_live_basis": {
+        "text": "中継の欄に「有」が付いている会議を、インターネット配信します。",
+        "url": "https://www.kuriharacity.jp/w032/010/010/020/008/20260908/PAGE000000000000014480.html"
+      },
       "committee_vod": true,
       "committee_vod_basis": {
         "text": "令和8年予算特別委員会（02月25日～03月06日）",
@@ -2061,8 +2103,8 @@ window.BOCHO_DATA["04"] = [
         "target": "video"
       },
       "live_basis": {
-        "text": "令和8年第1回臨時会（01月23日）",
-        "url": "https://smart.discussvision.net/smart/tenant/kurihara/WebView/rd/council_1.html"
+        "text": "なお、本会議はインターネット中継、市役所本庁舎1階玄関ホールおよび各総合支所でも視聴できます。",
+        "url": "https://www.kuriharacity.jp/w032/010/010/060/312.html"
       },
       "live_scope": null,
       "not_official_record": true,
@@ -2719,7 +2761,10 @@ window.BOCHO_DATA["04"] = [
         "policy": "law_only",
         "target": "site"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "ライブ配信の日程は、議会日程をご覧ください。",
+        "url": "https://zao-town.stream.jfit.co.jp/"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -3039,7 +3084,10 @@ window.BOCHO_DATA["04"] = [
         "policy": "prohibited",
         "target": "site"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "ライブ配信を見る",
+        "url": "https://ogawara-town.stream.jfit.co.jp/"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -3217,7 +3265,10 @@ window.BOCHO_DATA["04"] = [
         "policy": "prohibited",
         "target": "site"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "本会議の生中継（ライブ中継）がご覧いただけます。",
+        "url": "https://www.town.murata.miyagi.jp/cyosei/gikai/gikai_tyukei/index.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -3389,7 +3440,10 @@ window.BOCHO_DATA["04"] = [
         "policy": "law_only",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "視聴の際は、上記『柴田町議会本会議ライブ中継及び録画映像（外部リンク）』をクリックしてください。",
+        "url": "https://www.town.shibata.miyagi.jp/index.cfm/82,0,169,332,html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -3549,7 +3603,10 @@ window.BOCHO_DATA["04"] = [
         "policy": "prohibited",
         "target": "site"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "生中継の放送スケジュールは、議会日程をご覧ください。",
+        "url": "https://kawasaki-town-miyagi.stream.jfit.co.jp/"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -3712,7 +3769,10 @@ window.BOCHO_DATA["04"] = [
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "議会中継の視聴はこちら",
+        "url": "http://www.town.marumori.miyagi.jp/town/detail.php?content=954"
+      },
       "live_scope": null,
       "not_official_record": null,
       "platforms": [],
@@ -3869,7 +3929,10 @@ window.BOCHO_DATA["04"] = [
         "policy": "prohibited",
         "target": "site"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "ライブ配信を見る",
+        "url": "https://watari-town.stream.jfit.co.jp/"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -4027,7 +4090,10 @@ window.BOCHO_DATA["04"] = [
         "policy": "prohibited",
         "target": "site"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "ライブ配信の日程は、議会日程をご覧ください。",
+        "url": "https://yamamoto-town.stream.jfit.co.jp/"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -4711,7 +4777,10 @@ window.BOCHO_DATA["04"] = [
         "policy": "law_only",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "大和町議会では、住民の皆さまに議会での活動を広く知っていただけるよう本会議等の様子をインターネット上でライブ配信及び録画配信します。",
+        "url": "https://www.town.taiwa.miyagi.jp/choseijoho/gikai/gikai_joho/3/2829.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -4887,7 +4956,10 @@ window.BOCHO_DATA["04"] = [
         "policy": "law_only",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "大郷町議会では、議会での活動等を住民に幅広く知っていただくため、令和2年第1回（3月）定例会より本会議等の様子をインターネット上でライブ配信及び録画配信しております。",
+        "url": "https://www.town.miyagi-osato.lg.jp/site/oosato-gikai/gikai-tyukei-rokuga.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -5208,7 +5280,10 @@ window.BOCHO_DATA["04"] = [
     "reiki_url": "https://public1.legalcrud.com/shikama_town/reiki/",
     "streaming": {
       "committee_live": true,
-      "committee_live_basis": null,
+      "committee_live_basis": {
+        "text": "本町議会では、住民に開かれた議会を目指し、議会での議論の状況をより多くの方々に知っていただくために、本会議及び予算・決算特別委員会の模様を、平成22年12月定例会よりインターネットで配信します。",
+        "url": "https://www.town.shikama.miyagi.jp/chosei/gikai/1519.html"
+      },
       "committee_vod": true,
       "committee_vod_basis": {
         "text": "本町議会では、住民に開かれた議会を目指し、議会での議論の状況をより多くの方々に知っていただくために、本会議及び予算・決算特別委員会の模様を、平成22年12月定例会よりインターネットで配信します。",
@@ -5222,7 +5297,10 @@ window.BOCHO_DATA["04"] = [
         "policy": "prohibited",
         "target": "site"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "生中継の日程は、議会の日程をご覧ください。",
+        "url": "https://shikama-town.stream.jfit.co.jp/"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -5378,7 +5456,10 @@ window.BOCHO_DATA["04"] = [
         "policy": "prohibited",
         "target": "site"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "議会のライブ中継または過去の議会映像はこちらからご覧になれます",
+        "url": "https://www.town.kami.miyagi.jp/choseijoho/kamimachigikai/1555.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -5711,7 +5792,21 @@ window.BOCHO_DATA["04"] = [
     "reiki_url": "https://www1.g-reiki.net/town.misato.miyagi/reiki_taikei/taikei_default.html",
     "streaming": {
       "committee_live": true,
+      "committee_live_basis": {
+        "text": "第3条 ライブ中継及び録画配信を行う会議は、議場で行う会議及び特別委員会とし、開会から閉会までとする。ただし、秘密会は中継を行わないものとする。",
+        "url": "https://www1.g-reiki.net/town.misato.miyagi/reiki_honbun/r272RG00000761.html"
+      },
       "committee_vod": true,
+      "download": {
+        "policy": null,
+        "target": null,
+        "basis": null
+      },
+      "live_basis": {
+        "text": "第3条 ライブ中継及び録画配信を行う会議は、議場で行う会議及び特別委員会とし、開会から閉会までとする。ただし、秘密会は中継を行わないものとする。",
+        "url": "https://www1.g-reiki.net/town.misato.miyagi/reiki_honbun/r272RG00000761.html"
+      },
+      "live_scope": null,
       "not_official_record": true,
       "platforms": [
         "YouTube"
@@ -5723,18 +5818,10 @@ window.BOCHO_DATA["04"] = [
       "scope": "本会議と特別委員会",
       "url": "https://www.youtube.com/channel/UCdna4p87O0BxxBwLTLNfx8A",
       "vod_delay": "会議の日から5日後（土日を除く）",
-      "live_basis": null,
-      "committee_live_basis": null,
-      "plenary_vod_basis": null,
-      "committee_vod_basis": null,
-      "live_scope": null,
       "vod_period": null,
       "vod_period_basis": null,
-      "download": {
-        "policy": null,
-        "target": null,
-        "basis": null
-      },
+      "plenary_vod_basis": null,
+      "committee_vod_basis": null,
       "cable": null,
       "footage": null,
       "suspended": null
@@ -5875,7 +5962,10 @@ window.BOCHO_DATA["04"] = [
         "policy": "prohibited",
         "target": "site"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "生中継の日程は、議会日程をご覧ください。",
+        "url": "https://onagawa-town.stream.jfit.co.jp/"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -6044,7 +6134,10 @@ window.BOCHO_DATA["04"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "南三陸町議会中継システムでは、町議会のライブ中継や録画映像の配信を行っています。",
+        "url": "https://www.town.minamisanriku.miyagi.jp/gikai/about/722.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [

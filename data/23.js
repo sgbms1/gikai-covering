@@ -1,4 +1,4 @@
-// 自動生成: tools/build_data.sh 23（2026-10-26）。直接編集しない。
+// 自動生成: tools/build_data.sh 23（2026-11-06）。直接編集しない。
 window.BOCHO_DATA = window.BOCHO_DATA || {};
 window.BOCHO_DATA["23"] = [
   {
@@ -274,14 +274,20 @@ window.BOCHO_DATA["23"] = [
     "reiki_url": "https://kri502.legal-square.com/HAS-Shohin/page/SJSrbLogin.jsf",
     "streaming": {
       "committee_live": true,
-      "committee_live_basis": null,
+      "committee_live_basis": {
+        "text": "本会議・委員会の生中継をご覧いただくことができます。",
+        "url": "https://nagoya.gijiroku.com/index.asp"
+      },
       "committee_vod": true,
       "download": {
         "policy": null,
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "本会議・委員会の生中継をご覧いただくことができます。",
+        "url": "https://nagoya.gijiroku.com/index.asp"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -462,7 +468,10 @@ window.BOCHO_DATA["23"] = [
     "reiki_url": "https://kri503.legal-square.com/HAS-Shohin/page/SJSrbLogin.jsf",
     "streaming": {
       "committee_live": true,
-      "committee_live_basis": null,
+      "committee_live_basis": {
+        "text": "豊橋市議会では、YouTubeを利用して、平成29年9月から、総務、環境経済、福祉教育、建設消防委員会といった常任委員会や、予算特別委員会、決算特別委員会などの特別委員会について、インターネット映像のライブ中継・録画中継配信を行います。",
+        "url": "https://www.city.toyohashi.lg.jp/32323.htm"
+      },
       "committee_vod": true,
       "download": {
         "basis": {
@@ -472,7 +481,10 @@ window.BOCHO_DATA["23"] = [
         "policy": "prohibited",
         "target": "site"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "生中継を視聴",
+        "url": "https://toyohashi-city.stream.jfit.co.jp/"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -650,7 +662,10 @@ window.BOCHO_DATA["23"] = [
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "内容／本会議開催時間に配信します。（本会議の全日程）",
+        "url": "https://www.city.okazaki.lg.jp/shigikai/haishin/1012149.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -822,7 +837,10 @@ window.BOCHO_DATA["23"] = [
     "reiki_url": "https://www2.city.ichinomiya.aichi.jp/reiki/reiki_taikei/taikei_default.html",
     "streaming": {
       "committee_live": true,
-      "committee_live_basis": null,
+      "committee_live_basis": {
+        "text": "生中継（本会議・常任委員会）",
+        "url": "https://www.city.ichinomiya.aichi.jp/shigikai/1010237/1005110.html"
+      },
       "committee_vod": null,
       "committee_vod_basis": null,
       "download": {
@@ -833,7 +851,10 @@ window.BOCHO_DATA["23"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "生中継（本会議・常任委員会）",
+        "url": "https://www.city.ichinomiya.aichi.jp/shigikai/1010237/1005110.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -1397,7 +1418,10 @@ window.BOCHO_DATA["23"] = [
         "policy": "law_only",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "YouTube(ユーチューブ)社のサービス内容の変更によって、ライブ中継が実施できなくなる、録画中継が削除される等、予告なく議会中継の実施内容を変更することがあります。",
+        "url": "https://www.city.kasugai.lg.jp/shisei/shigikai/1029484/index.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -1580,7 +1604,10 @@ window.BOCHO_DATA["23"] = [
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "注記：ライブ中継映像は、会議の当日にご覧になれます。録画映像は、会議終了後、おおむね1週間後に配信します。",
+        "url": "https://www.city.toyokawa.lg.jp/soshiki/gikaijimukyoku/giji/1/4/1/terekai-jokyo/r7/25275.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -2308,7 +2335,10 @@ window.BOCHO_DATA["23"] = [
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "●本日のライブ映像（定例会期間中のみ、 当日の映像をご覧いただけます）",
+        "url": "https://toyota-shigikai.jp/movie.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -2488,7 +2518,10 @@ window.BOCHO_DATA["23"] = [
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "インターネットライブ中継の実施（一般質問のみ）",
+        "url": "https://anjo-shigikai.jp/know/ict.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -2661,7 +2694,10 @@ window.BOCHO_DATA["23"] = [
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "令和３年６月定例会からライブ配信を開始しましたので、ぜひご視聴ください。",
+        "url": "https://smart.discussvision.net/smart/tenant/nishio/WebView/rd/council.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -2836,7 +2872,10 @@ window.BOCHO_DATA["23"] = [
     "reiki_url": "https://www1.g-reiki.net/gamagori/reiki_taikei/taikei_default.html",
     "streaming": {
       "committee_live": true,
-      "committee_live_basis": null,
+      "committee_live_basis": {
+        "text": "蒲郡市議会ではこれまでYouTube（平成29年６月以前はUstream）を利用した本会議のライブ中継を実施してきましたが、令和３年12月定例会から常任委員会のライブ中継を、令和6年3月予算審査特別委員会から特別委員会のライブ中継を実施します。どうぞご覧ください。",
+        "url": "https://www.city.gamagori.lg.jp/site/gikai/live.html"
+      },
       "committee_vod": true,
       "download": {
         "basis": {
@@ -2846,7 +2885,10 @@ window.BOCHO_DATA["23"] = [
         "policy": "law_only",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "蒲郡市議会ではこれまでYouTube（平成29年６月以前はUstream）を利用した本会議のライブ中継を実施してきましたが、令和３年12月定例会から常任委員会のライブ中継を、令和6年3月予算審査特別委員会から特別委員会のライブ中継を実施します。どうぞご覧ください。",
+        "url": "https://www.city.gamagori.lg.jp/site/gikai/live.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -3396,7 +3438,10 @@ window.BOCHO_DATA["23"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "8月28日、9月2日、3日、4日、8日、18日は本会議が開かれる予定です。ライブ中継がおこなわれます。",
+        "url": "https://smart.discussvision.net/smart/tenant/konan/WebView/rd/council_1.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -3751,7 +3796,10 @@ window.BOCHO_DATA["23"] = [
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "・本会議の映像をYouTubeにてライブ配信しています。",
+        "url": "https://www.city.inazawa.aichi.jp/0000004879.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -3943,7 +3991,10 @@ window.BOCHO_DATA["23"] = [
         "policy": "law_only",
         "target": "site"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "録画映像は、生中継終了後、作業が完了次第配信を開始します。",
+        "url": "https://shinshiro-city.stream.jfit.co.jp/"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -4661,7 +4712,10 @@ window.BOCHO_DATA["23"] = [
         "station": "キャッチネットワーク"
       },
       "committee_live": true,
-      "committee_live_basis": null,
+      "committee_live_basis": {
+        "text": "知立市議会は本会議及び常任委員会のライブ中継および録画映像をYoutube（ユーチューブ））「知立市議会公式チャンネル」にて配信しています。",
+        "url": "https://www.city.chiryu.aichi.jp/gikai/news/18476.html"
+      },
       "committee_vod": true,
       "committee_vod_basis": {
         "text": "知立市議会は本会議及び常任委員会のライブ中継および録画映像をYoutube（ユーチューブ））「知立市議会公式チャンネル」にて配信しています。",
@@ -4675,7 +4729,10 @@ window.BOCHO_DATA["23"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "知立市議会は本会議及び常任委員会のライブ中継および録画映像をYoutube（ユーチューブ））「知立市議会公式チャンネル」にて配信しています。",
+        "url": "https://www.city.chiryu.aichi.jp/gikai/news/18476.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -4843,7 +4900,10 @@ window.BOCHO_DATA["23"] = [
     "reiki_url": "https://www1.g-reiki.net/owariasahi.city/reiki_taikei/taikei_default.html",
     "streaming": {
       "committee_live": true,
-      "committee_live_basis": null,
+      "committee_live_basis": {
+        "text": "YouTube(ユーチューブ)社のサービス内容の変更によって、ライブ中継が実施できなくなる、録画中継が削除される等、予告なく委員会中継の実施内容を変更することがあります。",
+        "url": "https://www.city.owariasahi.lg.jp/site/gikai/3461.html"
+      },
       "committee_vod": true,
       "download": {
         "basis": {
@@ -4853,7 +4913,10 @@ window.BOCHO_DATA["23"] = [
         "policy": "law_only",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "本会議中継（ライブ・録画）",
+        "url": "https://www.city.owariasahi.lg.jp/site/gikai/3461.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -5041,7 +5104,10 @@ window.BOCHO_DATA["23"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "本会議（定例会）及び臨時会の開会時に会議の模様が生中継されます。",
+        "url": "https://www.city.takahama.lg.jp/site/gikai/1549.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -5605,14 +5671,20 @@ window.BOCHO_DATA["23"] = [
     "reiki_url": "http://www.city.nisshin.lg.jp/section/reiki_int/reiki_menu.html",
     "streaming": {
       "committee_live": true,
-      "committee_live_basis": null,
+      "committee_live_basis": {
+        "text": "本会議、常任委員会及びその他会議での審議等を生中継及び録画中継の映像でご覧いただくことができます。なお、アクセスが集中した場合やご使用になる端末の環境及びインターネット回線状況によっては、議会中継の映像をご覧いただけないことがありますので、あらかじめご了承ください。",
+        "url": "https://www.city.nisshin.lg.jp/department/gikai/giji/4/4895.html"
+      },
       "committee_vod": true,
       "download": {
         "policy": null,
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "本会議、常任委員会及びその他会議での審議等を生中継及び録画中継の映像でご覧いただくことができます。なお、アクセスが集中した場合やご使用になる端末の環境及びインターネット回線状況によっては、議会中継の映像をご覧いただけないことがありますので、あらかじめご了承ください。",
+        "url": "https://www.city.nisshin.lg.jp/department/gikai/giji/4/4895.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -5806,7 +5878,10 @@ window.BOCHO_DATA["23"] = [
         "policy": "prohibited",
         "target": "site"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "※インターネットによる生中継で放送します。また、インターネットによる録画中継も行います。",
+        "url": "https://www2.city.tahara.aichi.jp/gikai/katsudou/5/index.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -6527,7 +6602,7 @@ window.BOCHO_DATA["23"] = [
         "CATV",
         "YouTube"
       ],
-      "plenary_live": true,
+      "plenary_live": null,
       "plenary_vod": true,
       "reuse_basis": null,
       "reuse_policy": null,
@@ -6703,7 +6778,10 @@ window.BOCHO_DATA["23"] = [
         "policy": "prohibited",
         "target": "site"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "生中継を見る",
+        "url": "https://miyoshi-city.stream.jfit.co.jp/"
+      },
       "live_scope": "一般質問のみ",
       "not_official_record": true,
       "platforms": [
@@ -7052,7 +7130,10 @@ window.BOCHO_DATA["23"] = [
     "reiki_url": "https://www1.g-reiki.net/nagakute/reiki_taikei/taikei_default.html",
     "streaming": {
       "committee_live": true,
-      "committee_live_basis": null,
+      "committee_live_basis": {
+        "text": "本会議や委員会のライブ中継を視聴できます。",
+        "url": "http://www.kensakusystem.jp/nagakute-vod/index.html"
+      },
       "committee_vod": true,
       "download": {
         "basis": {
@@ -7062,7 +7143,10 @@ window.BOCHO_DATA["23"] = [
         "policy": "law_only",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "本会議や委員会のライブ中継を視聴できます。",
+        "url": "http://www.kensakusystem.jp/nagakute-vod/index.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -7386,7 +7470,10 @@ window.BOCHO_DATA["23"] = [
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "本会議のライブ中継と録画中継が視聴できます。",
+        "url": "https://www.town.toyoyama.lg.jp/chosei/gikai/1005088.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [

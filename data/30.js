@@ -1,4 +1,4 @@
-// 自動生成: tools/build_data.sh 30（2026-10-25）。直接編集しない。
+// 自動生成: tools/build_data.sh 30（2026-11-06）。直接編集しない。
 window.BOCHO_DATA = window.BOCHO_DATA || {};
 window.BOCHO_DATA["30"] = [
   {
@@ -92,7 +92,10 @@ window.BOCHO_DATA["30"] = [
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "令和２年2月定例会から、和歌山県議会ライブ中継および録画中継（ＶＯＤ）において手話通訳付き動画の配信をはじめました。 （詳しくはこちらをご覧ください。）",
+        "url": "https://gikai.congress-streamsp.jp/WakayamPref/"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -268,11 +271,8 @@ window.BOCHO_DATA["30"] = [
     "reiki_system": "reiki-base",
     "reiki_url": "https://krt800.legal-square.com/HAS-Shohin/page/SJSrbLogin.jsf",
     "streaming": {
-      "committee_live": true,
-      "committee_live_basis": {
-        "text": "総務委員会",
-        "url": "https://smart.discussvision.net/smart/tenant/wakayama/WebView/rd/council_1.html"
-      },
+      "committee_live": null,
+      "committee_live_basis": null,
       "committee_vod": true,
       "committee_vod_basis": {
         "text": "総務委員会",
@@ -286,7 +286,10 @@ window.BOCHO_DATA["30"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "議会ライブ配信・録画配信・その他動画",
+        "url": "https://www.city.wakayama.wakayama.jp/gikai/1000434/index.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -462,7 +465,10 @@ window.BOCHO_DATA["30"] = [
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "海南市議会の本会議・委員会の生中継または録画映像がご覧いただけます。",
+        "url": "https://www.city.kainan.lg.jp/kakubusho/gikaijimukyoku/gikaichukeiyoutube/index.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -1272,7 +1278,10 @@ window.BOCHO_DATA["30"] = [
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "定例会及び臨時会開催時におけるライブ映像をご覧いただけます。",
+        "url": "https://www.city.shingu.lg.jp/info/6"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -1959,7 +1968,10 @@ window.BOCHO_DATA["30"] = [
         "policy": "law_only",
         "target": "site"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "議会中継はYouTube（ユーチューブ）を利用し、生中継と録画中継を用い、映像及び音声の配信を行います。",
+        "url": "https://www.town.katsuragi.wakayama.jp/gikai/gikaiyoutube/index.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -3628,7 +3640,10 @@ window.BOCHO_DATA["30"] = [
         "policy": "law_only",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "みなべ町議会和歌山県 のライブ配信 ／ 470 ／ 1 か月前 に配信済み",
+        "url": "https://www.youtube.com/@%E3%81%BF%E3%81%AA%E3%81%B9%E7%94%BA%E8%AD%B0%E4%BC%9A%E5%92%8C%E6%AD%8C%E5%B1%B1%E7%9C%8C/streams"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -4543,7 +4558,7 @@ window.BOCHO_DATA["30"] = [
     "pref": "和歌山県",
     "name": "太地町議会",
     "kind": "町",
-    "checked_on": "2026-10-25",
+    "checked_on": "2026-11-06",
     "reiki_system": "none",
     "reiki_url": null,
     "guide_url": "https://www.town.taiji.wakayama.jp/gikai/gikai.html",
@@ -4656,7 +4671,7 @@ window.BOCHO_DATA["30"] = [
     "pref": "和歌山県",
     "name": "古座川町議会",
     "kind": "町",
-    "checked_on": "2026-10-25",
+    "checked_on": "2026-11-06",
     "reiki_system": "none",
     "reiki_url": null,
     "guide_url": "https://www.town.kozagawa.lg.jp/kurashi/sub006.html",
@@ -4769,7 +4784,7 @@ window.BOCHO_DATA["30"] = [
     "pref": "和歌山県",
     "name": "北山村議会",
     "kind": "村",
-    "checked_on": "2026-10-25",
+    "checked_on": "2026-11-06",
     "reiki_system": "none",
     "reiki_url": null,
     "guide_url": null,

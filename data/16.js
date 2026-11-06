@@ -1,4 +1,4 @@
-// 自動生成: tools/build_data.sh 16（2026-10-25）。直接編集しない。
+// 自動生成: tools/build_data.sh 16（2026-11-06）。直接編集しない。
 window.BOCHO_DATA = window.BOCHO_DATA || {};
 window.BOCHO_DATA["16"] = [
   {
@@ -115,14 +115,20 @@ window.BOCHO_DATA["16"] = [
         "station": "富山県内のケーブルテレビ全局"
       },
       "committee_live": true,
-      "committee_live_basis": null,
+      "committee_live_basis": {
+        "text": "本会議・予算特別委員会の生中継をご覧いただけます。",
+        "url": "https://toyama-pref.stream.jfit.co.jp/"
+      },
       "committee_vod": true,
       "download": {
         "policy": null,
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "本会議・予算特別委員会の生中継をご覧いただけます。",
+        "url": "https://toyama-pref.stream.jfit.co.jp/"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -1520,14 +1526,20 @@ window.BOCHO_DATA["16"] = [
     "reiki_url": "https://www1.g-reiki.net/city.oyabe.toyama/reiki_taikei/taikei_default.html",
     "streaming": {
       "committee_live": true,
-      "committee_live_basis": null,
+      "committee_live_basis": {
+        "text": "市議会では、本会議及び予算特別委員会を、YouTube（ユーチューブ）でライブ配信と録画配信を行っています。",
+        "url": "https://www.city.oyabe.toyama.jp/shigikai/1003372/1001609.html"
+      },
       "committee_vod": true,
       "download": {
         "policy": null,
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "市議会では、本会議及び予算特別委員会を、YouTube（ユーチューブ）でライブ配信と録画配信を行っています。",
+        "url": "https://www.city.oyabe.toyama.jp/shigikai/1003372/1001609.html"
+      },
       "live_scope": null,
       "not_official_record": null,
       "platforms": [
@@ -1885,14 +1897,20 @@ window.BOCHO_DATA["16"] = [
     "reiki_url": "https://www1.g-reiki.net/imizu/reiki_taikei/taikei_default.html",
     "streaming": {
       "committee_live": true,
-      "committee_live_basis": null,
+      "committee_live_basis": {
+        "text": "議会の開会中は、本会議及び予算特別委員会の模様を生中継しています。",
+        "url": "https://www.city.imizu.toyama.jp/guide/svGuideDtl.aspx?servno=15402"
+      },
       "committee_vod": true,
       "download": {
         "policy": null,
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "議会の開会中は、本会議及び予算特別委員会の模様を生中継しています。",
+        "url": "https://www.city.imizu.toyama.jp/guide/svGuideDtl.aspx?servno=15402"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -2589,7 +2607,10 @@ window.BOCHO_DATA["16"] = [
         "policy": "law_only",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "入善町議会では映像配信サービスのYoutubeを利用して本会議の生中継を行っています。議会のインターネット生中継については、下記のリンク先から視聴いただけます。",
+        "url": "https://www.town.nyuzen.toyama.jp/gyosei/chosei/gikai/2413.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -2759,7 +2780,10 @@ window.BOCHO_DATA["16"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "朝日町議会では映像配信サービスのYouTube Liveを利用して本会議の生中継を行っており、",
+        "url": "https://www.town.asahi.toyama.jp/chosei/gyosei/gikai/1504741604152.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [

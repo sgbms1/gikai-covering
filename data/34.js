@@ -1,4 +1,4 @@
-// 自動生成: tools/build_data.sh 34（2026-10-24）。直接編集しない。
+// 自動生成: tools/build_data.sh 34（2026-11-06）。直接編集しない。
 window.BOCHO_DATA = window.BOCHO_DATA || {};
 window.BOCHO_DATA["34"] = [
   {
@@ -94,14 +94,20 @@ window.BOCHO_DATA["34"] = [
     "reiki_url": "https://ops-jg.d1-law.com/opensearch/SrMjF01/init?jctcd=8A8B97723A",
     "streaming": {
       "committee_live": true,
-      "committee_live_basis": null,
+      "committee_live_basis": {
+        "text": "本会議・委員会等の審議状況をＹｏｕｔｕｂｅにより、ライブ及び録画中継しています。",
+        "url": "https://www.pref.hiroshima.lg.jp/site/gikai/chukei.html"
+      },
       "committee_vod": true,
       "download": {
         "policy": null,
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "本会議・委員会等の審議状況をＹｏｕｔｕｂｅにより、ライブ及び録画中継しています。",
+        "url": "https://www.pref.hiroshima.lg.jp/site/gikai/chukei.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -274,7 +280,10 @@ window.BOCHO_DATA["34"] = [
         "station": "CATV（11ch）"
       },
       "committee_live": true,
-      "committee_live_basis": null,
+      "committee_live_basis": {
+        "text": "本サイトでは、本会議、予算特別委員会、決算特別委員会（全体会議）等の生中継及び録画配信と、常任委員会、その他特別委員会の録音配信を行っています。",
+        "url": "https://hiroshima.gijiroku.com/help_broadcasting.asp"
+      },
       "committee_vod": true,
       "download": {
         "basis": {
@@ -284,7 +293,10 @@ window.BOCHO_DATA["34"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "本サイトでは、本会議、予算特別委員会、決算特別委員会（全体会議）等の生中継及び録画配信と、常任委員会、その他特別委員会の録音配信を行っています。",
+        "url": "https://hiroshima.gijiroku.com/help_broadcasting.asp"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -476,7 +488,10 @@ window.BOCHO_DATA["34"] = [
         "policy": "law_only",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "本会議等のライブ中継を視聴できます。",
+        "url": "http://www.kensakusystem.jp/kure-vod/index.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -673,7 +688,7 @@ window.BOCHO_DATA["34"] = [
         "CATV",
         "YouTube"
       ],
-      "plenary_live": true,
+      "plenary_live": null,
       "plenary_vod": true,
       "reuse_basis": {
         "article": null,
@@ -1220,7 +1235,10 @@ window.BOCHO_DATA["34"] = [
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "生中継を見る",
+        "url": "https://fukuyama-city.stream.jfit.co.jp/"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -1599,7 +1617,10 @@ window.BOCHO_DATA["34"] = [
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "生中継を見る",
+        "url": "https://miyoshi-city-hiroshima.stream.jfit.co.jp/"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -1772,7 +1793,10 @@ window.BOCHO_DATA["34"] = [
         "policy": "law_only",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "本会議の様子(生中継)を下記の2つの方法で視聴することができます。配信した映像は、録画番組としてYouTubeへ保存されています。",
+        "url": "https://www.city.shobara.hiroshima.jp/gikai/gikairelay/index.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -1958,7 +1982,10 @@ window.BOCHO_DATA["34"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "1．「大竹市議会-YouTube」をクリックすると、YouTube（ユーチューブ）社の管理する画面へ進みます。大竹市議会が生中継を配信している時は、生中継をご覧いただけます。",
+        "url": "https://www.city.otake.hiroshima.jp/soshiki/shigikai/gikaijimu/chuukei/8635.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -2154,7 +2181,10 @@ window.BOCHO_DATA["34"] = [
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "市議会の本会議ライブ中継をインターネットでご覧いただけるようになりました",
+        "url": "http://www.city.higashihiroshima.lg.jp/shgikai/5/2/index.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -2317,7 +2347,10 @@ window.BOCHO_DATA["34"] = [
         "policy": "law_only",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "本会議のライブ中継を視聴できます。",
+        "url": "http://www.kensakusystem.jp/hatsukaichi-vod/index.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -2486,7 +2519,10 @@ window.BOCHO_DATA["34"] = [
     "reiki_url": "https://www1.g-reiki.net/akitakata/reiki_taikei/taikei_default.html",
     "streaming": {
       "committee_live": true,
-      "committee_live_basis": null,
+      "committee_live_basis": {
+        "text": "安芸高田市議会では、市民に開かれた議会を目指し、YouTubeの映像配信サービスを利用して、市議会（定例会・臨時会・総務文教常任委員会・産業厚生常任委員会・予算決算常任委員会・特別委員会（議会広報特別委員会を除く））における会議の様子をインターネット中継しています。",
+        "url": "https://www.akitakata.jp/ja/parliament/gikai_chuukei/v336p174q997e737z/"
+      },
       "committee_vod": true,
       "committee_vod_basis": {
         "text": "令和8年第3回定例会 予算決算常任委員会（9月8日）安芸高田市議会",
@@ -2500,7 +2536,10 @@ window.BOCHO_DATA["34"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "安芸高田市議会では、市民に開かれた議会を目指し、YouTubeの映像配信サービスを利用して、市議会（定例会・臨時会・総務文教常任委員会・産業厚生常任委員会・予算決算常任委員会・特別委員会（議会広報特別委員会を除く））における会議の様子をインターネット中継しています。",
+        "url": "https://www.akitakata.jp/ja/parliament/gikai_chuukei/v336p174q997e737z/"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -2831,7 +2870,10 @@ window.BOCHO_DATA["34"] = [
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "次のバナー「町議会インターネット中継（YouTubeへの外部リンク）」をクリックすると、ライブ（生）中継中は開催中の議会の様子をご覧になれます。",
+        "url": "https://www.town.fuchu.hiroshima.jp/site/assembly/34609.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -3005,7 +3047,10 @@ window.BOCHO_DATA["34"] = [
         "policy": "prohibited",
         "target": "site"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "次のリンク先から、本会議の生中継や過去の本会議の映像をご覧いただけます。",
+        "url": "https://www.town.kaita.lg.jp/site/gikai/126289.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -3844,7 +3889,10 @@ window.BOCHO_DATA["34"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "大崎上島町議会では、本会議の映像をライブ中継及び録画映像にて公開しております。",
+        "url": "https://www.town.osakikamijima.hiroshima.jp/machizukuri/chogikai/recorded/8214.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -4012,7 +4060,10 @@ window.BOCHO_DATA["34"] = [
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "世羅町議会インターネットライブ中継開始のお知らせ",
+        "url": "https://www.town.sera.hiroshima.jp/site/gikai/16962.html"
+      },
       "live_scope": null,
       "not_official_record": null,
       "platforms": [

@@ -1,4 +1,4 @@
-// 自動生成: tools/build_data.sh 14（2026-10-25）。直接編集しない。
+// 自動生成: tools/build_data.sh 14（2026-11-06）。直接編集しない。
 window.BOCHO_DATA = window.BOCHO_DATA || {};
 window.BOCHO_DATA["14"] = [
   {
@@ -750,8 +750,8 @@ window.BOCHO_DATA["14"] = [
     "streaming": {
       "committee_live": true,
       "committee_live_basis": {
-        "text": "総務委員会",
-        "url": "https://smart.discussvision.net/smart/tenant/sagamihara/WebView/rd/council_1.html"
+        "text": "を含む、原則全ての委員会を生中継及び録画放映している。",
+        "url": "https://www.sagamihara-shigikai.jp/doc/2024082200026/file_contents/2024-02.pdf"
       },
       "committee_vod": true,
       "committee_vod_basis": {
@@ -5390,7 +5390,7 @@ window.BOCHO_DATA["14"] = [
     "reiki_system": "g-reiki",
     "reiki_url": "https://www1.g-reiki.net/town.kaisei.kanagawa/reiki_menu.html",
     "streaming": {
-      "committee_live": true,
+      "committee_live": null,
       "committee_live_basis": null,
       "committee_vod": true,
       "download": {
@@ -5403,7 +5403,10 @@ window.BOCHO_DATA["14"] = [
         "open": null,
         "press": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "開成町議会の本会議のライブ映像をご覧いただけます。",
+        "url": "https://www.kensakusystem.jp/kaisei-vod/live/index.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [],

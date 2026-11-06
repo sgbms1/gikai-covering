@@ -1,4 +1,4 @@
-// 自動生成: tools/build_data.sh 17（2026-10-24）。直接編集しない。
+// 自動生成: tools/build_data.sh 17（2026-11-06）。直接編集しない。
 window.BOCHO_DATA = window.BOCHO_DATA || {};
 window.BOCHO_DATA["17"] = [
   {
@@ -105,14 +105,20 @@ window.BOCHO_DATA["17"] = [
     "reiki_url": "https://www1.g-reiki.net/ishikawa/reiki_taikei/taikei_default.html",
     "streaming": {
       "committee_live": true,
-      "committee_live_basis": null,
+      "committee_live_basis": {
+        "text": "石川県議会の本会議・予算委員会の映像を生中継でご覧いただけます。",
+        "url": "https://pref-ishikawa.gijiroku.com/voices/g07_broadcasting.asp"
+      },
       "committee_vod": true,
       "download": {
         "policy": null,
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "石川県議会の本会議・予算委員会の映像を生中継でご覧いただけます。",
+        "url": "https://pref-ishikawa.gijiroku.com/voices/g07_broadcasting.asp"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -305,7 +311,10 @@ window.BOCHO_DATA["17"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "本会議映像の生配信と録画配信を行っています。",
+        "url": "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gikaijimukyokugijichosaka/gyomuannai/1/7/7792.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -498,7 +507,10 @@ window.BOCHO_DATA["17"] = [
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "令和8年度七尾市議会定例会10月会議（10月14日） ／ 178 ／ 6 日前 に配信済み",
+        "url": "https://www.youtube.com/channel/UCfL-NKE3Nvmv4hQVkckbH4Q/streams"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -683,7 +695,10 @@ window.BOCHO_DATA["17"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "生中継（YouTube（ユーチューブ）による配信）",
+        "url": "https://www.city.komatsu.lg.jp/citycouncil/3082.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -871,7 +886,10 @@ window.BOCHO_DATA["17"] = [
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "下記URLより本会議のライブ中継や過去の本会議の模様をご視聴いただけます。",
+        "url": "https://www.city.wajima.ishikawa.jp/docs/2013040100065/"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -1053,7 +1071,10 @@ window.BOCHO_DATA["17"] = [
         "policy": "law_only",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "令和8年第8回珠洲市議会9月定例会 閉会 9月30日 ／ 167 ／ 2 週間前 に配信済み",
+        "url": "https://www.youtube.com/channel/UCvNt9i0rFwJDgyhPdnpgLag/streams"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -1212,7 +1233,10 @@ window.BOCHO_DATA["17"] = [
     "reiki_url": "https://www1.g-reiki.net/kaga/reiki_taikei/taikei_default.html",
     "streaming": {
       "committee_live": true,
-      "committee_live_basis": null,
+      "committee_live_basis": {
+        "text": "加賀市議会議会活性化特別委員会（R8.10.9） ／ 209 ／ 11 日前 に配信済み",
+        "url": "https://www.youtube.com/channel/UCtRm_TmFaD_OAu3BHZTETOQ/streams"
+      },
       "committee_vod": true,
       "committee_vod_basis": {
         "text": "加賀市議会議会活性化特別委員会（R8.10.9）",
@@ -1226,7 +1250,10 @@ window.BOCHO_DATA["17"] = [
         "policy": "prohibited",
         "target": "site"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "加賀市議会本会議（R8.9.25②） ／ 113 ／ 3 週間前 に配信済み",
+        "url": "https://www.youtube.com/channel/UCtRm_TmFaD_OAu3BHZTETOQ/streams"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -1399,7 +1426,10 @@ window.BOCHO_DATA["17"] = [
     "reiki_url": "https://en3-jg.d1-law.com/hakui/d1w_reiki/reiki.html",
     "streaming": {
       "committee_live": true,
-      "committee_live_basis": null,
+      "committee_live_basis": {
+        "text": "本会議・常任委員会の会議開催中は、議会の様子をライブ配信しています。",
+        "url": "https://www.city.hakui.lg.jp/gikai_live/index.html"
+      },
       "committee_vod": true,
       "download": {
         "basis": {
@@ -1409,7 +1439,10 @@ window.BOCHO_DATA["17"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "本会議・常任委員会の会議開催中は、議会の様子をライブ配信しています。",
+        "url": "https://www.city.hakui.lg.jp/gikai_live/index.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -1601,7 +1634,7 @@ window.BOCHO_DATA["17"] = [
         "CATV",
         "独自"
       ],
-      "plenary_live": true,
+      "plenary_live": null,
       "plenary_vod": true,
       "reuse_basis": {
         "article": null,
@@ -1967,7 +2000,10 @@ window.BOCHO_DATA["17"] = [
         "station": "小松ケーブルテレビ「のみチャンネル」"
       },
       "committee_live": true,
-      "committee_live_basis": null,
+      "committee_live_basis": {
+        "text": "予算決算常任委員会（令和8年9月10日）",
+        "url": "https://www.youtube.com/watch?v=ATgGVk3Tyxo"
+      },
       "committee_vod": true,
       "download": {
         "basis": {
@@ -1977,7 +2013,10 @@ window.BOCHO_DATA["17"] = [
         "policy": "prohibited",
         "target": "site"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "議会のライブ中継及びアーカイブ映像を視聴する手順は以下のとおりです。",
+        "url": "https://www.city.nomi.ishikawa.jp/docs/2976.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -2158,7 +2197,7 @@ window.BOCHO_DATA["17"] = [
       "platforms": [
         "YouTube"
       ],
-      "plenary_live": true,
+      "plenary_live": null,
       "plenary_vod": true,
       "reuse_basis": {
         "article": null,
@@ -2508,7 +2547,10 @@ window.BOCHO_DATA["17"] = [
         "policy": "law_only",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "町議会では、本会議をYou Tubeでライブ中継と録画配信を行っています。",
+        "url": "https://www.town.tsubata.lg.jp/page/1731.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -3022,7 +3064,10 @@ window.BOCHO_DATA["17"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "令和8年　第３回宝達志水町議会定例会 再開 ／ 305 ／ 1 か月前 に配信済み",
+        "url": "https://www.youtube.com/channel/UCIYc16qNI8GoSq-P4FwV-zg/streams"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -3205,7 +3250,10 @@ window.BOCHO_DATA["17"] = [
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "定例会議生中継・過去映像はYouTubeでご覧ください",
+        "url": "https://www.town.nakanoto.ishikawa.jp/parliament/11/3579.html"
+      },
       "live_scope": null,
       "not_official_record": null,
       "platforms": [

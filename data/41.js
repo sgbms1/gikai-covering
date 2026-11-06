@@ -1,4 +1,4 @@
-// 自動生成: tools/build_data.sh 41（2026-10-25）。直接編集しない。
+// 自動生成: tools/build_data.sh 41（2026-11-06）。直接編集しない。
 window.BOCHO_DATA = window.BOCHO_DATA || {};
 window.BOCHO_DATA["41"] = [
   {
@@ -299,7 +299,10 @@ window.BOCHO_DATA["41"] = [
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "佐賀市議会では、平成20（2008）年6月定例会から、本会議のライブ配信とオンデマンド（録画）配信を行っています。",
+        "url": "https://www.city.saga.lg.jp/shisei/shigikai/2/index.html"
+      },
       "live_scope": null,
       "not_official_record": null,
       "platforms": [],
@@ -650,7 +653,10 @@ window.BOCHO_DATA["41"] = [
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "本会議の生中継をご覧いただけます。",
+        "url": "https://tosu-city.stream.jfit.co.jp/"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -1372,7 +1378,10 @@ window.BOCHO_DATA["41"] = [
         "policy": "law_only",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "鹿島市議会９月定例会（閉会）１０月５日 ／ 112 ／ 2 週間前 に配信済み",
+        "url": "https://www.youtube.com/channel/UC8EwfTTIOYZdMmgZDRvc45w/streams"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [

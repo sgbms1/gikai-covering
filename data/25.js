@@ -1,4 +1,4 @@
-// 自動生成: tools/build_data.sh 25（2026-10-24）。直接編集しない。
+// 自動生成: tools/build_data.sh 25（2026-11-06）。直接編集しない。
 window.BOCHO_DATA = window.BOCHO_DATA || {};
 window.BOCHO_DATA["25"] = [
   {
@@ -83,7 +83,10 @@ window.BOCHO_DATA["25"] = [
     "reiki_url": "https://www.pref.shiga.lg.jp/site/jourei/reiki_int/reiki_taikei/taikei_default.html",
     "streaming": {
       "committee_live": true,
-      "committee_live_basis": null,
+      "committee_live_basis": {
+        "text": "議場中継は、本会議の初日・代表質問・一般質問・最終日、予算特別委員会の全体質疑において行います。",
+        "url": "https://www.shigaken-gikai.jp/g07_broadcasting.asp"
+      },
       "committee_vod": true,
       "committee_vod_basis": {
         "text": "令和8年予算特別委員会",
@@ -97,7 +100,10 @@ window.BOCHO_DATA["25"] = [
         "policy": "law_only",
         "target": "site"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "滋賀県議会インターネット中継は、滋賀県議会の本会議のライブ(生)中継と録画放映をおこなっております。",
+        "url": "https://www.shigaken-gikai.jp/help_broadcasting.asp"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -429,7 +435,10 @@ window.BOCHO_DATA["25"] = [
     "reiki_url": "https://www.city.hikone.lg.jp/section/reiki_int/",
     "streaming": {
       "committee_live": true,
-      "committee_live_basis": null,
+      "committee_live_basis": {
+        "text": "委員会については、令和3年6月定例会からライブ配信のみ視聴いただけます。",
+        "url": "https://hikone-city.stream.jfit.co.jp/"
+      },
       "committee_vod": false,
       "committee_vod_basis": {
         "text": "委員会については、令和3年6月定例会からライブ配信のみ視聴いただけます。",
@@ -443,7 +452,10 @@ window.BOCHO_DATA["25"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "本会議については、ライブ配信・録画配信どちらも視聴いただけます。",
+        "url": "https://hikone-city.stream.jfit.co.jp/"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -615,7 +627,10 @@ window.BOCHO_DATA["25"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "長浜市議会インターネット中継は、本会議を動画により中継します。",
+        "url": "https://nagahama.gijiroku.com/help_broadcasting.asp"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -796,7 +811,10 @@ window.BOCHO_DATA["25"] = [
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "9.市議会本会議の生中継および録画放送について",
+        "url": "https://www.city.omihachiman.lg.jp/gyosei/shigikai/12284.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -977,7 +995,10 @@ window.BOCHO_DATA["25"] = [
         "policy": "law_only",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "本会議等のライブ中継を視聴できます。",
+        "url": "http://www.kensakusystem.jp/kusatsu-vod/"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -1522,7 +1543,10 @@ window.BOCHO_DATA["25"] = [
         "policy": "law_only",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "本会議等のライブ中継を視聴できます。",
+        "url": "http://gikai.city.koka.lg.jp/"
+      },
       "live_scope": "本会議・常任委員会",
       "not_official_record": null,
       "platforms": [
@@ -1916,7 +1940,10 @@ window.BOCHO_DATA["25"] = [
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "■ 本会議の生中継をご覧いただけます。",
+        "url": "https://konan-city.stream.jfit.co.jp/"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -2078,7 +2105,10 @@ window.BOCHO_DATA["25"] = [
     "reiki_url": "https://www.city.takashima.lg.jp/section/reiki_int/reiki_taikei/taikei_default.html",
     "streaming": {
       "committee_live": true,
-      "committee_live_basis": null,
+      "committee_live_basis": {
+        "text": "第4条 ライブ中継を行う会議は、本会議および予算常任委員会ならびに決算特別委員会とする。ただし、秘密会は中継映像の配信を行わない。",
+        "url": "https://www.city.takashima.lg.jp/section/reiki_int/reiki_honbun/r152RG00002128.html"
+      },
       "committee_vod": null,
       "committee_vod_basis": null,
       "download": {
@@ -2089,7 +2119,10 @@ window.BOCHO_DATA["25"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "議会の模様を、インターネットでライブ中継および録画配信しています。",
+        "url": "https://www.city.takashima.lg.jp/gyoseijoho/webshigikai/4/4412.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -2273,7 +2306,10 @@ window.BOCHO_DATA["25"] = [
         "policy": "prohibited",
         "target": "site"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "録画中継は、概ね生中継終了後５日程度（土・日・祝日を除く）でご覧になれます。",
+        "url": "https://higashiomi-city.stream.jfit.co.jp/"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -2635,7 +2671,10 @@ window.BOCHO_DATA["25"] = [
         "policy": "prohibited",
         "target": "site"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "ライブ中継の日程は、議会日程をご覧ください。",
+        "url": "https://hino-town.stream.jfit.co.jp/"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -2821,7 +2860,10 @@ window.BOCHO_DATA["25"] = [
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "本会議(定例会および臨時会)の音声を、動画配信ソフトYouTube(ユーチューブ)を利用し生配信および録音配信しています。",
+        "url": "https://www.town.ryuoh.shiga.jp/parliament/onsei_haishin/onsei_haishin.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -2994,7 +3036,10 @@ window.BOCHO_DATA["25"] = [
         "policy": "prohibited",
         "target": "site"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "愛荘町議会本会議（定例会・臨時会）の生中継と録画中継をしています。",
+        "url": "https://www.town.aisho.shiga.jp/chosei/chogikai/1334.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [

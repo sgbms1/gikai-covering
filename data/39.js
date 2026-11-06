@@ -1,4 +1,4 @@
-// 自動生成: tools/build_data.sh 39（2026-10-24）。直接編集しない。
+// 自動生成: tools/build_data.sh 39（2026-11-06）。直接編集しない。
 window.BOCHO_DATA = window.BOCHO_DATA || {};
 window.BOCHO_DATA["39"] = [
   {
@@ -127,7 +127,10 @@ window.BOCHO_DATA["39"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "本会議のライブ中継を視聴できます。",
+        "url": "https://www.kensakusystem.jp/kochi-vod/index.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -306,7 +309,10 @@ window.BOCHO_DATA["39"] = [
         "station": "高知ケーブルテレビ"
       },
       "committee_live": true,
-      "committee_live_basis": null,
+      "committee_live_basis": {
+        "text": "会期中は，本会議および予算決算常任委員会全体会の模様を生中継で配信します。また，過去1年間分の本会議および予算決算常任委員会全体会の模様を録画配信でご覧いただけます。　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　※最新の会議の録画配信については，ライブ配信を行った日の翌日から概ね2週間後をめどに配信を行っています。",
+        "url": "https://www.city.kochi.kochi.jp/soshiki/97/rokugatyukei.html"
+      },
       "committee_vod": true,
       "download": {
         "policy": null,
@@ -321,7 +327,10 @@ window.BOCHO_DATA["39"] = [
         "open": null,
         "press": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "会期中は，本会議および予算決算常任委員会全体会の模様を生中継で配信します。また，過去1年間分の本会議および予算決算常任委員会全体会の模様を録画配信でご覧いただけます。　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　※最新の会議の録画配信については，ライブ配信を行った日の翌日から概ね2週間後をめどに配信を行っています。",
+        "url": "https://www.city.kochi.kochi.jp/soshiki/97/rokugatyukei.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -664,7 +673,10 @@ window.BOCHO_DATA["39"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "本会議の模様を生（ライブ）中継と録画中継でご覧いただけます。",
+        "url": "https://www.city.aki.kochi.jp/life/dtl.php?hdnKey=3911"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -837,7 +849,10 @@ window.BOCHO_DATA["39"] = [
         "policy": "law_only",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "・下記の「南国市議会中継」（YouTube）をクリックすると、ライブ中継時はYouTubeウェブサイト上で自動的に中継が配信されます。また、ライブ中継を配信していないときは、録画中継を視聴することができます。",
+        "url": "https://www.city.nankoku.lg.jp/life/life_dtl.php?hdnKey=4855"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -1657,7 +1672,10 @@ window.BOCHO_DATA["39"] = [
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "「議会中継」の「YouTube」をクリックすると、生中継時はウェブサイト上で自動的に中継が配信されます。",
+        "url": "https://city.shimanto.gsl-service.net/home_doc/2017081000025/"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -1975,11 +1993,8 @@ window.BOCHO_DATA["39"] = [
     "reiki_system": "g-reiki",
     "reiki_url": "https://www1.g-reiki.net/kami/reiki_taikei/taikei_default.html",
     "streaming": {
-      "committee_live": true,
-      "committee_live_basis": {
-        "text": "総務常任委員会",
-        "url": "https://smart.discussvision.net/smart/tenant/kami/WebView/rd/council_1.html"
-      },
+      "committee_live": null,
+      "committee_live_basis": null,
       "committee_vod": true,
       "committee_vod_basis": {
         "text": "総務常任委員会",
@@ -1991,8 +2006,8 @@ window.BOCHO_DATA["39"] = [
         "basis": null
       },
       "live_basis": {
-        "text": "令和8年香美市議会定例会1月開会会議",
-        "url": "https://smart.discussvision.net/smart/tenant/kami/WebView/rd/council_1.html"
+        "text": "ていますけど、ライブ中継もしていますので、ちょっと可能なところだけ金額を言って",
+        "url": "https://www.city.kami.lg.jp/uploaded/attachment/51802.pdf"
       },
       "live_scope": null,
       "not_official_record": true,
@@ -3619,7 +3634,7 @@ window.BOCHO_DATA["39"] = [
     "pref": "高知県",
     "name": "大川村議会",
     "kind": "村",
-    "checked_on": "2026-10-24",
+    "checked_on": "2026-11-06",
     "reiki_system": "none",
     "reiki_url": null,
     "guide_url": null,
@@ -4157,7 +4172,7 @@ window.BOCHO_DATA["39"] = [
         "basis": null
       },
       "live_basis": {
-        "text": "令和8年第1回臨時会",
+        "text": "本日は、ライブ中継の予定はありません。",
         "url": "https://smart.discussvision.net/smart/tenant/nakatosa/WebView/rd/council_1.html"
       },
       "live_scope": null,

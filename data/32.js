@@ -1,4 +1,4 @@
-// 自動生成: tools/build_data.sh 32（2026-10-25）。直接編集しない。
+// 自動生成: tools/build_data.sh 32（2026-11-06）。直接編集しない。
 window.BOCHO_DATA = window.BOCHO_DATA || {};
 window.BOCHO_DATA["32"] = [
   {
@@ -307,7 +307,10 @@ window.BOCHO_DATA["32"] = [
         "policy": "prohibited",
         "target": "site"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "なお、本会議一般質問の模様はケーブルテレビで生中継、YouTubeで生配信していますので、ぜひご覧ください。",
+        "url": "https://www.city.matsue.lg.jp/soshikikarasagasu/gikaijimukyoku_gijichosaka/matsueshigikai/5/1376.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -847,7 +850,7 @@ window.BOCHO_DATA["32"] = [
         "CATV",
         "独自"
       ],
-      "plenary_live": true,
+      "plenary_live": null,
       "plenary_vod": true,
       "reuse_basis": null,
       "reuse_policy": null,
@@ -1181,7 +1184,10 @@ window.BOCHO_DATA["32"] = [
         "policy": "law_only",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "安来市議会定例会議の模様をライブ映像または録画映像として視聴いただけます。６月定例会議 一般質問を配信します。６月３日（水）（一般質問１日目）、６月４日（木）（一般質問２日目）　※９月定例会議 一般質問までの公開となります。",
+        "url": "https://www.youtube.com/playlist?list=PLwBIdUjguueYFqzd2TFOAZ9US0OO3KJVk"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -2715,7 +2721,7 @@ window.BOCHO_DATA["32"] = [
     "pref": "島根県",
     "name": "海士町議会",
     "kind": "町",
-    "checked_on": "2026-10-25",
+    "checked_on": "2026-11-06",
     "reiki_system": "g-reiki",
     "reiki_url": "https://www.town.ama.shimane.jp/reiki_int/reiki_menu.html",
     "guide_url": null,
@@ -2980,7 +2986,7 @@ window.BOCHO_DATA["32"] = [
     "pref": "島根県",
     "name": "知夫村議会",
     "kind": "村",
-    "checked_on": "2026-10-25",
+    "checked_on": "2026-11-06",
     "reiki_system": "none",
     "reiki_url": null,
     "guide_url": null,

@@ -1,4 +1,4 @@
-// 自動生成: tools/build_data.sh 19（2026-10-24）。直接編集しない。
+// 自動生成: tools/build_data.sh 19（2026-11-06）。直接編集しない。
 window.BOCHO_DATA = window.BOCHO_DATA || {};
 window.BOCHO_DATA["19"] = [
   {
@@ -106,7 +106,10 @@ window.BOCHO_DATA["19"] = [
         "policy": "law_only",
         "target": "site"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "生中継を見る",
+        "url": "https://yamanashi-pref.stream.jfit.co.jp/"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -317,7 +320,10 @@ window.BOCHO_DATA["19"] = [
         "policy": "prohibited",
         "target": "site"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "生中継本会議の生中継をご覧いただけます。",
+        "url": "https://kofu-city.stream.jfit.co.jp/"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -1579,13 +1585,16 @@ window.BOCHO_DATA["19"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "次に、北杜市議会定例会等においては、当日の議会インターネット中継等は実施しておりません。",
+        "url": "https://www.city.hokuto.yamanashi.jp/docs/29014.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
         "DiscussVision"
       ],
-      "plenary_live": true,
+      "plenary_live": false,
       "plenary_vod": true,
       "plenary_vod_basis": {
         "text": "令和8年第1回定例会",
@@ -1753,7 +1762,10 @@ window.BOCHO_DATA["19"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "ライブ中継・録画映像はこちらをクリック",
+        "url": "https://www.kai-shigikai.jp/doc/2017051800051/"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [

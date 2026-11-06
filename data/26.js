@@ -1,4 +1,4 @@
-// 自動生成: tools/build_data.sh 26（2026-10-25）。直接編集しない。
+// 自動生成: tools/build_data.sh 26（2026-11-06）。直接編集しない。
 window.BOCHO_DATA = window.BOCHO_DATA || {};
 window.BOCHO_DATA["26"] = [
   {
@@ -85,7 +85,10 @@ window.BOCHO_DATA["26"] = [
     "reiki_url": "https://www.pref.kyoto.jp/reiki/reiki_menu.html",
     "streaming": {
       "committee_live": true,
-      "committee_live_basis": null,
+      "committee_live_basis": {
+        "text": "本会議・委員会のライブ中継をご覧いただけます。",
+        "url": "https://gikai.congress-streamsp.jp/KyotoPrefGikai/"
+      },
       "committee_vod": true,
       "download": {
         "basis": {
@@ -95,7 +98,10 @@ window.BOCHO_DATA["26"] = [
         "policy": "law_only",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "本会議・委員会のライブ中継をご覧いただけます。",
+        "url": "https://gikai.congress-streamsp.jp/KyotoPrefGikai/"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -610,7 +616,10 @@ window.BOCHO_DATA["26"] = [
     "reiki_url": "https://www.city.maizuru.kyoto.jp/html/reiki_int/reiki_taikei/taikei_default.html",
     "streaming": {
       "committee_live": true,
-      "committee_live_basis": null,
+      "committee_live_basis": {
+        "text": "舞鶴市議会では、本会議及び委員会の様子をリアルタイムでご覧いただけるようライブ映像のインターネット配信を行っています。",
+        "url": "https://www.city.maizuru.kyoto.jp/sigikai/0000001322.html"
+      },
       "committee_vod": true,
       "download": {
         "basis": {
@@ -620,7 +629,10 @@ window.BOCHO_DATA["26"] = [
         "policy": "law_only",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "舞鶴市議会では、本会議及び委員会の様子をリアルタイムでご覧いただけるようライブ映像のインターネット配信を行っています。",
+        "url": "https://www.city.maizuru.kyoto.jp/sigikai/0000001322.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -797,7 +809,10 @@ window.BOCHO_DATA["26"] = [
         "policy": "law_only",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "本会議等のライブ中継を視聴できます。",
+        "url": "http://www.kensakusystem.jp/ayabe-vod/index.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -985,7 +1000,10 @@ window.BOCHO_DATA["26"] = [
     "reiki_url": "http://reiki-web.city.uji.kyoto.jp/reiki/reiki_taikei/taikei_default.html",
     "streaming": {
       "committee_live": true,
-      "committee_live_basis": null,
+      "committee_live_basis": {
+        "text": "これまで録画配信を行っていた一般質問に加え、本会議での議案審議や各委員会の中継も実施しています。",
+        "url": "https://www.city.uji.kyoto.jp/soshiki/2/5122.html"
+      },
       "committee_vod": true,
       "download": {
         "basis": {
@@ -995,7 +1013,10 @@ window.BOCHO_DATA["26"] = [
         "policy": "law_only",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "宇治市議会では、市民の皆さんにとって、市議会がこれまで以上に身近なものとなるよう、平成27年3月定例会よりインターネット上で生中継配信を開始しました。",
+        "url": "https://www.city.uji.kyoto.jp/soshiki/2/5122.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -1680,7 +1701,10 @@ window.BOCHO_DATA["26"] = [
     "reiki_url": "https://www.city.muko.kyoto.jp/section/reiki_int/reiki_taikei/taikei_default.html",
     "streaming": {
       "committee_live": true,
-      "committee_live_basis": null,
+      "committee_live_basis": {
+        "text": "なお特別委員会についてはライブ配信のみで、録画配信は行いません。",
+        "url": "https://www.city.muko.kyoto.jp/site/shigikai/2346.html"
+      },
       "committee_vod": true,
       "download": {
         "basis": {
@@ -1690,7 +1714,10 @@ window.BOCHO_DATA["26"] = [
         "policy": "law_only",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "ライブ配信（YouTube配信）",
+        "url": "https://www.city.muko.kyoto.jp/site/shigikai/2346.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -1861,7 +1888,10 @@ window.BOCHO_DATA["26"] = [
     "reiki_url": "https://www.city.nagaokakyo.lg.jp/html/reiki/reiki_taikei/taikei_default.html",
     "streaming": {
       "committee_live": true,
-      "committee_live_basis": null,
+      "committee_live_basis": {
+        "text": "平成25年9月定例会以降の本会議、令和5年12月定例会以降の委員会のライブ中継・動画配信がご覧いただけます。",
+        "url": "https://www.city.nagaokakyo.lg.jp/0000003308.html"
+      },
       "committee_vod": true,
       "download": {
         "basis": {
@@ -1871,7 +1901,10 @@ window.BOCHO_DATA["26"] = [
         "policy": "law_only",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "平成25年9月定例会以降の本会議、令和5年12月定例会以降の委員会のライブ中継・動画配信がご覧いただけます。",
+        "url": "https://www.city.nagaokakyo.lg.jp/0000003308.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -2248,14 +2281,20 @@ window.BOCHO_DATA["26"] = [
     "reiki_url": "https://www.city.kyotanabe.lg.jp/reiki/reiki_taikei/taikei_default.html",
     "streaming": {
       "committee_live": true,
-      "committee_live_basis": null,
+      "committee_live_basis": {
+        "text": "(2) 常任委員会",
+        "url": "https://www.city.kyotanabe.lg.jp/reiki/reiki_honbun/k113RG00001733.html"
+      },
       "committee_vod": true,
       "download": {
         "policy": null,
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "第3条 中継の対象となる会議は、次に掲げる会議とする。ただし、地方自治法(昭和22年法律第67号)第115条第1項の規定により秘密会とされた本会議及び京田辺市議会委員会条例(平成8年京田辺市条例第53号)第19条の規定により秘密会とされた委員会の場合は、この限りでない。",
+        "url": "https://www.city.kyotanabe.lg.jp/reiki/reiki_honbun/k113RG00001733.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -2597,7 +2636,10 @@ window.BOCHO_DATA["26"] = [
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "市議会本会議のライブ中継および録画配信をご覧いただけます（別サーバーへ移動します）。",
+        "url": "https://www.city.nantan.kyoto.jp/www/gove/144/001/000/index_9392.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -2768,7 +2810,10 @@ window.BOCHO_DATA["26"] = [
         "policy": "law_only",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "■議会の生中継をご覧いただけます。",
+        "url": "https://kizugawa-city.stream.jfit.co.jp/"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [

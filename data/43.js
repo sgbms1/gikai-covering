@@ -1,4 +1,4 @@
-// 自動生成: tools/build_data.sh 43（2026-10-25）。直接編集しない。
+// 自動生成: tools/build_data.sh 43（2026-11-06）。直接編集しない。
 window.BOCHO_DATA = window.BOCHO_DATA || {};
 window.BOCHO_DATA["43"] = [
   {
@@ -104,7 +104,10 @@ window.BOCHO_DATA["43"] = [
     "reiki_url": "https://www1.g-reiki.net/pref.kumamoto/reiki_taikei/taikei_default.html",
     "streaming": {
       "committee_live": true,
-      "committee_live_basis": null,
+      "committee_live_basis": {
+        "text": "■ 本会議及び委員会の生中継をご覧いただけます。",
+        "url": "https://kumamoto-pref.stream.jfit.co.jp/"
+      },
       "committee_vod": true,
       "committee_vod_basis": {
         "text": "令和8年4月閉会中常任委員会",
@@ -115,7 +118,10 @@ window.BOCHO_DATA["43"] = [
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "■ 本会議及び委員会の生中継をご覧いただけます。",
+        "url": "https://kumamoto-pref.stream.jfit.co.jp/"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -287,7 +293,10 @@ window.BOCHO_DATA["43"] = [
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "■ 本会議の生中継をご覧いただけます。",
+        "url": "http://www.kumamoto-city.stream.jfit.co.jp/"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -448,7 +457,10 @@ window.BOCHO_DATA["43"] = [
     "reiki_url": "https://www.city.yatsushiro.lg.jp/reiki/reiki_taikei/taikei_default.html",
     "streaming": {
       "committee_live": true,
-      "committee_live_basis": null,
+      "committee_live_basis": {
+        "text": "20260616　北園 武広君、橋本 貴喜君、村川 清則君に対する懲罰特別委員会 ／ 1411 ／ 4 か月前 に配信済み",
+        "url": "https://www.youtube.com/channel/UCPBSA-tlDfzUc3Sk6HqH6Cw/streams"
+      },
       "committee_vod": true,
       "committee_vod_basis": {
         "text": "この委員会中継（映像及び音声）は、八代市議会の正式な記録ではありません。",
@@ -459,7 +471,10 @@ window.BOCHO_DATA["43"] = [
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "・本会議同様、生中継や録画中継も行っております。",
+        "url": "https://www.city.yatsushiro.lg.jp/gikai/kiji00320193/index.html"
+      },
       "live_scope": null,
       "not_official_record": null,
       "platforms": [
@@ -819,7 +834,10 @@ window.BOCHO_DATA["43"] = [
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "本会議のネット中継および録画配信について",
+        "url": "https://www.city.arao.lg.jp/shisei/senkyo-gikai-kansa/gikai/gikai-chukei/"
+      },
       "live_scope": null,
       "not_official_record": null,
       "platforms": [],
@@ -994,7 +1012,10 @@ window.BOCHO_DATA["43"] = [
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "水俣市議会では、動画共有サービスYouTube（ユーチューブ）を利用して、本会議のインターネット中継及び録画配信を行っています。",
+        "url": "https://www.city.minamata.lg.jp/gikai/kiji0033603/index.html"
+      },
       "live_scope": null,
       "not_official_record": null,
       "platforms": [
@@ -1640,7 +1661,10 @@ window.BOCHO_DATA["43"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "宇土市議会では、定例会・臨時会での本会議の様子をインターネット上（外部サイト：YouTube）で生中継しています。",
+        "url": "https://www.city.uto.lg.jp/article/view/1316/12767.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -1814,7 +1838,10 @@ window.BOCHO_DATA["43"] = [
         "policy": "law_only",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "本市議会では、YouTubeのサイトを利用して、本会議の生中継及び録画中継を開始します。なお、ご覧になる際は下記の注意(免責)事項をご確認ください。",
+        "url": "https://www.city.kamiamakusa.kumamoto.jp/q/aview/455/6057.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -2147,7 +2174,10 @@ window.BOCHO_DATA["43"] = [
         "policy": "prohibited",
         "target": "site"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "令和8年第4回 阿蘇市議会定例会 一般質問 (9月16日水曜日)",
+        "url": "https://www.youtube.com/watch?v=Ou7To3sD_D4"
+      },
       "live_scope": null,
       "not_official_record": null,
       "platforms": [],
@@ -2320,7 +2350,10 @@ window.BOCHO_DATA["43"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "本会議の生中継をご覧いただけます",
+        "url": "https://amakusa-city.stream.jfit.co.jp/"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -2480,8 +2513,8 @@ window.BOCHO_DATA["43"] = [
         "basis": null
       },
       "live_basis": {
-        "text": "令和8年第1回臨時会",
-        "url": "https://smart.discussvision.net/smart/tenant/koshi/WebView/rd/council_1.html"
+        "text": "本会議中の生中継や録画をインターネットで配信していますので、ぜひご覧ください。",
+        "url": "https://www.city.koshi.lg.jp/gikai/kiji00325740/index.html"
       },
       "live_scope": null,
       "not_official_record": true,
@@ -2957,7 +2990,10 @@ window.BOCHO_DATA["43"] = [
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "令和8年 第７回 南関町議会定例会　９月11日金曜日 ／ 557 ／ 1 か月前 に配信済み",
+        "url": "https://www.youtube.com/channel/UCOY7tFuMjKBkFOOEbqWPt-w/streams"
+      },
       "live_scope": null,
       "not_official_record": null,
       "platforms": [

@@ -1,4 +1,4 @@
-// 自動生成: tools/build_data.sh 36（2026-10-24）。直接編集しない。
+// 自動生成: tools/build_data.sh 36（2026-11-06）。直接編集しない。
 window.BOCHO_DATA = window.BOCHO_DATA || {};
 window.BOCHO_DATA["36"] = [
   {
@@ -444,8 +444,8 @@ window.BOCHO_DATA["36"] = [
     "streaming": {
       "committee_live": true,
       "committee_live_basis": {
-        "text": "予算決算委員会",
-        "url": "https://smart.discussvision.net/smart/tenant/naruto/WebView/rd/council_1.html"
+        "text": "本会議と委員会の模様は、インターネット中継と録画配信でご覧いただけます。",
+        "url": "https://www.city.naruto.lg.jp/gikai/docs/2025122500052/file_contents/2025122500052__files_00541657_gikaidayori_125.pdf"
       },
       "committee_vod": true,
       "committee_vod_basis": {
@@ -458,8 +458,8 @@ window.BOCHO_DATA["36"] = [
         "basis": null
       },
       "live_basis": {
-        "text": "令和８年第１回臨時会",
-        "url": "https://smart.discussvision.net/smart/tenant/naruto/WebView/rd/council_1.html"
+        "text": "議会映像配信（Live映像・録画映像）はこちらからご覧ください。",
+        "url": "https://www.city.naruto.lg.jp/gikai/"
       },
       "live_scope": null,
       "not_official_record": true,
@@ -883,7 +883,7 @@ window.BOCHO_DATA["36"] = [
     "pref": "徳島県",
     "name": "吉野川市議会",
     "kind": "市",
-    "checked_on": "2026-10-24",
+    "checked_on": "2026-11-06",
     "reiki_system": "other",
     "reiki_url": "https://www.city.yoshinogawa.lg.jp/category/bunya/gyosei/jorei/more@docs_1.html",
     "guide_url": null,

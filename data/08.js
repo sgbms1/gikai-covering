@@ -1,4 +1,4 @@
-// 自動生成: tools/build_data.sh 08（2026-10-26）。直接編集しない。
+// 自動生成: tools/build_data.sh 08（2026-11-06）。直接編集しない。
 window.BOCHO_DATA = window.BOCHO_DATA || {};
 window.BOCHO_DATA["08"] = [
   {
@@ -110,7 +110,10 @@ window.BOCHO_DATA["08"] = [
         "policy": "law_only",
         "target": "site"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "生中継を見る",
+        "url": "https://ibaraki-pref.stream.jfit.co.jp/"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -278,10 +281,10 @@ window.BOCHO_DATA["08"] = [
     "reiki_system": "reiki-base",
     "reiki_url": "https://kre002.legal-square.com/HAS-Shohin/page/SJSrbLogin.jsf",
     "streaming": {
-      "committee_live": true,
+      "committee_live": false,
       "committee_live_basis": {
-        "text": "令和8年総務環境委員会",
-        "url": "https://smart.discussvision.net/smart/tenant/mito/WebView/rd/council_1.html"
+        "text": "なお、本会議及び常任委員会は、インターネットで動画配信（本会議は生中継・録画配信，常任委員会は録画配信のみ）を行っております。",
+        "url": "https://www.city.mito.lg.jp/site/gikai/5575.html"
       },
       "committee_vod": true,
       "committee_vod_basis": {
@@ -297,8 +300,8 @@ window.BOCHO_DATA["08"] = [
         "target": "video"
       },
       "live_basis": {
-        "text": "令和8年第1回臨時会",
-        "url": "https://smart.discussvision.net/smart/tenant/mito/WebView/rd/council_1.html"
+        "text": "なお、本会議及び常任委員会は、インターネットで動画配信（本会議は生中継・録画配信，常任委員会は録画配信のみ）を行っております。",
+        "url": "https://www.city.mito.lg.jp/site/gikai/5575.html"
       },
       "live_scope": null,
       "not_official_record": true,
@@ -836,8 +839,8 @@ window.BOCHO_DATA["08"] = [
     "streaming": {
       "committee_live": true,
       "committee_live_basis": {
-        "text": "令和８年各種委員会",
-        "url": "https://smart.discussvision.net/smart/tenant/koga/WebView/rd/council_1.html"
+        "text": "古河市議会では、市民に身近で開かれた議会を目指し、市議会の様子を広く市民の皆さまに知っていただくため、インターネット中継（生中継、録画中継）を行っています。",
+        "url": "https://www.city.ibaraki-koga.lg.jp/soshiki/shigikaijimukyoku/teireirinji/1344.html"
       },
       "committee_vod": true,
       "committee_vod_basis": {
@@ -852,7 +855,10 @@ window.BOCHO_DATA["08"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "古河市議会では、市民に身近で開かれた議会を目指し、市議会の様子を広く市民の皆さまに知っていただくため、インターネット中継（生中継、録画中継）を行っています。",
+        "url": "https://www.city.ibaraki-koga.lg.jp/soshiki/shigikaijimukyoku/teireirinji/1344.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -1042,7 +1048,10 @@ window.BOCHO_DATA["08"] = [
         "policy": "prohibited",
         "target": "site"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "石岡市議会では、議会の活動を広く市民の皆さまにお知らせする一環として、定例会や臨時会の本会議を生中継しています。",
+        "url": "https://www.ishioka-shigikai.jp/shinshi/sougou/bouchou.htm"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -1243,7 +1252,10 @@ window.BOCHO_DATA["08"] = [
         "policy": "prohibited",
         "target": "site"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "★録画による放映は、ライブ中継終了後、準備が整い次第、ご覧いただくことができます。",
+        "url": "https://smart.discussvision.net/smart/tenant/yuki/WebView/rd/council_1.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -1420,7 +1432,10 @@ window.BOCHO_DATA["08"] = [
     "reiki_url": "https://www1.g-reiki.net/ryugasaki/reiki_taikei/taikei_default.html",
     "streaming": {
       "committee_live": true,
-      "committee_live_basis": null,
+      "committee_live_basis": {
+        "text": "龍ケ崎市議会では、YouTube（ユーチューブ）「龍ケ崎市議会チャンネル」において、本会議や委員会の様子を動画配信（ライブ配信・録画配信）しています。",
+        "url": "https://www.city.ryugasaki.ibaraki.jp/shigikai/message/shikenhaishin.html"
+      },
       "committee_vod": true,
       "download": {
         "basis": {
@@ -1430,7 +1445,10 @@ window.BOCHO_DATA["08"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "龍ケ崎市議会では、YouTube（ユーチューブ）「龍ケ崎市議会チャンネル」において、本会議や委員会の様子を動画配信（ライブ配信・録画配信）しています。",
+        "url": "https://www.city.ryugasaki.ibaraki.jp/shigikai/message/shikenhaishin.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -1960,7 +1978,10 @@ window.BOCHO_DATA["08"] = [
         "policy": "prohibited",
         "target": "site"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "生中継を視聴",
+        "url": "https://hitachiota-city.stream.jfit.co.jp/"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -2134,7 +2155,10 @@ window.BOCHO_DATA["08"] = [
     "reiki_url": "https://en3-jg.d1-law.com/takahagi/d1w_reiki/reiki.html",
     "streaming": {
       "committee_live": true,
-      "committee_live_basis": null,
+      "committee_live_basis": {
+        "text": "本市議会では、YouTube（ユーチューブ）を利用して、常任委員会など会議の生中継及び録画配信を行っています。",
+        "url": "https://www.city.takahagi.ibaraki.jp/gyousei/gikai/eizou/page001420.html"
+      },
       "committee_vod": true,
       "download": {
         "basis": {
@@ -2144,7 +2168,10 @@ window.BOCHO_DATA["08"] = [
         "policy": "prohibited",
         "target": "site"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "録画中継は、生中継終了後おおむね６日（土、日、祝日を除く）からご覧いただけます。",
+        "url": "https://www.city.takahagi.ibaraki.jp/gyousei/gikai/eizou/page002471.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -2663,7 +2690,10 @@ window.BOCHO_DATA["08"] = [
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "取手市議会の公式チャンネルです。定例会や臨時会での本会議の映像を、ライブ中継や、録画映像としてご覧になれます。",
+        "url": "https://www.youtube.com/channel/UCPecAD2aY0dSapfH3Q6Tj1A"
+      },
       "live_scope": null,
       "not_official_record": null,
       "platforms": [
@@ -3006,7 +3036,10 @@ window.BOCHO_DATA["08"] = [
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "このコーナーでは、つくば市議会の議場内に設置したカメラを通じ、本会議等の模様をライブ（生）中継と録画（ビデオ・オン・デマンド方式）でご覧いただくことができます。",
+        "url": "https://tsukuba.gijiroku.com/g07_broadcasting.asp"
+      },
       "live_scope": "本会議（議場）のみ",
       "not_official_record": true,
       "platforms": [
@@ -3181,7 +3214,10 @@ window.BOCHO_DATA["08"] = [
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "本会議の生中継配信をご覧いただけます",
+        "url": "https://www.city.hitachinaka.lg.jp/gikai/g_topics/1012744.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -3493,7 +3529,10 @@ window.BOCHO_DATA["08"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "録画中継はライブ中継終了後、およそ３日後からご覧いただけます。",
+        "url": "https://gikai.congress-streamsp.jp/ItakoCity/"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -4060,7 +4099,10 @@ window.BOCHO_DATA["08"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "令和3年第3回定例会から会期中の映像のLIVE配信（生中継）を始めました。 映像は、「YouTube」にて、概ね1年間掲載しています。",
+        "url": "https://www.city.naka.lg.jp/gikai/page000913.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -4251,16 +4293,13 @@ window.BOCHO_DATA["08"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": {
-        "text": "令和８年１月臨時会",
-        "url": "https://smart.discussvision.net/smart/tenant/chikusei/WebView/rd/council_1.html"
-      },
+      "live_basis": null,
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
         "DiscussVision"
       ],
-      "plenary_live": true,
+      "plenary_live": null,
       "plenary_vod": true,
       "plenary_vod_basis": {
         "text": "令和８年１月臨時会",
@@ -4440,7 +4479,10 @@ window.BOCHO_DATA["08"] = [
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "いただくため、本会議のインターネット中継（生中継・録画配信）を行っています。",
+        "url": "https://www.city.bando.lg.jp/data/doc/1779253974_doc_34_0.pdf"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -4785,7 +4827,10 @@ window.BOCHO_DATA["08"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "本会議のライブ中継をインターネットで配信",
+        "url": "https://www.city.kasumigaura.lg.jp/page/page003232.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -5501,7 +5546,10 @@ window.BOCHO_DATA["08"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "※本日はライブ中継の予定がありません。",
+        "url": "https://smart.discussvision.net/smart/tenant/hokota/WebView/rd/council_1.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -5676,7 +5724,10 @@ window.BOCHO_DATA["08"] = [
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "つくばみらい市議会では、本会議のライブ映像及び録画映像をYouTube（ユーチューブ）「つくばみらい市議会公式チャンネル」で令和3年第3回定例会から配信を開始しています。",
+        "url": "https://www.city.tsukubamirai.lg.jp/gikai/page001106.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -5865,8 +5916,8 @@ window.BOCHO_DATA["08"] = [
         "target": "video"
       },
       "live_basis": {
-        "text": "令和8年第1回臨時会",
-        "url": "https://smart.discussvision.net/smart/tenant/omitama/WebView/rd/council_1.html"
+        "text": "・生中継については、本会議の審議状況などにより開始時間が変更になりますのでご了承ください。",
+        "url": "https://gikai.city.omitama.ibaraki.jp/0335/info-0000009409-4.html"
       },
       "live_scope": null,
       "not_official_record": true,
@@ -6216,7 +6267,10 @@ window.BOCHO_DATA["08"] = [
     "reiki_url": "https://www1.g-reiki.net/town.oarai/reiki_taikei/taikei_default.html",
     "streaming": {
       "committee_live": true,
-      "committee_live_basis": null,
+      "committee_live_basis": {
+        "text": "令和８年第３回議会定例会　総務常任委員会審査（９月７日） ／ 313 ／ 1 か月前 に配信済み",
+        "url": "https://www.youtube.com/@%E5%A4%A7%E6%B4%97%E7%94%BA%E8%AD%B0%E4%BC%9A/streams"
+      },
       "committee_vod": true,
       "committee_vod_basis": {
         "text": "令和８年第３回議会定例会　総務常任委員会審査（９月７日）",
@@ -6227,7 +6281,10 @@ window.BOCHO_DATA["08"] = [
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "＊議会ホームページにおいて、ライブ配信と後日録画配信を行います。",
+        "url": "https://www.town.oarai.lg.jp/oaraigikai/archives/2290"
+      },
       "live_scope": null,
       "not_official_record": null,
       "platforms": [
@@ -6556,7 +6613,10 @@ window.BOCHO_DATA["08"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "議会のライブ配信を行っています。",
+        "url": "https://www.vill.tokai.ibaraki.jp/tokaimuragikai/boucho/10439.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -6714,7 +6774,10 @@ window.BOCHO_DATA["08"] = [
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "ライブ配信を見る",
+        "url": "https://daigo-town.stream.jfit.co.jp/"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -7395,7 +7458,10 @@ window.BOCHO_DATA["08"] = [
         "policy": "prohibited",
         "target": "site"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "生中継の日程は、「定例会・臨時会の情報」をご覧ください。",
+        "url": "https://www.town.ibaraki-yachiyo.lg.jp/page/page011526.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -7913,7 +7979,10 @@ window.BOCHO_DATA["08"] = [
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "R８第3回定例会　9/16　採決 ／ 351 ／ 1 か月前 に配信済み",
+        "url": "https://www.youtube.com/channel/UCrXaVYO1gkhgxqK25HPY7qA/streams"
+      },
       "live_scope": null,
       "not_official_record": null,
       "platforms": [

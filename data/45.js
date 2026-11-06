@@ -1,4 +1,4 @@
-// 自動生成: tools/build_data.sh 45（2026-10-31）。直接編集しない。
+// 自動生成: tools/build_data.sh 45（2026-11-06）。直接編集しない。
 window.BOCHO_DATA = window.BOCHO_DATA || {};
 window.BOCHO_DATA["45"] = [
   {
@@ -116,7 +116,10 @@ window.BOCHO_DATA["45"] = [
         "policy": "law_only",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "宮崎県議会本会議の様子をライブ中継及び録画中継（ビデオ・オン・デマンド：VOD）でご覧いただけます。",
+        "url": "https://pref-miyazaki.gijiroku.com/help_broadcasting.asp"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -306,7 +309,7 @@ window.BOCHO_DATA["45"] = [
         "DiscussVision",
         "CATV"
       ],
-      "plenary_live": true,
+      "plenary_live": null,
       "plenary_vod": true,
       "reuse_basis": {
         "article": null,
@@ -648,7 +651,10 @@ window.BOCHO_DATA["45"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "延岡市議会では、YouTube(ユーチューブ)による本会議及び一部委員会の録画配信を行っています。また、本会議は、ライブ配信も行っております。下記注意事項をご確認の上、ご覧ください。",
+        "url": "https://www.city.nobeoka.miyazaki.jp/site/gikai/28033.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -1001,7 +1007,10 @@ window.BOCHO_DATA["45"] = [
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "YouTube(ユーチューブ)による本会議のライブ配信、録画配信を行います。",
+        "url": "https://www.city.kobayashi.lg.jp/gyoseijoho/gikai/gikaichukei_kaigirokukensaku/2802.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -1172,7 +1181,10 @@ window.BOCHO_DATA["45"] = [
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "日向市議会では、市民の議会に対する理解を深め、市民に開かれた議会を構築するために、インターネット上で、市議会本会議の生中継と録画配信映像を行っています。",
+        "url": "https://www.hyugacity.jp/shigikai/10rokuon.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -1351,7 +1363,10 @@ window.BOCHO_DATA["45"] = [
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "令和８年第７回臨時会　10月20日（火曜日）",
+        "url": "http://www.kensakusystem.jp/kushima-vod/live/index.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -1689,7 +1704,10 @@ window.BOCHO_DATA["45"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "これまで上記の取り扱いでしたが、令和7年10月定例会からライブ中継および録画配信を「本会議全て」に拡充します。",
+        "url": "https://www.city.ebino.lg.jp/gyosei_shisei/gikai/gian_giji/1/2047.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -2032,7 +2050,10 @@ window.BOCHO_DATA["45"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "高原町議会では、平成31年3月定例会から、本会議中継（ライブ）をYoutube（ユーチューブ）で配信します。スマートフォンやタブレット端末等でご覧いただけます。",
+        "url": "https://www.town.takaharu.lg.jp/site/gikai/1277.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -3580,7 +3601,7 @@ window.BOCHO_DATA["45"] = [
     "pref": "宮崎県",
     "name": "諸塚村議会",
     "kind": "村",
-    "checked_on": "2026-10-31",
+    "checked_on": "2026-11-06",
     "reiki_system": "none",
     "reiki_url": null,
     "guide_url": null,

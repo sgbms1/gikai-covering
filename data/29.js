@@ -1,4 +1,4 @@
-// 自動生成: tools/build_data.sh 29（2026-10-24）。直接編集しない。
+// 自動生成: tools/build_data.sh 29（2026-11-06）。直接編集しない。
 window.BOCHO_DATA = window.BOCHO_DATA || {};
 window.BOCHO_DATA["29"] = [
   {
@@ -104,7 +104,10 @@ window.BOCHO_DATA["29"] = [
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "本サイトでは、本会議のライブ・録画配信を行っています。",
+        "url": "https://pref-nara.gijiroku.com/"
+      },
       "live_scope": null,
       "not_official_record": null,
       "platforms": [
@@ -280,7 +283,10 @@ window.BOCHO_DATA["29"] = [
     "reiki_url": "https://ops-jg.d1-law.com/opensearch/SrMjF01/init?jctcd=8A85DFA88B",
     "streaming": {
       "committee_live": true,
-      "committee_live_basis": null,
+      "committee_live_basis": {
+        "text": "奈良市議会の本会議、委員会等の審議状況を、ライブ及びオンデマンド方式によりインターネット映像配信を行う。詳細な仕様は、別添2「入札仕様書」のとおり。",
+        "url": "https://www.city.nara.lg.jp/site/narasigikai/276439.html"
+      },
       "committee_vod": true,
       "download": {
         "basis": {
@@ -290,7 +296,10 @@ window.BOCHO_DATA["29"] = [
         "policy": "law_only",
         "target": "site"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "奈良市議会の本会議、委員会等の審議状況を、ライブ及びオンデマンド方式によりインターネット映像配信を行う。詳細な仕様は、別添2「入札仕様書」のとおり。",
+        "url": "https://www.city.nara.lg.jp/site/narasigikai/276439.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -655,8 +664,8 @@ window.BOCHO_DATA["29"] = [
     "streaming": {
       "committee_live": true,
       "committee_live_basis": {
-        "text": "総務常任委員会",
-        "url": "https://smart.discussvision.net/smart/tenant/yamatokoriyama/WebView/rd/council_1.html"
+        "text": "本会議、委員会ともにインターネット中継を実施しておりますので、パソコン、スマートフォンなどでご覧いただけます。",
+        "url": "https://www.city.yamatokoriyama.lg.jp/soshiki/gikaijimukyoku/shigikai/index.html"
       },
       "committee_vod": true,
       "committee_vod_basis": {
@@ -669,8 +678,8 @@ window.BOCHO_DATA["29"] = [
         "basis": null
       },
       "live_basis": {
-        "text": "令和8年第1回臨時会",
-        "url": "https://smart.discussvision.net/smart/tenant/yamatokoriyama/WebView/rd/council_1.html"
+        "text": "本会議、委員会ともにインターネット中継を実施しておりますので、パソコン、スマートフォンなどでご覧いただけます。",
+        "url": "https://www.city.yamatokoriyama.lg.jp/soshiki/gikaijimukyoku/shigikai/index.html"
       },
       "live_scope": null,
       "not_official_record": true,
@@ -851,8 +860,8 @@ window.BOCHO_DATA["29"] = [
         "basis": null
       },
       "live_basis": {
-        "text": "令和8年第1回定例会",
-        "url": "https://smart.discussvision.net/smart/tenant/tenri/WebView/rd/council_1.html?referrer=http%3A%2F%2F210.189.170.165%2F"
+        "text": "④ インターネットで本会議をライブ中継し、またその録画を配信",
+        "url": "https://www.city.tenri.nara.jp/material/files/group/13/r6syuyounasesaku.pdf"
       },
       "live_scope": null,
       "not_official_record": true,
@@ -1030,7 +1039,10 @@ window.BOCHO_DATA["29"] = [
         "policy": "law_only",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "本会議のライブ中継を視聴できます。",
+        "url": "http://www.kensakusystem.jp/kashihara-vod/index.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -1566,8 +1578,8 @@ window.BOCHO_DATA["29"] = [
         "basis": null
       },
       "live_basis": {
-        "text": "令和8年3月定例会",
-        "url": "https://smart.discussvision.net/smart/tenant/gose/WebView/rd/council_1.html"
+        "text": "※議会インターネット映像配信（ライブ中継・録画配信）において、傍聴席が映り込みます。傍聴をご希望の場合はご了承の上、お越しください。",
+        "url": "https://www.city.gose.nara.jp/0000000256.html"
       },
       "live_scope": null,
       "not_official_record": true,
@@ -1752,7 +1764,7 @@ window.BOCHO_DATA["29"] = [
     "reiki_system": "g-reiki",
     "reiki_url": "https://www.city.ikoma.lg.jp/html/reiki_int/reiki_taikei/taikei_default.html",
     "streaming": {
-      "committee_live": true,
+      "committee_live": null,
       "committee_live_basis": null,
       "committee_vod": true,
       "download": {
@@ -1760,7 +1772,10 @@ window.BOCHO_DATA["29"] = [
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "次回のライブ中継は、令和8年生駒市議会12月定例会となります。",
+        "url": "https://www.city.ikoma.lg.jp/gikai/0000009243.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -2108,7 +2123,10 @@ window.BOCHO_DATA["29"] = [
     "reiki_url": "https://www1.g-reiki.net/city.katsuragi/reiki_taikei/taikei_default.html",
     "streaming": {
       "committee_live": true,
-      "committee_live_basis": null,
+      "committee_live_basis": {
+        "text": "本会議、常任委員会、特別委員会のライブ中継や録画映像を配信しております。(録画映像は、会議終了後、一定期間ご覧いただけます)",
+        "url": "https://www.city.katsuragi.nara.jp/shisei/shigikai/3718.html"
+      },
       "committee_vod": true,
       "download": {
         "basis": {
@@ -2118,7 +2136,10 @@ window.BOCHO_DATA["29"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "本会議、常任委員会、特別委員会のライブ中継や録画映像を配信しております。(録画映像は、会議終了後、一定期間ご覧いただけます)",
+        "url": "https://www.city.katsuragi.nara.jp/shisei/shigikai/3718.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -2358,7 +2379,7 @@ window.BOCHO_DATA["29"] = [
     "pref": "奈良県",
     "name": "山添村議会",
     "kind": "村",
-    "checked_on": "2026-10-24",
+    "checked_on": "2026-11-06",
     "reiki_system": "g-reiki",
     "reiki_url": "https://www.vill.yamazoe.nara.jp/reiki_int/reiki_menu.html",
     "guide_url": null,
@@ -4554,8 +4575,8 @@ window.BOCHO_DATA["29"] = [
         "basis": null
       },
       "live_basis": {
-        "text": "令和8年第1回臨時会",
-        "url": "https://smart.discussvision.net/smart/tenant/oji/WebView/rd/council_1.html"
+        "text": "議場で行われる本会議は、インターネット中継でライブ配信（後日、録画配信）されます。また、役場1階表玄関のテレビでライブ中継が傍聴できます。",
+        "url": "https://www.town.oji.nara.jp/kakuka/gikai/gikaijimukyoku/ojicyogikai/kaigi/kaiginittei/10318.html"
       },
       "live_scope": null,
       "not_official_record": true,
@@ -4968,7 +4989,7 @@ window.BOCHO_DATA["29"] = [
     "pref": "奈良県",
     "name": "吉野町議会",
     "kind": "町",
-    "checked_on": "2026-10-24",
+    "checked_on": "2026-11-06",
     "reiki_system": "none",
     "reiki_url": null,
     "guide_url": "https://www.town.yoshino.nara.jp/gikai/90.html",
@@ -5531,7 +5552,7 @@ window.BOCHO_DATA["29"] = [
     "pref": "奈良県",
     "name": "天川村議会",
     "kind": "村",
-    "checked_on": "2026-10-24",
+    "checked_on": "2026-11-06",
     "reiki_system": "none",
     "reiki_url": null,
     "guide_url": null,
@@ -5644,7 +5665,7 @@ window.BOCHO_DATA["29"] = [
     "pref": "奈良県",
     "name": "野迫川村議会",
     "kind": "村",
-    "checked_on": "2026-10-24",
+    "checked_on": "2026-11-06",
     "reiki_system": "none",
     "reiki_url": null,
     "guide_url": null,
@@ -5757,7 +5778,7 @@ window.BOCHO_DATA["29"] = [
     "pref": "奈良県",
     "name": "十津川村議会",
     "kind": "村",
-    "checked_on": "2026-10-24",
+    "checked_on": "2026-11-06",
     "reiki_system": "none",
     "reiki_url": null,
     "guide_url": null,
@@ -5870,7 +5891,7 @@ window.BOCHO_DATA["29"] = [
     "pref": "奈良県",
     "name": "下北山村議会",
     "kind": "村",
-    "checked_on": "2026-10-24",
+    "checked_on": "2026-11-06",
     "reiki_system": "none",
     "reiki_url": null,
     "guide_url": null,
@@ -5983,7 +6004,7 @@ window.BOCHO_DATA["29"] = [
     "pref": "奈良県",
     "name": "上北山村議会",
     "kind": "村",
-    "checked_on": "2026-10-24",
+    "checked_on": "2026-11-06",
     "reiki_system": "none",
     "reiki_url": null,
     "guide_url": null,
@@ -6096,7 +6117,7 @@ window.BOCHO_DATA["29"] = [
     "pref": "奈良県",
     "name": "川上村議会",
     "kind": "村",
-    "checked_on": "2026-10-24",
+    "checked_on": "2026-11-06",
     "reiki_system": "none",
     "reiki_url": null,
     "guide_url": null,
@@ -6209,7 +6230,7 @@ window.BOCHO_DATA["29"] = [
     "pref": "奈良県",
     "name": "東吉野村議会",
     "kind": "村",
-    "checked_on": "2026-10-24",
+    "checked_on": "2026-11-06",
     "reiki_system": "none",
     "reiki_url": null,
     "guide_url": null,

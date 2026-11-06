@@ -1,4 +1,4 @@
-// 自動生成: tools/build_data.sh 15（2026-10-26）。直接編集しない。
+// 自動生成: tools/build_data.sh 15（2026-11-06）。直接編集しない。
 window.BOCHO_DATA = window.BOCHO_DATA || {};
 window.BOCHO_DATA["15"] = [
   {
@@ -299,7 +299,10 @@ window.BOCHO_DATA["15"] = [
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "生中継の日程は、議会の日程をご覧ください。",
+        "url": "https://niigata-city.stream.jfit.co.jp/"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -810,7 +813,10 @@ window.BOCHO_DATA["15"] = [
     "reiki_url": "https://ops-jg.d1-law.com/opensearch/SrMjF01/init?jctcd=8A8035768F",
     "streaming": {
       "committee_live": true,
-      "committee_live_basis": null,
+      "committee_live_basis": {
+        "text": "本会議、全員協議会、委員会を生中継しています。",
+        "url": "https://www.city.kashiwazaki.lg.jp/shigikai/kaigiroku_gikaichukei_bocho/10314.html"
+      },
       "committee_vod": true,
       "download": {
         "basis": {
@@ -820,7 +826,10 @@ window.BOCHO_DATA["15"] = [
         "policy": "law_only",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "本会議、全員協議会、委員会を生中継しています。",
+        "url": "https://www.city.kashiwazaki.lg.jp/shigikai/kaigiroku_gikaichukei_bocho/10314.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -1171,7 +1180,10 @@ window.BOCHO_DATA["15"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "◆ライブ中継は、本会議開会から閉会までの全ての模様をご覧いただけます。",
+        "url": "http://smart.discussvision.net/smart/tenant/ojiya/WebView/rd/council.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -1883,7 +1895,10 @@ window.BOCHO_DATA["15"] = [
         "policy": "prohibited",
         "target": "site"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "生中継の日程については、「議会日程」をご覧ください。",
+        "url": "https://murakami-city.stream.jfit.co.jp/"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -2054,8 +2069,8 @@ window.BOCHO_DATA["15"] = [
     "streaming": {
       "committee_live": true,
       "committee_live_basis": {
-        "text": "令和８年予算審査特別委員会",
-        "url": "https://smart.discussvision.net/smart/tenant/tsubame/WebView/rd/council_1.html"
+        "text": "本会議・常任委員会は、インターネット中継でご覧いただけます。",
+        "url": "https://www.city.tsubame.niigata.jp/keikaku/gikai/3737.html"
       },
       "committee_vod": true,
       "committee_vod_basis": {
@@ -2070,7 +2085,10 @@ window.BOCHO_DATA["15"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "ライブ中継は、本会議開会から閉会まで、すべての模様をご覧いただけます。",
+        "url": "https://www.city.tsubame.niigata.jp/keikaku/gikai/3575.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -2819,7 +2837,10 @@ window.BOCHO_DATA["15"] = [
         "policy": "prohibited",
         "target": "site"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "生中継を視聴する",
+        "url": "https://joetsu-city.stream.jfit.co.jp/"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -3706,7 +3727,10 @@ window.BOCHO_DATA["15"] = [
         "policy": "prohibited",
         "target": "site"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "胎内市議会では、YouTube（ユーチューブ）を利用して本会議のライブ配信を行っています。",
+        "url": "https://www.city.tainai.niigata.jp/gyose/gikai/youtubehaishin.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -4043,13 +4067,21 @@ window.BOCHO_DATA["15"] = [
     "reiki_system": "g-reiki",
     "reiki_url": "https://www1.g-reiki.net/vill.yahiko/reiki_taikei/taikei_default.html",
     "streaming": {
-      "committee_live": true,
+      "committee_live": null,
+      "committee_live_basis": null,
       "committee_vod": true,
+      "download": {
+        "policy": null,
+        "target": null,
+        "basis": null
+      },
+      "live_basis": null,
+      "live_scope": null,
       "not_official_record": true,
       "platforms": [
         "YouTube"
       ],
-      "plenary_live": true,
+      "plenary_live": null,
       "plenary_vod": true,
       "reuse_basis": {
         "article": null,
@@ -4065,18 +4097,10 @@ window.BOCHO_DATA["15"] = [
       "scope": "本会議及び委員会（要綱の定め）",
       "url": "https://www.youtube.com/@%E5%BC%A5%E5%BD%A6%E6%9D%91%E8%AD%B0%E4%BC%9A/videos",
       "vod_delay": "会議終了後、速やかに",
-      "live_basis": null,
-      "committee_live_basis": null,
-      "plenary_vod_basis": null,
-      "committee_vod_basis": null,
-      "live_scope": null,
       "vod_period": null,
       "vod_period_basis": null,
-      "download": {
-        "policy": null,
-        "target": null,
-        "basis": null
-      },
+      "plenary_vod_basis": null,
+      "committee_vod_basis": null,
       "cable": null,
       "footage": null,
       "suspended": null
@@ -4403,7 +4427,10 @@ window.BOCHO_DATA["15"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "阿賀町議会では、「身近で開かれた議会」を目指し、より多くの皆さまから議会の様子をご覧いただくため、令和5年6月定例会議より、インターネットを利用した議会生中継および録画中継を行っています。パソコンをはじめ、スマートフォンやタブレットからも視聴できます。",
+        "url": "https://www.town.aga.niigata.jp/agachogikai/2215.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -4582,7 +4609,10 @@ window.BOCHO_DATA["15"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "出雲崎町議会では、開かれた議会を目指し、より多くの皆さまに議会の様子をご覧いただくため、令和３年３月定例会より、インターネットを利用した議会生中継および録画中継を行っています。",
+        "url": "https://www.town.izumozaki.niigata.jp/gikai/internetgikaichukei/"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [

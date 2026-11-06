@@ -1,4 +1,4 @@
-// 自動生成: tools/build_data.sh 38（2026-10-26）。直接編集しない。
+// 自動生成: tools/build_data.sh 38（2026-11-06）。直接編集しない。
 window.BOCHO_DATA = window.BOCHO_DATA || {};
 window.BOCHO_DATA["38"] = [
   {
@@ -1118,7 +1118,10 @@ window.BOCHO_DATA["38"] = [
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "ライブ中継は、本会議開会中のみご覧いただけます。",
+        "url": "https://www.city.saijo.ehime.jp/site/gikai/gikaityuukei.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -1958,8 +1961,8 @@ window.BOCHO_DATA["38"] = [
         "basis": null
       },
       "live_basis": {
-        "text": "令和8年第1回臨時会",
-        "url": "https://smart.discussvision.net/smart/tenant/toon/WebView/rd/council_1.html"
+        "text": "本会議については、インターネット中継（ライブ中継・録画配信）を行っておりますので、ご利用ください。",
+        "url": "https://www.city.toon.ehime.jp/site/120/11566.html"
       },
       "live_scope": null,
       "not_official_record": null,

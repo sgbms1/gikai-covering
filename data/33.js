@@ -1,4 +1,4 @@
-// 自動生成: tools/build_data.sh 33（2026-10-25）。直接編集しない。
+// 自動生成: tools/build_data.sh 33（2026-11-06）。直接編集しない。
 window.BOCHO_DATA = window.BOCHO_DATA || {};
 window.BOCHO_DATA["33"] = [
   {
@@ -668,7 +668,10 @@ window.BOCHO_DATA["33"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "本会議ライブ中継",
+        "url": "https://www.city.tsuyama.lg.jp/3rdCategory?categoryId=31000246"
+      },
       "live_scope": null,
       "not_official_record": null,
       "platforms": [],
@@ -824,7 +827,10 @@ window.BOCHO_DATA["33"] = [
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "ー　ライブ配信・・・本会議の議案審査等の日程をYouTube（ユーチューブ）で放映します。",
+        "url": "https://www.city.tamano.lg.jp/site/gikai/44766.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -994,7 +1000,7 @@ window.BOCHO_DATA["33"] = [
         "scope": "本会議と会期中の常任委員会（総務文教・厚生産業・予算決算の一部）を生放送・録画放送",
         "station": "笠岡放送（CATV 11チャンネル）"
       },
-      "committee_live": true,
+      "committee_live": null,
       "committee_live_basis": null,
       "committee_vod": true,
       "download": {
@@ -1012,7 +1018,7 @@ window.BOCHO_DATA["33"] = [
         "CATV",
         "YouTube"
       ],
-      "plenary_live": true,
+      "plenary_live": null,
       "plenary_vod": true,
       "reuse_basis": {
         "article": null,
@@ -1343,7 +1349,10 @@ window.BOCHO_DATA["33"] = [
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "総社市議会の本会議の模様を生中継と録画中継でご覧いただけます。",
+        "url": "https://www.city.soja.okayama.jp/site/gikai/5110.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -1866,7 +1875,10 @@ window.BOCHO_DATA["33"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "議会ライブ中継について（配信日の詳細はページ内をご覧ください）",
+        "url": "https://www.city.bizen.okayama.jp/soshiki/23/13264.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -2035,7 +2047,10 @@ window.BOCHO_DATA["33"] = [
     "reiki_url": "https://www1.g-reiki.net/setouchi/reiki_taikei/taikei_default.html",
     "streaming": {
       "committee_live": true,
-      "committee_live_basis": null,
+      "committee_live_basis": {
+        "text": "予算常任委員会全体会および決算常任委員会全体会については、ライブ中継のみで録画映像は配信はしません。",
+        "url": "https://setouchi-city.gijiroku.com/help_broadcasting.asp"
+      },
       "committee_vod": true,
       "committee_vod_basis": {
         "text": "予算常任委員会全体会および決算常任委員会全体会については、ライブ中継のみで録画映像は配信はしません。",
@@ -2049,7 +2064,10 @@ window.BOCHO_DATA["33"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "ライブ中継終了後、７日程度（土曜・日曜・祝日を除く）で編集済みの録画映像をご覧いただけます。",
+        "url": "https://setouchi-city.gijiroku.com/help_broadcasting.asp"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -2216,11 +2234,8 @@ window.BOCHO_DATA["33"] = [
     "reiki_system": "g-reiki",
     "reiki_url": "https://www1.g-reiki.net/akaiwa_reiki/reiki_taikei/taikei_default.html",
     "streaming": {
-      "committee_live": true,
-      "committee_live_basis": {
-        "text": "総務常任委員会",
-        "url": "https://smart.discussvision.net/smart/tenant/akaiwa/WebView/rd/council_1.html"
-      },
+      "committee_live": null,
+      "committee_live_basis": null,
       "committee_vod": true,
       "committee_vod_basis": {
         "text": "総務常任委員会",
@@ -2232,8 +2247,8 @@ window.BOCHO_DATA["33"] = [
         "basis": null
       },
       "live_basis": {
-        "text": "令和８年３月第１回赤磐市議会定例会",
-        "url": "https://smart.discussvision.net/smart/tenant/akaiwa/WebView/rd/council_1.html"
+        "text": "また、インターネットで本会議の中継と録画配信を、市役所本庁舎1階市民コーナーでモニターによる中継を行っていますので、ご利用ください。",
+        "url": "https://www.city.akaiwa.lg.jp/shisei/gikai/about/index.html"
       },
       "live_scope": null,
       "not_official_record": true,
@@ -3095,7 +3110,10 @@ window.BOCHO_DATA["33"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "早島町議会では本会議をインターネットでライブ中継しています。",
+        "url": "https://www.town.hayashima.lg.jp/soshiki/gikai/gyomu/gikai/about_gikai/1794.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -3729,7 +3747,10 @@ window.BOCHO_DATA["33"] = [
     "reiki_url": "https://www1.g-reiki.net/town.kagamino/reiki_taikei/taikei_default.html",
     "streaming": {
       "committee_live": true,
-      "committee_live_basis": null,
+      "committee_live_basis": {
+        "text": "鏡野町議会では、町民に開かれた議会の一環として、本会議、委員会及び全員協議会をライブ配信及び録画配信でご覧いただけます。",
+        "url": "https://www.town.kagamino.lg.jp/site/gikai/1306.html"
+      },
       "committee_vod": true,
       "download": {
         "basis": {
@@ -3739,7 +3760,10 @@ window.BOCHO_DATA["33"] = [
         "policy": "law_only",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "鏡野町議会では、町民に開かれた議会の一環として、本会議、委員会及び全員協議会をライブ配信及び録画配信でご覧いただけます。",
+        "url": "https://www.town.kagamino.lg.jp/site/gikai/1306.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -4387,7 +4411,10 @@ window.BOCHO_DATA["33"] = [
         "policy": "law_only",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "令和8年第5回久米南町議会定例会(9/17午前) ／ 65 ／ 1 か月前 に配信済み",
+        "url": "https://www.youtube.com/channel/UCNcGhiGmxLvpuDHO4rikDtg/streams"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [

@@ -1,4 +1,4 @@
-// 自動生成: tools/build_data.sh 42（2026-10-26）。直接編集しない。
+// 自動生成: tools/build_data.sh 42（2026-11-06）。直接編集しない。
 window.BOCHO_DATA = window.BOCHO_DATA || {};
 window.BOCHO_DATA["42"] = [
   {
@@ -84,14 +84,20 @@ window.BOCHO_DATA["42"] = [
     "reiki_url": "https://krq301.legal-square.com/HAS-Shohin/page/SJSrbLogin.jsf",
     "streaming": {
       "committee_live": true,
-      "committee_live_basis": null,
+      "committee_live_basis": {
+        "text": "委員会の生中継・録画中継は、YouTubeを利用しています。",
+        "url": "https://www.pref.nagasaki.jp/gikai/youtube/index.html"
+      },
       "committee_vod": true,
       "download": {
         "policy": null,
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "なお、本会議、常任委員会及び特別委員会については、インターネットで生中継するとともに、後日、録画映像の配信も行っていますので、ご活用をお願いします。",
+        "url": "https://www.pref.nagasaki.jp/gikai/4070.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -268,7 +274,10 @@ window.BOCHO_DATA["42"] = [
         "policy": "prohibited",
         "target": "site"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "■ 本会議の生中継をご覧になれます。",
+        "url": "https://nagasaki-city.stream.jfit.co.jp/"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -799,7 +808,10 @@ window.BOCHO_DATA["42"] = [
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "■ 本会議の生中継をご覧いただけます。",
+        "url": "https://isahaya-city.stream.jfit.co.jp/"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -1246,7 +1258,7 @@ window.BOCHO_DATA["42"] = [
     "pref": "長崎県",
     "name": "松浦市議会",
     "kind": "市",
-    "checked_on": "2026-10-26",
+    "checked_on": "2026-11-06",
     "reiki_system": "reiki-base",
     "reiki_url": "https://krr349.legal-square.com/HAS-Shohin/page/SJSrbLogin.jsf",
     "guide_url": null,
@@ -1789,7 +1801,10 @@ window.BOCHO_DATA["42"] = [
         "policy": "law_only",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "■本会議の生中継をご覧いただけます。",
+        "url": "https://goto-city.stream.jfit.co.jp/"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -1979,7 +1994,10 @@ window.BOCHO_DATA["42"] = [
         "policy": "prohibited",
         "target": "site"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "ライブ配信を見る",
+        "url": "https://saikai-city.stream.jfit.co.jp/"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -2169,7 +2187,10 @@ window.BOCHO_DATA["42"] = [
         "policy": "prohibited",
         "target": "site"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "生中継を視聴する",
+        "url": "https://unzen-city.stream.jfit.co.jp/"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -2352,8 +2373,8 @@ window.BOCHO_DATA["42"] = [
         "basis": null
       },
       "live_basis": {
-        "text": "令和8年第1回定例会",
-        "url": "https://smart.discussvision.net/smart/tenant/minamishimabara/WebView/rd/council_1.html"
+        "text": "会議はインターネットやケーブルテレビなどのライブ中継でもご覧いただけます。",
+        "url": "https://www.city.minamishimabara.lg.jp/gikai/kiji00312803/index.html"
       },
       "live_scope": null,
       "not_official_record": null,
@@ -2656,7 +2677,10 @@ window.BOCHO_DATA["42"] = [
         "policy": "prohibited",
         "target": "site"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "生中継を見る",
+        "url": "https://togitsu-town.stream.jfit.co.jp/"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [

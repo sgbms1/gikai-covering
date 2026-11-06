@@ -1,4 +1,4 @@
-// 自動生成: tools/build_data.sh 10（2026-10-26）。直接編集しない。
+// 自動生成: tools/build_data.sh 10（2026-11-06）。直接編集しない。
 window.BOCHO_DATA = window.BOCHO_DATA || {};
 window.BOCHO_DATA["10"] = [
   {
@@ -305,7 +305,10 @@ window.BOCHO_DATA["10"] = [
     "reiki_url": "https://www1.g-reiki.net/maebashi/reiki_taikei/taikei_default.html",
     "streaming": {
       "committee_live": true,
-      "committee_live_basis": null,
+      "committee_live_basis": {
+        "text": "令和5年9月から、決算委員会及び予算委員会のライブ配信を開始いたします。",
+        "url": "https://maebashi-gikai.gijiroku.com/"
+      },
       "committee_vod": true,
       "committee_vod_basis": {
         "text": "令和5年9月以降の録画映像を視聴できます。",
@@ -319,7 +322,10 @@ window.BOCHO_DATA["10"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "録画放映は生中継終了後、5日程度(土曜・日曜・祝日を除く)で編集済みの録画をご覧いただけます。",
+        "url": "https://maebashi-gikai.gijiroku.com/help_broadcasting.asp"
+      },
       "live_scope": null,
       "not_official_record": null,
       "platforms": [
@@ -496,7 +502,10 @@ window.BOCHO_DATA["10"] = [
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "高崎市議会の議場内に設置したカメラを通じ、本会議の模様をライブ（生）中継と録画（ビデオ・オン・デマンド方式）配信でご覧いただくことができます。",
+        "url": "https://takasaki.gijiroku.com/voices/help_broadcasting.asp"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -672,7 +681,10 @@ window.BOCHO_DATA["10"] = [
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "桐生市議会では、議会改革（開かれた議会）の取組の一環として、平成25年第4回定例会（12月議会）からインターネット中継（生中継、録画中継）を始めました。",
+        "url": "https://www.city.kiryu.lg.jp/shigikai/1007141/1003997.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [],
@@ -1034,7 +1046,10 @@ window.BOCHO_DATA["10"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "太田市議会の議場内に設置したカメラを通じ、本会議の模様をライブ（生）中継と録画（ビデオ・オン・デマンド方式）配信でご覧いただくことができます。",
+        "url": "http://ota.gijiroku.com/voices/help_broadcasting.asp"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -1379,7 +1394,10 @@ window.BOCHO_DATA["10"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "ライブ＆録画映像配信　LIVE&RECORDED VIDEO",
+        "url": "https://www.city.tatebayashi.gunma.jp/li/gikai/index.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -1553,7 +1571,10 @@ window.BOCHO_DATA["10"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "◆ライブ中継は、本会議開会から閉会までの全ての模様をご覧いただけます。",
+        "url": "https://smart.discussvision.net/smart/tenant/shibukawa/WebView/rd/council_1.html?referrer=http%3A%2F%2Fwww.city.shibukawa.lg.jp%2F"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -1929,7 +1950,10 @@ window.BOCHO_DATA["10"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "◆ライブ中継は、本会議開会から閉会までの全ての模様をご覧いただけます。",
+        "url": "https://smart.discussvision.net/smart/tenant/tomioka/WebView/rd/council_1.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -2119,7 +2143,10 @@ window.BOCHO_DATA["10"] = [
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "平成２６年　第４回定例会（12月議会）からインターネット中継（生中継、録画中継）を開始しております。",
+        "url": "https://smart.discussvision.net/smart/tenant/annaka/WebView/rd/council.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -2287,7 +2314,10 @@ window.BOCHO_DATA["10"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "みどり市議会の議場内に設置したカメラを通じ、本会議の模様を生中継と録画配信でご覧いただくことができます。",
+        "url": "https://www.city.midori.gunma.jp/shisei/1001670/1003209/1003266.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -2617,7 +2647,10 @@ window.BOCHO_DATA["10"] = [
         "policy": "prohibited",
         "target": "site"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "本会議は、議場の様子を生中継・録画映像配信されます。傍聴席も映り込む場合がありますので、あらかじめご了承ください。",
+        "url": "https://www.town.yoshioka.lg.jp/gikai//boucyou.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -5943,7 +5976,10 @@ window.BOCHO_DATA["10"] = [
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "大泉町議会では、本会議の生中継と録画配信を行っています。",
+        "url": "https://www.town.oizumi.gunma.jp/g001/20260918143422.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -6129,7 +6165,10 @@ window.BOCHO_DATA["10"] = [
         "policy": "law_only",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "邑楽町議会では、本会議やその他会議の模様をライブ配信しています。",
+        "url": "https://www.town.ora.gunma.jp/s049/070/106/gikai-live.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [

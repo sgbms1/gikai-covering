@@ -1,4 +1,4 @@
-// 自動生成: tools/build_data.sh 35（2026-10-24）。直接編集しない。
+// 自動生成: tools/build_data.sh 35（2026-11-06）。直接編集しない。
 window.BOCHO_DATA = window.BOCHO_DATA || {};
 window.BOCHO_DATA["35"] = [
   {
@@ -105,7 +105,10 @@ window.BOCHO_DATA["35"] = [
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "生中継を見る　　　　　＞",
+        "url": "https://yamaguchi-pref.hotstreaming.info/"
+      },
       "live_scope": "特別委員会のみ",
       "not_official_record": true,
       "platforms": [
@@ -272,7 +275,10 @@ window.BOCHO_DATA["35"] = [
         "policy": "law_only",
         "target": "site"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "ライブ中継の日程は、市議会ホームページ内の議会カレンダーをご覧ください。",
+        "url": "https://shimonoseki.media-streaming.jp/"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -463,7 +469,10 @@ window.BOCHO_DATA["35"] = [
         "policy": "law_only",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "インターネットが利用できる環境であれば、議会に傍聴にお越しになれない方も、パソコン、スマートフォン、タブレット端末などで市議会本会議の映像（ライブ中継、録画中継）をご覧いただけます。",
+        "url": "https://www.city.ube.yamaguchi.jp/shisei/1006704/1006718.html"
+      },
       "live_scope": null,
       "not_official_record": null,
       "platforms": [
@@ -652,7 +661,7 @@ window.BOCHO_DATA["35"] = [
         "CATV",
         "独自"
       ],
-      "plenary_live": true,
+      "plenary_live": null,
       "plenary_vod": true,
       "reuse_basis": {
         "article": null,
@@ -997,7 +1006,10 @@ window.BOCHO_DATA["35"] = [
         "policy": "prohibited",
         "target": "site"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "録画中継は、原則、ライブ中継終了後、おおよそ5日後（土日祝日を除く。）にご覧いただけます。",
+        "url": "https://www.city.hofu.yamaguchi.jp/site/sigikai/chukei.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [],
@@ -2219,7 +2231,10 @@ window.BOCHO_DATA["35"] = [
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "録画映像は、生中継の３～４日後（土日祝を除く。）を目途に配信します。",
+        "url": "https://smart.discussvision.net/smart/tenant/shunan/WebView/rd/council_1.html"
+      },
       "live_scope": null,
       "not_official_record": null,
       "platforms": [
@@ -2394,7 +2409,10 @@ window.BOCHO_DATA["35"] = [
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "インターネットで本会議及び委員会の中継も行っております。",
+        "url": "https://www.city.sanyo-onoda.lg.jp/site/sigikai/boucho.html"
+      },
       "live_scope": null,
       "not_official_record": null,
       "platforms": [
@@ -2810,7 +2828,7 @@ window.BOCHO_DATA["35"] = [
     "pref": "山口県",
     "name": "上関町議会",
     "kind": "町",
-    "checked_on": "2026-10-24",
+    "checked_on": "2026-11-06",
     "reiki_system": "none",
     "reiki_url": null,
     "guide_url": "https://www.town.kaminoseki.lg.jp/%e5%82%8d%e8%81%b4%e3%81%ae%e3%81%94%e6%a1%88%e5%86%85.html",

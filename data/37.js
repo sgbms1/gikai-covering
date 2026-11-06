@@ -1,4 +1,4 @@
-// 自動生成: tools/build_data.sh 37（2026-10-25）。直接編集しない。
+// 自動生成: tools/build_data.sh 37（2026-11-06）。直接編集しない。
 window.BOCHO_DATA = window.BOCHO_DATA || {};
 window.BOCHO_DATA["37"] = [
   {
@@ -136,8 +136,8 @@ window.BOCHO_DATA["37"] = [
     "streaming": {
       "committee_live": true,
       "committee_live_basis": {
-        "text": "令和8年総務委員会",
-        "url": "https://smart.discussvision.net/smart/tenant/pref_kagawa/WebView/rd/council_1.html"
+        "text": "・県議会（定例会、臨時会、閉会中の委員会）の模様を生中継・録画中継していますので、ぜひご覧ください。",
+        "url": "https://www.pref.kagawa.lg.jp/kocho/koho/mailmag/20230914.html"
       },
       "committee_vod": true,
       "committee_vod_basis": {
@@ -150,8 +150,8 @@ window.BOCHO_DATA["37"] = [
         "basis": null
       },
       "live_basis": {
-        "text": "令和8年2月定例会",
-        "url": "https://smart.discussvision.net/smart/tenant/pref_kagawa/WebView/rd/council_1.html"
+        "text": "・県議会（定例会、臨時会、閉会中の委員会）の模様を生中継・録画中継していますので、ぜひご覧ください。",
+        "url": "https://www.pref.kagawa.lg.jp/kocho/koho/mailmag/20230914.html"
       },
       "live_scope": null,
       "not_official_record": true,
@@ -871,7 +871,10 @@ window.BOCHO_DATA["37"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "令和８年６月定例会（６．１２） ／ 97 ／ 4 か月前 に配信済み",
+        "url": "https://www.youtube.com/channel/UCF8lMQO5zFNob_8hjPs5ABw/streams"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -1219,7 +1222,10 @@ window.BOCHO_DATA["37"] = [
         "policy": "prohibited",
         "target": "site"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "本会議開会中のみ、生中継を視聴することができます。生中継の配信予定日程は、「会期日程」をご覧ください。",
+        "url": "https://www.city.sanuki.lg.jp/shisei/gikai/3777.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -1370,7 +1376,10 @@ window.BOCHO_DATA["37"] = [
     "reiki_url": "https://en3-jg.d1-law.com/higashikagawa/d1w_reiki/reiki.html",
     "streaming": {
       "committee_live": true,
-      "committee_live_basis": null,
+      "committee_live_basis": {
+        "text": "定例会、臨時会、委員会（本会議において付託された議案の審査）のライブ配信を行っています。",
+        "url": "https://www.higashikagawa.jp/shiseijoho/gikai/3404.html"
+      },
       "committee_vod": true,
       "committee_vod_basis": {
         "text": "令和7年度決算審査特別委員会",
@@ -1384,7 +1393,10 @@ window.BOCHO_DATA["37"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "本会議等のライブ配信をぜひご覧ください。",
+        "url": "https://www.higashikagawa.jp/shiseijoho/gikai/3404.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -1570,7 +1582,10 @@ window.BOCHO_DATA["37"] = [
         "policy": "prohibited",
         "target": "site"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "生中継は、議場での本会議等の模様をそのまま放送します。",
+        "url": "https://mitoyo-city.stream.jfit.co.jp/"
+      },
       "live_scope": "常任委員会(YouTube)",
       "not_official_record": true,
       "platforms": [

@@ -1,4 +1,4 @@
-// 自動生成: tools/build_data.sh 31（2026-10-26）。直接編集しない。
+// 自動生成: tools/build_data.sh 31（2026-11-06）。直接編集しない。
 window.BOCHO_DATA = window.BOCHO_DATA || {};
 window.BOCHO_DATA["31"] = [
   {
@@ -115,14 +115,20 @@ window.BOCHO_DATA["31"] = [
         "station": null
       },
       "committee_live": true,
-      "committee_live_basis": null,
+      "committee_live_basis": {
+        "text": "本会議・委員会のライブ中継を視聴できます。",
+        "url": "http://www.kensakusystem.jp/tottori-vod/index.html"
+      },
       "committee_vod": true,
       "download": {
         "policy": null,
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "本会議・委員会のライブ中継を視聴できます。",
+        "url": "http://www.kensakusystem.jp/tottori-vod/index.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -861,7 +867,7 @@ window.BOCHO_DATA["31"] = [
       "platforms": [
         "CATV"
       ],
-      "plenary_live": true,
+      "plenary_live": null,
       "plenary_vod": true,
       "plenary_vod_basis": {
         "text": "20260928_令和８年９月定例会_閉会日",
@@ -2050,7 +2056,7 @@ window.BOCHO_DATA["31"] = [
       "platforms": [
         "YouTube"
       ],
-      "plenary_live": true,
+      "plenary_live": null,
       "plenary_vod": true,
       "reuse_basis": {
         "article": null,
@@ -2585,7 +2591,10 @@ window.BOCHO_DATA["31"] = [
         "policy": "law_only",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "本会議の模様を、生中継と録画で配信してきましたが、平成25年1月から本格稼働といたします。",
+        "url": "https://www.daisen.jp/gikai/7/"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [

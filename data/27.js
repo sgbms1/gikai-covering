@@ -1,4 +1,4 @@
-// 自動生成: tools/build_data.sh 27（2026-10-26）。直接編集しない。
+// 自動生成: tools/build_data.sh 27（2026-11-06）。直接編集しない。
 window.BOCHO_DATA = window.BOCHO_DATA || {};
 window.BOCHO_DATA["27"] = [
   {
@@ -1236,8 +1236,8 @@ window.BOCHO_DATA["27"] = [
     "streaming": {
       "committee_live": true,
       "committee_live_basis": {
-        "text": "決算常任委員会",
-        "url": "https://smart.discussvision.net/smart/tenant/suita/WebView/rd/council_1.html"
+        "text": "令和8年10月23日（金曜）の総括質疑、討論・採決は、インターネットライブ中継を行います。（外部リンク）",
+        "url": "https://www.city.suita.osaka.jp/shigikai/1016981/1017043/1037899/1045628.html"
       },
       "committee_vod": true,
       "committee_vod_basis": {
@@ -5756,8 +5756,8 @@ window.BOCHO_DATA["27"] = [
     "streaming": {
       "committee_live": true,
       "committee_live_basis": {
-        "text": "総務建設常任委員会",
-        "url": "https://smart.discussvision.net/smart/tenant/shijonawate/WebView/rd/council_1.html"
+        "text": "四條畷市議会では、本会議及び常任委員会の模様は、ライブ中継（本会議または常任委員会の開催日のみ）及び録画映像でご覧いただけます。",
+        "url": "https://www.city.shijonawate.lg.jp/site/shigikai/81060.html"
       },
       "committee_vod": true,
       "committee_vod_basis": {

@@ -1,4 +1,4 @@
-// 自動生成: tools/build_data.sh 18（2026-10-25）。直接編集しない。
+// 自動生成: tools/build_data.sh 18（2026-11-06）。直接編集しない。
 window.BOCHO_DATA = window.BOCHO_DATA || {};
 window.BOCHO_DATA["18"] = [
   {
@@ -499,7 +499,10 @@ window.BOCHO_DATA["18"] = [
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "インターネットで本会議の生中継および録画映像（当年および過去4年分）を配信しています。",
+        "url": "https://www.city.tsuruga.lg.jp/site/gikai/3051.html"
+      },
       "live_scope": null,
       "not_official_record": null,
       "platforms": [
@@ -879,7 +882,10 @@ window.BOCHO_DATA["18"] = [
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "大野市議会では、本会議の様子をリアルタイムでご覧いただけるようインターネットでライブ映像を配信します。",
+        "url": "https://www.city.ono.fukui.jp/shisei/shigikai/douga/index.html"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -1244,7 +1250,10 @@ window.BOCHO_DATA["18"] = [
         "target": null,
         "basis": null
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "鯖江市議会　動画配信　第458回　令和8年9月定例会　9月18日 午後 ／ 188 ／ 1 か月前 に配信済み",
+        "url": "https://www.youtube.com/@%E9%AF%96%E6%B1%9F%E5%B8%82%E8%AD%B0%E4%BC%9A/streams"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [
@@ -1592,7 +1601,10 @@ window.BOCHO_DATA["18"] = [
         "station": null
       },
       "committee_live": true,
-      "committee_live_basis": null,
+      "committee_live_basis": {
+        "text": "委員会のインターネット配信を始めます（令和８年６月定例会～ ）",
+        "url": "https://www.city.echizen.lg.jp/office/110/010/nethaishin.html"
+      },
       "committee_vod": true,
       "download": {
         "basis": {
@@ -1602,7 +1614,10 @@ window.BOCHO_DATA["18"] = [
         "policy": "prohibited",
         "target": "video"
       },
-      "live_basis": null,
+      "live_basis": {
+        "text": "生中継の日程は、議会ホームページ内の開催日程をご覧ください。",
+        "url": "https://echizen-city.stream.jfit.co.jp"
+      },
       "live_scope": null,
       "not_official_record": true,
       "platforms": [

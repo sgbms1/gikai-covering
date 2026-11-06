@@ -1,4 +1,4 @@
-// 自動生成: tools/build_data.sh 44（2026-10-26）。直接編集しない。
+// 自動生成: tools/build_data.sh 44（2026-11-06）。直接編集しない。
 window.BOCHO_DATA = window.BOCHO_DATA || {};
 window.BOCHO_DATA["44"] = [
   {
@@ -666,7 +666,7 @@ window.BOCHO_DATA["44"] = [
         "basis": null
       },
       "live_basis": {
-        "text": "令和８年第１回定例会",
+        "text": "録画映像は、原則、生中継のおおよそ3日後（土日祝を除く。）に配信します。",
         "url": "https://smart.discussvision.net/smart/tenant/nakatsu/WebView/rd/council_1.html"
       },
       "live_scope": null,
